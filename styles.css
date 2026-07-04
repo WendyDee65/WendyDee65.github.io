@@ -98,6 +98,30 @@ nav a:hover {
   width: auto;
 }
 
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* BIG LOGO STYLE */
+.site-brand img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* TEXT STYLE */
+.site-brand span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* OPTIONAL: makes it white in dark headers */
+header .site-brand {
+  color: white;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
