@@ -115,6 +115,64 @@ nav a:hover {
   max-width: 500px;
 }
 
+/* HERO BANNER */
+.hero {
+  background: linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)
+  ),
+  url("images/hero.jpg") center/cover no-repeat;
+
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: white;
+  padding: 20px;
+}
+
+/* HERO CONTENT BOX */
+.hero-content {
+  max-width: 700px;
+}
+
+/* BIG LOGO IN HERO */
+.hero-logo {
+  width: 140px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* MAIN TITLE */
+.hero h1 {
+  font-size: 48px;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+/* TAGLINE */
+.tagline {
+  font-size: 18px;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #c94f4f; /* warm wine tone */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #a93f3f;
+}
 /* FOOTER */
 footer {
   text-align: center;
