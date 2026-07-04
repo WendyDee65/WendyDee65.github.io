@@ -278,6 +278,19 @@ table tbody tr:hover {
   text-align: left;
 }
 
+/* =========================
+   SCHEDULE NOTES
+========================= */
+
+.schedule-note {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.schedule-warning {
+  color: red;
+  font-weight: bold;
+}
 /* ==========================================
    FOOTER
 ========================================== */
