@@ -36,10 +36,16 @@
 ========================================== */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
   background: var(--background);
   color: var(--text);
+}
+
+
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
 }
 
 /* ==========================================
@@ -58,6 +64,10 @@ header {
   color: var(--text-light);
 
   box-shadow: var(--shadow);
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
 }
 
 /* ==========================================
