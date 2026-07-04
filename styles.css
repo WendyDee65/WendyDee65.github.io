@@ -301,6 +301,39 @@ table tbody tr:hover {
   color: red;
   font-weight: bold;
 }
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background: var(--surface);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+form button {
+  margin-top: 20px;
+}
 /* ==========================================
    FOOTER
 ========================================== */

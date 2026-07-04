@@ -41,41 +41,45 @@
   <div class="grid">
 
     <div class="card">
-      <h3>Tina Scarscella</h3>
-      <p>youremail@example.com</p>
-      <p>Tina's phone.</p>
+      <h3>Tina Scarsella</h3>
+      <p>tinascarsella@gmail.com</p>
+      <p>(805) 835-2076</p>
+      <p>Facebook: Line Dancing with Tina Scarsella</p>
     </div>
 
     <div class="card">
       <h3>Wendy Gray</h3>
       <p>wxm3sax@gmail.com</p>
-      <p>805-440-0590</p>
+      <p>(805) 440-0590</p>
     </div>
 
   </div>
 
 </section>
 
-<section class="section">
 
-  <h2>Private Lessons & Group Events</h2>
-  <p>
-    Available for private instruction, workshops, parties, and special events.
-    Contact us for availability and pricing.
-  </p>
-
-</section>
 
 <section class="section alt">
 
   <h2>Quick Message</h2>
 
-  <form>
-    <input type="text" placeholder="Your Name" required><br><br>
-    <input type="email" placeholder="Your Email" required><br><br>
-    <textarea placeholder="Your Message" rows="5" required></textarea><br><br>
-    <button class="btn" type="submit">Send Message</button>
-  </form>
+<form action="https://formspree.io/f/xwvdyeyb" method="POST">
+
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="6" required></textarea>
+
+  <button type="submit" class="btn">Send Message</button>
+
+  <input type="hidden" name="_subject" value="New Contact Form Submission">
+  <input type="hidden" name="_next" value="thank-you.html">
+
+</form>
 
   <p style="margin-top:15px; font-size: 0.9em;">
     *This form is for display. To receive messages, connect it to email or Google Forms.
