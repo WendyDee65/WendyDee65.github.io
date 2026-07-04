@@ -164,13 +164,13 @@ table th {
 .instructor-container {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
 }
 
 .instructor-card {
-    max-width: 420px;
-    text-align: center;
+    flex: 1;
+    max-width: 400px;
 }
 
 .instructor-card img {
