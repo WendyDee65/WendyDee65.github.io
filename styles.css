@@ -173,6 +173,22 @@ nav a:hover {
 .btn:hover {
   background: #a93f3f;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-logo {
+    width: 110px;
+  }
+}
+
 /* FOOTER */
 footer {
   text-align: center;
