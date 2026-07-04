@@ -98,28 +98,21 @@ nav a:hover {
   width: auto;
 }
 
-.site-brand {
+.logo-feature {
   display: flex;
   align-items: center;
-  gap: 15px;
+  justify-content: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-/* BIG LOGO STYLE */
-.site-brand img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
+.logo-feature img {
+  width: 250px;
+  max-width: 100%;
 }
 
-/* TEXT STYLE */
-.site-brand span {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* OPTIONAL: makes it white in dark headers */
-header .site-brand {
-  color: white;
+.logo-feature-text {
+  max-width: 500px;
 }
 
 /* FOOTER */
