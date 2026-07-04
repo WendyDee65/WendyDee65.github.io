@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
+
   <link rel="stylesheet" href="styles.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -15,7 +17,7 @@
     <img src="images/VineInLine.png" alt="Logo">
     <span>Vine In Line</span>
   </div>
- 
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -24,68 +26,70 @@
     <a href="events.html">Events</a>
     <a href="other_resources.html">Other Resources</a>
     <a href="contact.html">Contact</a>
-
   </nav>
 </header>
 
+<!-- HERO / INTRO -->
 <section class="section">
   <h1>Get in Touch</h1>
   <p>
-    Have a question about classes, events, or private lessons?  
-    We'd love to hear from you.
+    Have a question about classes, events, or private lessons?<br>
+    We’d love to hear from you.
   </p>
 </section>
 
+<!-- CONTACT CARDS -->
 <section class="section alt">
+
+  <h2>Instructors</h2>
 
   <div class="grid">
 
     <div class="card">
       <h3>Tina Scarsella</h3>
-      <p>tinascarsella@gmail.com</p>
-      <p>(805) 835-2076</p>
-      <p>Facebook: Line Dancing with Tina Scarsella</p>
+      <p><strong>Email:</strong> tinascarsella@gmail.com</p>
+      <p><strong>Phone:</strong> (805) 835-2076</p>
+      <p><strong>Facebook:</strong> Line Dancing with Tina Scarsella</p>
     </div>
 
     <div class="card">
       <h3>Wendy Gray</h3>
-      <p>wxm3sax@gmail.com</p>
-      <p>(805) 440-0590</p>
+      <p><strong>Email:</strong> wxm3sax@gmail.com</p>
+      <p><strong>Phone:</strong> (805) 440-0590</p>
     </div>
 
   </div>
 
 </section>
 
+<!-- FORM SECTION -->
+<section class="section">
 
+  <h2>Send a Quick Message</h2>
 
-<section class="section alt">
+  <div class="form-wrapper">
 
-  <h2>Quick Message</h2>
+    <form action="https://formspree.io/f/xwvdyeyb" method="POST">
 
-<form action="https://formspree.io/f/xwvdyeyb" method="POST">
+      <input type="text" name="_gotcha" style="display:none">
 
-  <input type="text" name="_gotcha" style="display:none">
-  
-  <label for="name">Name</label>
-  <input type="text" id="name" name="name" required>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
 
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
 
-  <label for="message">Message</label>
-  <textarea id="message" name="message" rows="6" required></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
 
-  <button type="submit" class="btn">Send Message</button>
+      <button type="submit" class="btn">Send Message</button>
 
-  <input type="hidden" name="_subject" value="New Contact Form Submission">
-  <input type="hidden" name="_next" value="thank-you.html">
+      <input type="hidden" name="_subject" value="New Contact Form Submission">
+      <input type="hidden" name="_next" value="thank-you.html">
 
-</form>
+    </form>
 
-  <p style="margin-top:15px; font-size: 0.9em;">
-    *This form is for display. To receive messages, connect it to email or Google Forms.
-  </p>
+  </div>
 
 </section>
 

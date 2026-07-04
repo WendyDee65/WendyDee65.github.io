@@ -334,6 +334,12 @@ form textarea {
 form button {
   margin-top: 20px;
 }
+
+.form-wrapper {
+  max-width: 600px;
+  margin: auto;
+}
+
 /* ==========================================
    FOOTER
 ========================================== */
