@@ -42,17 +42,26 @@
   <div style="overflow-x:auto;">
     <input type="text" id="danceSearch" placeholder="Search dances..." style="margin-bottom: 15px; padding: 8px; width: 100%; max-width: 350px;">
     <table>
-      <thead>
-        <tr>
-          <th>Dance Name</th>
-          <th>Level</th>
-          <th>Stepsheet</th>
-          <th>Demo Video</th>
-          <th>Tutorial Video</th>
-          <th>Music</th>
-          <th>Count/Wall</th>
-        </tr>
-      </thead>
+<thead>
+  <tr>
+    <th>Dance Name</th>
+    <th>Level</th>
+    <th>Music</th>
+    <th>Count</th>
+    <th>Walls</th>
+    <th>Stepsheet</th>
+    <th>Demo Video</th>
+    <th>Tutorial</th>
+  </tr>
+  <tr class="filter-row">
+    <th><input type="text" id="filterName" placeholder="Filter name"></th>
+    <th><input type="text" id="filterLevel" placeholder="Filter level"></th>
+    <th><input type="text" id="filterStepsheet" placeholder="Yes / No"></th>
+    <th><input type="text" id="filterDemo" placeholder="Yes / No"></th>
+    <th><input type="text" id="filterTutorial" placeholder="Yes / No"></th>
+    <th><inupt type=text" id="filterMusic" aria-placeholder="Yes / No"></inupt></th>
+  </tr>
+</thead>
 
       <tbody id="danceTable"></tbody>
 
@@ -125,10 +134,12 @@
 
     filteredDances.forEach(d => {
       const row = document.createElement("tr");
-
       row.innerHTML = `
-        <td>${d.name}</td>
-        <td>${d.level}</td>
+        <td>${d.name || ""}</td>
+        <td>${d.level || ""}</td>
+        <td>${d.music || ""}</td>
+        <td>${d.count || ""}</td>
+        <td>${d.walls || ""}</td>
         <td>${d.stepsheet ? `<a href="${d.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>` : ""}</td>
         <td>${d.demo ? `<a href="${d.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>` : ""}</td>
         <td>${d.tutorial ? `<a href="${d.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>` : ""}</td>
