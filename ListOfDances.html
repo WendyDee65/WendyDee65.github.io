@@ -39,8 +39,29 @@
 
 <section class="section alt">
 
-  <div style="overflow-x:auto;">
-    <input type="text" id="danceSearch" placeholder="Search dances..." style="margin-bottom: 15px; padding: 8px; width: 100%; max-width: 350px;">
+    <div style="overflow-x:auto;">
+      <div class="dance-filters">
+    <label>
+      Level:
+      <select id="levelFilter">
+        <option value="">All</option>
+      </select>
+    </label>
+
+    <label>
+      Count:
+      <select id="countFilter">
+        <option value="">All</option>
+      </select>
+    </label>
+
+    <label>
+      Walls:
+      <select id="wallsFilter">
+        <option value="">All</option>
+      </select>
+    </label>
+  </div>
     <table id="danceTableDisplay" class="display stripe hover">
     <thead>
       <tr>
@@ -127,7 +148,31 @@
     pageLength: 25,
     lengthMenu: [10, 25, 50, 100, { label: "All", value: -1 }],
     order: [[0, 'asc']]
-  });
+    });
+
+    function fillFilter(selectId, columnIndex) {
+      const select = document.getElementById(selectId);
+
+      table
+        .column(columnIndex)
+        .data()
+        .unique()
+        .sort()
+        .each(function (value) {
+          if (value !== "") {
+            select.add(new Option(value, value));
+          }
+        });
+
+      select.addEventListener("change", function () {
+        table.column(columnIndex).search(this.value).draw();
+      });
+    }
+
+    fillFilter("levelFilter", 1);
+    fillFilter("countFilter", 3);
+    fillFilter("wallsFilter", 4);
+  
 </script>
 
 </body>

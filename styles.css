@@ -196,6 +196,31 @@ nav a:hover {
   background: var(--accent-hover);
 }
 
+/* =========================
+   DANCE FILTERS
+========================= */
+
+.dance-filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.dance-filters label {
+  font-weight: 600;
+  color: #4b3b5a;      /* Matches your purple/brown theme */
+}
+
+.dance-filters select {
+  margin-left: 0.4rem;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #c7b8d8;
+  border-radius: 6px;
+  background: white;
+  font-size: 0.95rem;
+}
 /* ==========================================
    TABLES
 ========================================== */
