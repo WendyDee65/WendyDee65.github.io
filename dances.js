@@ -13,7 +13,6 @@ const dances = [
   { name: "After Hours", level: "", music: "No demo available", countWall: "32/4", stepsheet: "https://www.copperknob.co.uk/stepsheets/186672/ab-after-hours", demo: "", tutorial: "" },
 
   // ===== B =====
-  // ===== B =====
 
   { name: "Baby I Wanna Know", level: "", music: "Hey Baby", countWall: "32/4", stepsheet: "", demo: "https://www.youtube.com/watch?v=yAKJ5w6qIfA", tutorial: "" },
   { name: "Back on Texas Time", level: "", music: "Texas Time", countWall: "32/4", stepsheet: "", demo: "https://www.youtube.com/watch?v=db0fkKuYZ04", tutorial: "" },
