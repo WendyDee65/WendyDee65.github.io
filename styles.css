@@ -443,6 +443,73 @@ table.dataTable thead th.dt-ordering-desc .dt-column-order {
   color: white !important;
 }
 
+/* =========================
+   DATATABLE CUSTOM STYLE
+========================= */
+
+/* Header */
+table.dataTable thead th {
+  background: var(--primary);
+  color: white;
+}
+
+/* Gold sort arrows */
+table.dataTable thead th .dt-column-order {
+  color: #FFD59A !important;
+  opacity: 1 !important;
+}
+
+/* Alternating lavender rows */
+table.dataTable tbody tr:nth-child(even) {
+  background-color: #F3EEF7;
+}
+
+table.dataTable tbody tr:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+/* Hover row - soft wine color */
+table.dataTable tbody tr:hover {
+  background-color: #EFE1E8 !important;
+}
+
+/* Search box */
+.dt-search input {
+  border: 1px solid #c7b8d8;
+  border-radius: 20px;
+  padding: 7px 14px;
+  margin-left: 8px;
+  font-family: inherit;
+}
+
+/* Page length dropdown */
+.dt-length select {
+  border: 1px solid #c7b8d8;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-family: inherit;
+}
+
+/* Pagination buttons */
+.dt-paging button {
+  border-radius: 8px !important;
+  border: 1px solid #c7b8d8 !important;
+  background: #F3EEF7 !important;
+  color: #4b3b5a !important;
+  margin: 0 3px;
+}
+
+.dt-paging button:hover {
+  background: #6b4f7a !important;
+  color: white !important;
+}
+
+/* Current page button */
+.dt-paging button.current {
+  background: #5B3A29 !important;
+  color: white !important;
+  border-color: #5B3A29 !important;
+}
 /* ==========================================
    RESPONSIVE
 ========================================== */
