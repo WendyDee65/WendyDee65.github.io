@@ -41,27 +41,27 @@
 
   <div style="overflow-x:auto;">
     <input type="text" id="danceSearch" placeholder="Search dances..." style="margin-bottom: 15px; padding: 8px; width: 100%; max-width: 350px;">
-    <table>
-<thead>
-  <tr>
-    <th>Dance Name</th>
-    <th>Level</th>
-    <th>Music</th>
-    <th>Count</th>
-    <th>Walls</th>
-    <th>Stepsheet</th>
-    <th>Demo Video</th>
-    <th>Tutorial</th>
-  </tr>
-  <tr class="filter-row">
-    <th><input type="text" id="filterName" placeholder="Filter name"></th>
-    <th><input type="text" id="filterLevel" placeholder="Filter level"></th>
-    <th><input type="text" id="filterStepsheet" placeholder="Yes / No"></th>
-    <th><input type="text" id="filterDemo" placeholder="Yes / No"></th>
-    <th><input type="text" id="filterTutorial" placeholder="Yes / No"></th>
-    <th><inupt type=text" id="filterMusic" aria-placeholder="Yes / No"></inupt></th>
-  </tr>
-</thead>
+    <table id="danceTableDisplay" class="display stripe hover">
+    <thead>
+      <tr>
+        <th>Dance Name</th>
+        <th>Level</th>
+        <th>Music</th>
+        <th>Count</th>
+        <th>Walls</th>
+        <th>Stepsheet</th>
+        <th>Demo Video</th>
+        <th>Tutorial Video</th>
+      </tr>
+      <tr class="filter-row">
+        <th><input type="text" id="filterName" placeholder="Filter name"></th>
+        <th><input type="text" id="filterLevel" placeholder="Filter level"></th>
+        <th><input type="text" id="filterStepsheet" placeholder="Yes / No"></th>
+        <th><input type="text" id="filterDemo" placeholder="Yes / No"></th>
+        <th><input type="text" id="filterTutorial" placeholder="Yes / No"></th>
+        <th><inupt type=text" id="filterMusic" aria-placeholder="Yes / No"></inupt></th>
+      </tr>
+    </thead>
 
       <tbody id="danceTable"></tbody>
 
@@ -100,82 +100,42 @@
   <p>Vine In Line | SLO North County, CA</p>
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+
 <!-- JS: load data -->
 <script src="dances.js"></script>
 
-<!-- JS: render table -->
-<script src="dances.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
 
 <script>
   const tableBody = document.getElementById("danceTable");
-  const searchBox = document.getElementById("danceSearch");
 
-  let sortColumn = "name";
-  let sortDirection = "asc";
+  dances.forEach(d => {
+    const row = document.createElement("tr");
 
-  function renderTable() {
-    const searchText = searchBox.value.toLowerCase();
+    row.innerHTML = `
+      <td>${d.name}</td>
+      <td>${d.level}</td>
+      <td>${d.music}</td>
+      <td>${d.count}</td>
+      <td>${d.walls}</td>
+      <td>${d.stepsheet ? `<a href="${d.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>` : ""}</td>
+      <td>${d.demo ? `<a href="${d.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>` : ""}</td>
+      <td>${d.tutorial ? `<a href="${d.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>` : ""}</td>
+    `;
 
-    const filteredDances = dances
-      .filter(d =>
-        d.name.toLowerCase().includes(searchText) ||
-        d.level.toLowerCase().includes(searchText)
-      )
-      .sort((a, b) => {
-        const valueA = (a[sortColumn] || "").toLowerCase();
-        const valueB = (b[sortColumn] || "").toLowerCase();
-
-        if (valueA < valueB) return sortDirection === "asc" ? -1 : 1;
-        if (valueA > valueB) return sortDirection === "asc" ? 1 : -1;
-        return 0;
-      });
-
-    tableBody.innerHTML = "";
-
-    filteredDances.forEach(d => {
-      const row = document.createElement("tr");
-      row.innerHTML = `
-        <td>${d.name || ""}</td>
-        <td>${d.level || ""}</td>
-        <td>${d.music || ""}</td>
-        <td>${d.count || ""}</td>
-        <td>${d.walls || ""}</td>
-        <td>${d.stepsheet ? `<a href="${d.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>` : ""}</td>
-        <td>${d.demo ? `<a href="${d.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>` : ""}</td>
-        <td>${d.tutorial ? `<a href="${d.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>` : ""}</td>
-      `;
-
-      tableBody.appendChild(row);
-    });
-  }
-
-  document.querySelectorAll("th").forEach(header => {
-    header.style.cursor = "pointer";
-
-    header.addEventListener("click", () => {
-      const columnMap = {
-        "Dance Name": "name",
-        "Level": "level"
-      };
-
-      const selectedColumn = columnMap[header.textContent.trim()];
-
-      if (!selectedColumn) return;
-
-      if (sortColumn === selectedColumn) {
-        sortDirection = sortDirection === "asc" ? "desc" : "asc";
-      } else {
-        sortColumn = selectedColumn;
-        sortDirection = "asc";
-      }
-
-      renderTable();
-    });
+    tableBody.appendChild(row);
   });
 
-  searchBox.addEventListener("input", renderTable);
-
-  renderTable();
+  new DataTable('#danceTableDisplay', {
+    pageLength: 25,
+    lengthMenu: [10, 25, 50, 100, { label: "All", value: -1 }],
+    order: [[0, 'asc']]
+  });
 </script>
 
 </body>
