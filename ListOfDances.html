@@ -124,6 +124,10 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
 
+<script src="dances.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+
 <script>
   const tableBody = document.getElementById("danceTable");
 
@@ -131,11 +135,11 @@
     const row = document.createElement("tr");
 
     row.innerHTML = `
-      <td>${d.name}</td>
-      <td>${d.level}</td>
-      <td>${d.music}</td>
-      <td>${d.count}</td>
-      <td>${d.walls}</td>
+      <td>${d.name || ""}</td>
+      <td>${d.level || ""}</td>
+      <td>${d.music || ""}</td>
+      <td>${d.count || ""}</td>
+      <td>${d.walls || ""}</td>
       <td>${d.stepsheet ? `<a href="${d.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>` : ""}</td>
       <td>${d.demo ? `<a href="${d.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>` : ""}</td>
       <td>${d.tutorial ? `<a href="${d.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>` : ""}</td>
@@ -144,36 +148,37 @@
     tableBody.appendChild(row);
   });
 
-  new DataTable('#danceTableDisplay', {
+  const table = new DataTable('#danceTableDisplay', {
     pageLength: 25,
     lengthMenu: [10, 25, 50, 100, { label: "All", value: -1 }],
     order: [[0, 'asc']]
-    });
+  });
 
-    function fillFilter(selectId, columnIndex) {
-      const select = document.getElementById(selectId);
+  function fillFilter(selectId, columnIndex) {
+    const select = document.getElementById(selectId);
 
-      table
-        .column(columnIndex)
-        .data()
-        .unique()
-        .sort()
-        .each(function (value) {
-          if (value !== "") {
-            select.add(new Option(value, value));
-          }
-        });
+    table
+      .column(columnIndex)
+      .data()
+      .unique()
+      .sort()
+      .each(function (value) {
+        const cleanValue = value.toString().trim();
 
-      select.addEventListener("change", function () {
-        table.column(columnIndex).search(this.value).draw();
+        if (cleanValue !== "") {
+          select.add(new Option(cleanValue, cleanValue));
+        }
       });
-    }
 
-    fillFilter("levelFilter", 1);
-    fillFilter("countFilter", 3);
-    fillFilter("wallsFilter", 4);
-  
-</script>
+    select.addEventListener("change", function () {
+      table.column(columnIndex).search(this.value, { exact: true }).draw();
+    });
+  }
+
+  fillFilter("levelFilter", 1);
+  fillFilter("countFilter", 3);
+  fillFilter("wallsFilter", 4);
+</script>>
 
 </body>
 </html>

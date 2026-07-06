@@ -11,7 +11,7 @@ const dances = [
   { name: "A Bar Song", level: "", music: "A Bar Song (Tipsy)", count: "32", walls: "4", stepsheet: "", demo: "https://www.youtube.com/watch?v=6WUNB-EQbsc", tutorial: "" },
   { name: "AA", level: "", music: "AA", count: "32", walls: "4", stepsheet: "", demo: "", tutorial: "" },
   { name: "Across the Room", level: "", music: "You Look Like You Love Me", count: "32", walls: "4", stepsheet: "", demo: "https://www.youtube.com/watch?v=fq3L9zbd8_A", tutorial: "" },
-  { name: "After Hours", level: "", music: "No demo available", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/186672/ab-after-hours", demo: "", tutorial: "" },
+  { name: "After Hours", level: "", music: "After Hours", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/186672/ab-after-hours", demo: "", tutorial: "" },
 
   // ===== B =====
     // ===== B =====
