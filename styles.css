@@ -413,38 +413,36 @@ footer {
    DATATABLE SORT ICONS
 ========================= */
 
-table.dataTable thead th,
-table.dataTable thead td {
-  position: relative;
-  cursor: pointer;
-  padding-right: 28px !important;
+/* =========================
+   DATATABLE SORT ICONS
+========================= */
+
+/* Make the headers clickable */
+table.dataTable thead th {
+    position: relative;
+    cursor: pointer;
+    padding-right: 34px !important;
 }
 
-/* DataTables 2 sort icon area */
-table.dataTable thead th span.dt-column-order {
-  position: absolute;
-  right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
+/* Style the built-in DataTables sort icon */
+table.dataTable thead th .dt-column-order {
+    color: #FFD59A !important;      /* gold */
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 1 !important;
+
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-/* fallback: show simple arrows if DataTables icons don't appear */
-table.dataTable thead th::after {
-  content: " ⇅";
-  font-size: 0.8rem;
-  color: #FFD59A;
-  margin-left: 6px;
+/* Make the active sorted column darker */
+table.dataTable thead th.dt-ordering-asc .dt-column-order,
+table.dataTable thead th.dt-ordering-desc .dt-column-order {
+    color: white !important;
 }
 
-table.dataTable thead th.dt-ordering-asc::after {
-  content: " ▲";
-  color: #FFD59A;
-}
-
-table.dataTable thead th.dt-ordering-desc::after {
-  content: " ▼";
-  color: #FFD59A;
-}
 /* ==========================================
    RESPONSIVE
 ========================================== */
