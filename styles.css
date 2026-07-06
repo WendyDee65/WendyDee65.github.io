@@ -409,38 +409,38 @@ footer {
   margin-top: 40px;
 }
 
-/* =========================
-   DATATABLE SORT ICONS
-========================= */
 
 /* =========================
    DATATABLE SORT ICONS
 ========================= */
 
-/* Make the headers clickable */
 table.dataTable thead th {
-    position: relative;
-    cursor: pointer;
-    padding-right: 34px !important;
+  cursor: pointer;
 }
 
-/* Style the built-in DataTables sort icon */
+/* Keep title and icon on one line */
+table.dataTable thead th .dt-column-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* Style the built-in DataTables icon */
 table.dataTable thead th .dt-column-order {
-    color: #FFD59A !important;      /* gold */
-    font-size: 1rem;
-    font-weight: bold;
-    opacity: 1 !important;
-
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+  color: #FFD59A !important;
+  opacity: 1 !important;
+  font-size: 0.9rem;
+  line-height: 1;
+  position: static !important;
+  transform: none !important;
+  margin-left: 6px;
 }
 
-/* Make the active sorted column darker */
+/* Make active sorted column icon white */
 table.dataTable thead th.dt-ordering-asc .dt-column-order,
 table.dataTable thead th.dt-ordering-desc .dt-column-order {
-    color: white !important;
+  color: white !important;
 }
 
 /* ==========================================
