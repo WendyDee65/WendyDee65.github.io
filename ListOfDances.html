@@ -48,7 +48,9 @@
           <th>Level</th>
           <th>Stepsheet</th>
           <th>Demo Video</th>
-          <th>Tutorial</th>
+          <th>Tutorial Video</th>
+          <th>Music</th>
+          <th>Count/Wall</th>
         </tr>
       </thead>
 
@@ -102,9 +104,25 @@
     row.innerHTML = `
       <td>${d.name}</td>
       <td>${d.level}</td>
-      <td>${d.stepsheet ? `<a href="${d.stepsheet}" target="_blank">Stepsheet</a>` : ""}</td>
-      <td>${d.demo ? `<a href="${d.demo}" target="_blank">Demo</a>` : ""}</td>
-      <td>${d.tutorial ? `<a href="${d.tutorial}" target="_blank">Tutorial</a>` : ""}</td>
+      <td>
+        ${d.stepsheet
+          ? `<a href="${d.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>`
+          : ""}
+      </td>
+
+      <td>
+        ${d.demo
+          ? `<a href="${d.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>`
+          : ""}
+      </td>
+
+      <td>
+        ${d.tutorial
+          ? `<a href="${d.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>`
+          : ""}
+      </td>
+      <td>${d.music}</td>
+      <td>${d.countWall}</td>
     `;
 
     tableBody.appendChild(row);
