@@ -86,7 +86,7 @@
 </section>
 
 <footer>
-  <p>© 2026 Vine In Line | SLO North County, CA</p>
+  <p>Vine In Line | SLO North County, CA</p>
 </footer>
 
 <!-- JS: load data -->
@@ -102,9 +102,9 @@
     row.innerHTML = `
       <td>${d.name}</td>
       <td>${d.level}</td>
-      <td>${d.stepsheet}</td>
-      <td>${d.demo}</td>
-      <td>${d.tutorial}</td>
+      <td>${d.stepsheet ? `<a href="${d.stepsheet}" target="_blank">Stepsheet</a>` : ""}</td>
+      <td>${d.demo ? `<a href="${d.demo}" target="_blank">Demo</a>` : ""}</td>
+      <td>${d.tutorial ? `<a href="${d.tutorial}" target="_blank">Tutorial</a>` : ""}</td>
     `;
 
     tableBody.appendChild(row);
