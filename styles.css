@@ -478,69 +478,59 @@ form button {
   color: #b30000;
   font-weight: bold;
 }
-
 /* =========================
    EVENTS PAGE
 ========================= */
 
 .events-list {
-  display: grid;
-  gap: 20px;
-  max-width: 900px;
+  max-width: 850px;
   margin: auto;
 }
 
-.event-card {
-  text-align: left;
+.event-agenda-item {
+  background: white;
+  border-bottom: 2px solid #e6ddd4;
+  padding: 35px 20px;
+  text-align: center;
 }
 
-.event-card:nth-child(odd) {
-  background: #FFFFFF;
+.event-agenda-item:first-child {
+  border-top: 2px solid #e6ddd4;
 }
 
-.event-card:nth-child(even) {
-  background: #F3EEF7;
-}
-
-.event-date {
-  display: block;
-
+.event-agenda-date {
   font-family: "Merriweather", serif;
-
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 1.2;
-
   color: var(--primary);
-
-  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
 }
 
-.event-meta {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-
-  font-size: .95rem;
-  color: #666;
-  font-weight: 600;
-
-  margin-bottom: 12px;
+.event-agenda-item h2 {
+  font-size: 1.45rem;
+  margin-bottom: 14px;
 }
 
-.event-card h2 {
-  font-size: 1.55rem;
-  margin: 6px 0 0;
-}
-
-.event-card h2 a {
+.event-agenda-item h2 a {
   color: var(--primary);
   text-decoration: none;
 }
 
-.event-card h2 a:hover {
+.event-agenda-item h2 a:hover {
   color: var(--accent);
   text-decoration: underline;
+}
+
+.event-agenda-meta {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  color: #666;
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 /* ==========================================
    FOOTER
