@@ -503,23 +503,33 @@ form button {
 }
 
 .event-date {
-  font-size: 1.25rem;
-  font-weight: bold;
+  display: block;
+
+  font-family: "Merriweather", serif;
+
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.2;
+
   color: var(--primary);
-  margin-bottom: 8px;
+
+  margin-bottom: 12px;
 }
 
 .event-meta {
   display: flex;
-  gap: 14px;
+  gap: 18px;
   flex-wrap: wrap;
-  color: #4b3b5a;
-  font-weight: 600;
+
+  font-size: .95rem;
+  color: #666;
+
   margin-bottom: 10px;
 }
 
 .event-card h2 {
-  margin: 8px 0 0;
+  font-size: 1.55rem;
+  margin: 6px 0 0;
 }
 
 .event-card h2 a {
@@ -528,6 +538,7 @@ form button {
 }
 
 .event-card h2 a:hover {
+  color: var(--accent);
   text-decoration: underline;
 }
 /* ==========================================
