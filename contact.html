@@ -41,22 +41,33 @@
 <!-- CONTACT CARDS -->
 <section class="section alt">
 
-  <h2>Instructors</h2>
+  <h2>Contact Us</h2>
 
-  <div class="grid">
+  <div class="contact-grid">
 
-  <div class="card instructor-card">
-    <h3>Tina Scarsella</h3>
-    <p>
-      <span class="icon">📞</span>
-      <a href="tel:8058352076">(805) 835-2076</a>
-    </p>
+    <div class="card contact-card">
+      <h2>Contact Vine In Line</h2>
 
-    <p>
-      <span class="icon">📘</span>
-      Facebook: Line Dancing with Tina Scarsella
-    </p>
-        <div class="card contact-card">
+      <form action="https://formspree.io/f/mpqgewov" method="POST">
+        <input type="text" name="_gotcha" style="display:none">
+
+        <label for="vine-name">Name</label>
+        <input type="text" id="vine-name" name="name" required>
+
+        <label for="vine-email">Your Email</label>
+        <input type="email" id="vine-email" name="email" required>
+
+        <label for="vine-message">Message</label>
+        <textarea id="vine-message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+
+        <input type="hidden" name="_subject" value="New Vine In Line Contact Form Submission">
+        <input type="hidden" name="_next" value="thank-you.html">
+      </form>
+    </div>
+
+    <div class="card contact-card">
       <h2>Contact Tina</h2>
 
       <form action="https://formspree.io/f/xwvdyeyb" method="POST">
@@ -69,18 +80,20 @@
         <label for="tina-message">Message</label>
         <textarea id="tina-message" name="message" rows="4" required></textarea>
 
-        <button class="btn" type="submit">Send Message to Tina</button>
+        <button class="btn" type="submit">Send Message</button>
       </form>
+
+      <p class="contact-line">
+        <span class="icon">📞</span>
+        <a href="tel:8058352076">(805) 835-2076</a>
+      </p>
+
+      <p class="contact-line">
+        <span class="icon">📘</span>
+        Facebook: Line Dancing with Tina Scarsella
+      </p>
     </div>
-  </div>
 
-  <div class="card instructor-card">
-    <h3>Wendy Gray</h3>
-
-    <p>
-      <span class="icon">📞</span>
-      <a href="tel:8054400590">(805) 440-0590</a>
-    </p>
     <div class="card contact-card">
       <h2>Contact Wendy</h2>
 
@@ -94,41 +107,14 @@
         <label for="wendy-message">Message</label>
         <textarea id="wendy-message" name="message" rows="4" required></textarea>
 
-        <button class="btn" type="submit">Send Message to Wendy</button>
+        <button class="btn" type="submit">Send Message</button>
       </form>
+
+      <p class="contact-line">
+        <span class="icon">📞</span>
+        <a href="tel:8054400590">(805) 440-0590</a>
+      </p>
     </div>
-  </div>
-
-</div>
-
-</section>
-
-<!-- FORM SECTION -->
-<section class="section">
-
-  <h2>Send a Quick Message</h2>
-
-  <div class="form-wrapper">
-
-    <form action="https://formspree.io/f/mpqgewov" method="POST">
-
-      <input type="text" name="_gotcha" style="display:none">
-
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="submit" class="btn">Send Message</button>
-
-      <input type="hidden" name="_subject" value="New Contact Form Submission">
-      <input type="hidden" name="_next" value="thank-you.html">
-
-    </form>
 
   </div>
 
