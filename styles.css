@@ -485,17 +485,28 @@ form button {
 .events-list {
   max-width: 850px;
   margin: auto;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .event-agenda-item {
-  background: white;
-  border-bottom: 2px solid #e6ddd4;
-  padding: 35px 20px;
+  padding: 35px 30px;
   text-align: center;
+  border-bottom: 2px solid #e6ddd4;
 }
 
-.event-agenda-item:first-child {
-  border-top: 2px solid #e6ddd4;
+.event-agenda-item:nth-child(odd) {
+  background: #FFFFFF;
+}
+
+.event-agenda-item:nth-child(even) {
+  background: #F3EEF7;
+}
+
+.event-agenda-item:last-child {
+  border-bottom: none;
 }
 
 .event-agenda-date {
@@ -505,12 +516,12 @@ form button {
   color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .event-agenda-item h2 {
   font-size: 1.45rem;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .event-agenda-item h2 a {
