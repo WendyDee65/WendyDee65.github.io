@@ -38,82 +38,86 @@
   <div id="newsContainer"></div>
 </section>
 
-<section class="section">
-  <h2>Featured This Month</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>🎵 Dance Review</h3>
-      <p>
-        Check the List of Dances page for stepsheets, demo videos, and tutorials for dances we have learned in class.
-      </p>
-      <a class="btn" href="ListOfDances.html">View Dances</a>
-    </div>
-
-    <div class="card">
-      <h3>👟 New Dancers Welcome</h3>
-      <p>
-        No partner is needed. Wear comfortable shoes, bring water, and come ready to have fun.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>💃 Class Reminder</h3>
-      <p>
-        Drop-in cost is $10 per night. Cash, check, or Venmo may be available depending on class.
-      </p>
-    </div>
-
-  </div>
 </section>
 
 
 <footer>
   <p>Vine In Line | SLO North County, CA</p>
 </footer>
-
 <script src="news.js"></script>
 
 <script>
   const newsContainer = document.getElementById("newsContainer");
 
-  newsItems.forEach(item => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.style.maxWidth = "900px";
-    card.style.margin = "auto";
-    card.style.textAlign = "left";
+  function danceLinks(dance) {
+    return `
+      ${dance.stepsheet ? `<a href="${dance.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>` : ""}
+      ${dance.demo ? `<a href="${dance.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>` : ""}
+      ${dance.tutorial ? `<a href="${dance.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>` : ""}
+    `;
+  }
 
-    card.innerHTML = `
-      <h2>🍇 ${item.month}</h2>
-      <h3>${item.title}</h3>
-      <p>${item.intro}</p>
+  newsContainer.innerHTML = `
+    <div class="card news-card">
+      <h2>🍇 ${news.month} Updates</h2>
 
-      <h3>New / Featured Dances</h3>
+      <h3>Current Schedule Updates</h3>
+      <ul>
+        ${news.scheduleUpdates.map(item => `<li>${item}</li>`).join("")}
+      </ul>
+
+      <h3>Field Trip Opportunities</h3>
+      ${news.fieldTrips.map(trip => `
+        <div class="news-dance-item">
+          <h4>${trip.title}</h4>
+          <p>${trip.description}</p>
+          ${trip.link ? `<a href="${trip.link}" target="_blank" rel="noopener noreferrer">${trip.linkText}</a>` : ""}
+        </div>
+      `).join("")}
+    </div>
+
+    <div class="card news-card">
+      <h2>💃 Featured Beginner Hour Dances</h2>
+      <h3>${news.beginnerHour.title}</h3>
 
       <div class="news-dance-list">
-        ${item.dances.map(dance => `
+        ${news.beginnerHour.dances.map(dance => `
           <div class="news-dance-item">
             <h4>${dance.name}</h4>
             <p><strong>Level:</strong> ${dance.level}</p>
-            <p>
-              ${dance.stepsheet ? `<a href="${dance.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>` : ""}
-              ${dance.demo ? `<a href="${dance.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>` : ""}
-              ${dance.tutorial ? `<a href="${dance.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>` : ""}
-            </p>
+            <p>${danceLinks(dance)}</p>
           </div>
         `).join("")}
       </div>
 
-      <h3>Announcements</h3>
-      <ul>
-        ${item.announcements.map(note => `<li>${note}</li>`).join("")}
-      </ul>
-    `;
+      ${news.beginnerHour.justDance && news.beginnerHour.justDance.length > 0 ? `
+        <h3>Just Dance Selections</h3>
+        <div class="news-dance-list">
+          ${news.beginnerHour.justDance.map(dance => `
+            <div class="news-dance-item">
+              <h4>${dance.name}</h4>
+              <p>${danceLinks(dance)}</p>
+            </div>
+          `).join("")}
+        </div>
+      ` : ""}
+    </div>
 
-    newsContainer.appendChild(card);
-  });
+    <div class="card news-card">
+      <h2>🎵 Featured Improver Hour Dances</h2>
+      <h3>${news.improverHour.title}</h3>
+
+      <div class="news-dance-list">
+        ${news.improverHour.dances.map(dance => `
+          <div class="news-dance-item">
+            <h4>${dance.name}</h4>
+            <p><strong>Level:</strong> ${dance.level}</p>
+            <p>${danceLinks(dance)}</p>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+  `;
 </script>
 
 </body>
