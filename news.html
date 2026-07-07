@@ -35,46 +35,7 @@
 </section>
 
 <section class="section alt">
-  <div class="card" style="max-width: 800px; margin: auto; text-align: left;">
-
-    <h2>🍇 July News</h2>
-
-    <p>
-      We are excited to keep dancing through July with weekly classes in Paso Robles and Atascadero.
-      Whether you are brand new or ready for more challenging dances, there is a class for you.
-    </p>
-
-    <hr>
-
-    <h3>Tuesday Beginner / Improver Classes</h3>
-    <p>
-      Tuesday classes continue at Centennial Park in Paso Robles.
-    </p>
-    <p>
-      <strong>6:00 PM – 7:00 PM:</strong> Beginner / High Beginner<br>
-      <strong>7:00 PM – 8:00 PM:</strong> Improver / High Improver
-    </p>
-
-    <h3>Thursday Intermediate / Advanced Classes</h3>
-    <p>
-      Thursday classes are held at Community Church of Atascadero in the Fellowship Hall.
-    </p>
-    <p>
-      <strong>4:30 PM – 5:00 PM:</strong> Warmup & Quick Reviews<br>
-      <strong>5:00 PM – 6:30 PM:</strong> Intermediate / Advanced Lesson
-    </p>
-
-    <hr>
-
-    <h3>⚠️ July Thursday Schedule Update</h3>
-    <p class="schedule-note">
-      Thursday classes will only be held on <strong>July 2, July 9, and July 30</strong>.<br>
-      <span class="schedule-warning">
-        No Thursday class on July 16 or July 23.
-      </span>
-    </p>
-
-  </div>
+  <div id="newsContainer"></div>
 </section>
 
 <section class="section">
@@ -107,27 +68,53 @@
   </div>
 </section>
 
-<section class="section alt">
-  <div class="card" style="max-width: 800px; margin: auto; text-align: left;">
-
-    <h2>Announcements</h2>
-
-    <p>
-      Have a dance request, question, or event idea? We would love to hear from you.
-    </p>
-
-    <p>
-      Visit the Contact page to reach out.
-    </p>
-
-    <a class="btn" href="contact.html">Contact Us</a>
-
-  </div>
-</section>
 
 <footer>
   <p>Vine In Line | SLO North County, CA</p>
 </footer>
+
+<script src="news.js"></script>
+
+<script>
+  const newsContainer = document.getElementById("newsContainer");
+
+  newsItems.forEach(item => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.style.maxWidth = "900px";
+    card.style.margin = "auto";
+    card.style.textAlign = "left";
+
+    card.innerHTML = `
+      <h2>🍇 ${item.month}</h2>
+      <h3>${item.title}</h3>
+      <p>${item.intro}</p>
+
+      <h3>New / Featured Dances</h3>
+
+      <div class="news-dance-list">
+        ${item.dances.map(dance => `
+          <div class="news-dance-item">
+            <h4>${dance.name}</h4>
+            <p><strong>Level:</strong> ${dance.level}</p>
+            <p>
+              ${dance.stepsheet ? `<a href="${dance.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>` : ""}
+              ${dance.demo ? `<a href="${dance.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>` : ""}
+              ${dance.tutorial ? `<a href="${dance.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>` : ""}
+            </p>
+          </div>
+        `).join("")}
+      </div>
+
+      <h3>Announcements</h3>
+      <ul>
+        ${item.announcements.map(note => `<li>${note}</li>`).join("")}
+      </ul>
+    `;
+
+    newsContainer.appendChild(card);
+  });
+</script>
 
 </body>
 </html>
