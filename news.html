@@ -59,9 +59,20 @@
       <h2>🍇 ${news.month} Updates</h2>
 
       <h3>Current Schedule Updates</h3>
+
       <ul>
         ${news.scheduleUpdates.map(item => `<li>${item}</li>`).join("")}
       </ul>
+
+      ${news.scheduleAlerts.length > 0 ? `
+      <div class="schedule-alert-box">
+        <h3>⚠️ Schedule Alert</h3>
+
+        <ul>
+          ${news.scheduleAlerts.map(item => `<li>${item}</li>`).join("")}
+        </ul>
+      </div>
+      ` : ""}
 
       <h3>Field Trip Opportunities</h3>
       ${news.fieldTrips.map(trip => `

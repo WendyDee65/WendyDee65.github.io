@@ -1,11 +1,14 @@
 const news = {
   month: "July 2026",
 
-  scheduleUpdates: [
+    scheduleUpdates: [
     "Tuesday classes continue at Centennial Park in Paso Robles.",
-    "Thursday classes will only be held on July 2, July 9, and July 30.",
+    "Thursday classes will only be held on July 2, July 9, and July 30."
+    ],
+
+    scheduleAlerts: [
     "No Thursday class on July 16 or July 23."
-  ],
+    ],
 
   fieldTrips: [
     {

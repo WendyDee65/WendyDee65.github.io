@@ -449,6 +449,36 @@ form button {
 .news-dance-item a:hover {
   text-decoration: underline;
 }
+
+
+/* =========================
+   SCHEDULE ALERT BOX
+========================= */
+
+.schedule-alert-box {
+  background: #fff3f3;
+  border-left: 6px solid #cc0000;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin: 25px 0;
+}
+
+.schedule-alert-box h3 {
+  color: #b30000;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.schedule-alert-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.schedule-alert-box li {
+  color: #b30000;
+  font-weight: bold;
+}
+
 /* ==========================================
    FOOTER
 ========================================== */
