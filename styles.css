@@ -492,17 +492,11 @@ form button {
 }
 
 .event-agenda-item {
-  padding: 18px 25px;
+  padding: 22px 28px;
   text-align: left;
-  border-bottom: 1px solid #ddd5cd;
-}
-
-.event-agenda-item:nth-child(odd) {
-  background: #FFFFFF;
-}
-
-.event-agenda-item:nth-child(even) {
-  background: #F3EEF7;
+  background: white;
+  border-bottom: 1px solid #e6ddd4;
+  border-left: 5px solid var(--accent);
 }
 
 .event-agenda-item:last-child {
@@ -510,39 +504,45 @@ form button {
 }
 
 .event-agenda-date {
-  font-family: "Merriweather", serif;
-  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.05rem;
   font-weight: 700;
   line-height: 1.2;
   color: var(--primary);
   text-transform: uppercase;
-  letter-spacing: .5px;
+  letter-spacing: 1px;
   margin-bottom: 6px;
 }
 
 .event-agenda-item h2 {
   font-size: 1.2rem;
-  margin: 4px 0 8px;
+  margin: 4px 0 6px;
   font-weight: 700;
 }
 
 .event-agenda-item h2 a {
-  color: var(--primary);
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  color: var(--text);
+  text-decoration: none;
 }
 
 .event-agenda-item h2 a:hover {
   color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .event-agenda-meta {
   display: flex;
-  gap: 16px;
+  gap: 8px;
   flex-wrap: wrap;
   font-size: .9rem;
   color: #666;
   font-weight: 600;
+}
+
+.event-agenda-meta span + span::before {
+  content: "• ";
+  color: var(--accent);
 }
 /* ==========================================
    FOOTER
