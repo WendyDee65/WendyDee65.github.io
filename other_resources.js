@@ -30,7 +30,7 @@ const resourceSections = [
     ]
   },
   {
-    title: "Informational Web Sites",
+    title: "Line Dance Web Sites",
     resources: [
       {
         title: "CopperKnob",
@@ -39,7 +39,7 @@ const resourceSections = [
       },
       {
         title: "World Line Dance Newsletter",
-        description: "Information about events, stepsheet, surveys, links - All Line Dance Related!",
+        description: "Information about events, stepsheets, surveys, links - and more!",
         link: "https://worldlinedancenewsletter.com/index.html"
       },
       {

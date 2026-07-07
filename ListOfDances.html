@@ -68,13 +68,14 @@
     <thead>
       <tr>
         <th>Dance Name</th>
+        <th>Stepsheet</th>
+        <th>Demo Video</th>
+        <th>Tutorial Video</th>
         <th>Level</th>
         <th>Music</th>
         <th>Count</th>
         <th>Walls</th>
-        <th>Stepsheet</th>
-        <th>Demo Video</th>
-        <th>Tutorial Video</th>
+
       </tr>
     </thead>
 
@@ -113,13 +114,14 @@
 
     row.innerHTML = `
       <td>${d.name || ""}</td>
+      <td>${d.stepsheet ? `<a href="${d.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>` : ""}</td>
+      <td>${d.demo ? `<a href="${d.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>` : ""}</td>
+      <td>${d.tutorial ? `<a href="${d.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>` : ""}</td>
       <td>${d.level || ""}</td>
       <td>${d.music || ""}</td>
       <td>${d.count || ""}</td>
       <td>${d.walls || ""}</td>
-      <td>${d.stepsheet ? `<a href="${d.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>` : ""}</td>
-      <td>${d.demo ? `<a href="${d.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>` : ""}</td>
-      <td>${d.tutorial ? `<a href="${d.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>` : ""}</td>
+
     `;
 
     tableBody.appendChild(row);
