@@ -479,6 +479,57 @@ form button {
   font-weight: bold;
 }
 
+/* =========================
+   EVENTS PAGE
+========================= */
+
+.events-list {
+  display: grid;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.event-card {
+  text-align: left;
+}
+
+.event-card:nth-child(odd) {
+  background: #FFFFFF;
+}
+
+.event-card:nth-child(even) {
+  background: #F3EEF7;
+}
+
+.event-date {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.event-meta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  color: #4b3b5a;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.event-card h2 {
+  margin: 8px 0 0;
+}
+
+.event-card h2 a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.event-card h2 a:hover {
+  text-decoration: underline;
+}
 /* ==========================================
    FOOTER
 ========================================== */

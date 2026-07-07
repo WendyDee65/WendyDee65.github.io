@@ -12,8 +12,8 @@ const news = {
 
   fieldTrips: [
     {
-      title: "Optional Dance Outing",
-      description: "Check back soon for upcoming local dance opportunities.",
+      title: "",
+      description: "There is currently no planned dance outing for July.  Stay tuned for August!",
       linkText: "",
       link: ""
     }
@@ -49,9 +49,9 @@ const news = {
     title: "Improver / High Improver Hour",
     dances: [
       {
-        name: "Wild West & Wicked - choreo Rob Fowler)",
+        name: "Wild West & Wicked - (choreo Rob Fowler)",
         level: "Improver",
-        stepsheet: "",
+        stepsheet: "https://www.copperknob.co.uk/stepsheets/LB8S443/wild-west-wicked",
         demo: "https://www.youtube.com/watch?v=RauGx_CC4oI",
         tutorial: "https://www.youtube.com/watch?v=a6KektdN0w0"
       },
