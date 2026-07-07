@@ -23,17 +23,24 @@ const news = {
     title: "Beginner / High Beginner Hour",
     dances: [
       {
-        name: "A Bar Song",
+        name: "Alligator Smile (32/4, no tags or restarts)",
+        level: "Absolute Beginner",
+        stepsheet: "",
+        demo: "https://www.youtube.com/watch?v=6sRsXVOX0K0",
+        tutorial: ""
+      },
+    {
+        name: "Another Bar Song (32/4 - no tags or restarts)",
         level: "Beginner",
         stepsheet: "",
-        demo: "https://www.youtube.com/watch?v=6WUNB-EQbsc",
+        demo: "https://www.youtube.com/watch?v=G39Pcjmdw0I",
         tutorial: ""
       }
     ],
     justDance: [
       {
-        name: "Cupid Shuffle",
-        demo: "https://www.youtube.com/watch?v=Of4K4cq_n88"
+        name: "",
+        demo: ""
       }
     ]
   },
@@ -42,18 +49,18 @@ const news = {
     title: "Improver / High Improver Hour",
     dances: [
       {
-        name: "Dancing Queen",
+        name: "Wild West & Wicked - choreo Rob Fowler)",
         level: "Improver",
         stepsheet: "",
-        demo: "https://www.youtube.com/watch?v=H4yx5x7ieyI",
-        tutorial: ""
+        demo: "https://www.youtube.com/watch?v=RauGx_CC4oI",
+        tutorial: "https://www.youtube.com/watch?v=a6KektdN0w0"
       },
       {
-        name: "Texas Hold 'Em",
+        name: "Jazz It Up - (choreo Rob Fowler)",
         level: "Improver",
-        stepsheet: "",
-        demo: "https://www.youtube.com/watch?t=1s&v=ZxO7OPqfT9k",
-        tutorial: ""
+        stepsheet: "https://www.copperknob.co.uk/stepsheets/YR4CF86/jazz-it-up",
+        demo: "https://www.youtube.com/watch?v=iR08CYfylJk",
+        tutorial: "https://www.youtube.com/watch?v=mefROFr0mOY"
       }
     ]
   }

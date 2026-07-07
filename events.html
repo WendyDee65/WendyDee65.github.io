@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events</title>
+
   <link rel="stylesheet" href="styles.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -24,115 +26,65 @@
     <a href="events.html">Events</a>
     <a href="other_resources.html">Other Resources</a>
     <a href="contact.html">Contact</a>
-
   </nav>
 </header>
 
 <section class="section">
-  <h1>Events & Social Dances</h1>
+  <h1>Events</h1>
   <p>
-    Here’s what’s coming up each month.  
-    Check back often for updates, workshops, and social dance nights.
+    Upcoming line dance socials, workshops, field trips, festivals, and special dance opportunities.
   </p>
 </section>
 
-<!-- ================= JULY ================= -->
 <section class="section alt">
-  <h2>July 2026</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>New Year Kickoff Social</h3>
-      <p><strong>Date:</strong> TBD</p>
-      <p>
-        Start the year with a fun, beginner-friendly social dance night.
-        Requests, easy dances, and lots of community fun.
-      </p>
-      <p>
-        Learn more:
-        <a href="https://www.caldance.com" target="_blank">California Dance Events</a>
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Beginner Workshop Series</h3>
-      <p><strong>Date:</strong> Weekly Saturdays</p>
-      <p>
-        Step-by-step instruction focusing on fundamentals and confidence building.
-      </p>
-      <p>
-        Related info:
-        <a href="https://www.worldlinedancenewsletter.com" target="_blank">Line Dance Resources</a>
-      </p>
-    </div>
-
-  </div>
+  <div id="eventsContainer" class="events-list"></div>
 </section>
 
-<!-- ================= AUGUST ================= -->
-<section class="section">
-  <h2>February 2026</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>BLISS (Sold Out)</h3>
-      <p><strong>Date:</strong> TBD</p>
-      <p>
-        A fun themed evening — bring friends or come solo. No partner needed.
-      </p>
-      <p>
-        Music inspiration:
-        <a href="https://www.youtube.com/results?search_query=line+dance+party+music" target="_blank">
-          YouTube Playlist Ideas
-        </a>
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Guest Instructor Workshop</h3>
-      <p><strong>Date:</strong> TBD</p>
-      <p>
-        Special choreography session featuring guest instruction and new dances.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= SEPTEMBER ================= -->
-<section class="section alt">
-  <h2>March 2026</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>Spring Social Dance</h3>
-      <p><strong>Date:</strong> TBD</p>
-      <p>
-        A relaxed social dance night with spring-themed music and choreography.
-      </p>
-      <p>
-        Event listings:
-        <a href="https://www.caldance.com" target="_blank">California Dance Events Calendar</a>
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Improver Bootcamp</h3>
-      <p><strong>Date:</strong> TBD</p>
-      <p>
-        Focused training for dancers ready to level up their skills.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
 <footer>
   <p>Vine In Line | SLO North County, CA</p>
 </footer>
+
+<script src="events.js"></script>
+
+<script>
+  const eventsContainer = document.getElementById("eventsContainer");
+
+  function getStartDate(dateText) {
+    const firstDate = dateText.split("-")[0].trim();
+    return new Date(firstDate);
+  }
+
+  const sortedEvents = [...events].sort((a, b) => {
+    return getStartDate(a.date) - getStartDate(b.date);
+  });
+
+  eventsContainer.innerHTML = sortedEvents.map(event => `
+    <div class="card event-card">
+
+      <div class="event-date">
+        📅 ${event.date}
+      </div>
+
+      ${event.type ? `<div class="event-type">${event.type}</div>` : ""}
+
+      <h2>${event.title}</h2>
+
+      <p>
+        📍 ${event.location}
+      </p>
+
+      ${event.link ? `
+        <a class="btn"
+           href="${event.link}"
+           target="_blank"
+           rel="noopener noreferrer">
+          Learn More
+        </a>
+      ` : ""}
+
+    </div>
+  `).join("");
+</script>
+
 </body>
 </html>
