@@ -16,6 +16,14 @@ const events = [
     link: "https://palmspringsldm.com/"
   },
 
+    {
+    date: "August 13-16, 2026",
+    title: "BLISS (Biggest Little Iconic Summer Stompdown (Sold Out) ",
+    type: "Event",
+    location: "Reno, CA",
+    link: "https://www.nvlinedance.com/bliss"
+  },
+
   {
     date: "October 7-11, 2026",
     title: "Windy City LineDance Mania",

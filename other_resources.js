@@ -3,14 +3,14 @@ const resourceSections = [
     title: "Local Dance Resources",
     resources: [
       {
-        title: "Vine In Line",
-        description: "Local line dance classes, dances, events, and updates for SLO North County.",
-        link: "index.html"
+        title: "805 Line Dancers",
+        description: "High Energy Line Dancing in San Luis Obispo with Rich and Megan",
+        link: "https://805linedancers.com/"
       },
       {
-        title: "Paso Robles Recreation",
-        description: "Local recreation programs and community activities in Paso Robles.",
-        link: "https://www.prcity.com/recreation"
+        title: "Cal Poly Country Line Dancing Club - CLDC",
+        description: "The CLDC is a student run social and dance club design to teach line dance, country and partner dancing.  It is welcome to the public.",
+        link: "https://cldccalpoly.wixsite.com/cldccalpoly"
       }
     ]
   },
@@ -18,9 +18,14 @@ const resourceSections = [
     title: "Regional Dance Resources",
     resources: [
       {
-        title: "Line Dance Events",
-        description: "Regional line dance workshops, socials, and dance opportunities.",
-        link: "https://example.com"
+        title: "Maverick's Saloon Dancing with Vanessa",
+        description: "Vanessa Robertson hosts line dancing monthly at Maverick's saloon",
+        link: "https://www.mavericksaloon.com/"
+      },
+      {
+        title: "Joel's Bakersfield Line Dancing",
+        description: "Great instruction and great fun multiple days of the week",
+        link: "https://sites.google.com/view/joels-links/line-dancing-links"
       }
     ]
   },
@@ -33,9 +38,14 @@ const resourceSections = [
         link: "https://www.copperknob.co.uk"
       },
       {
-        title: "YouTube",
-        description: "Search for line dance demos, tutorials, and practice videos.",
-        link: "https://www.youtube.com"
+        title: "World Line Dance Newsletter",
+        description: "Information about events, stepsheet, surveys, links - All Line Dance Related!",
+        link: "https://worldlinedancenewsletter.com/index.html"
+      },
+      {
+        title: "Linedancer Web",
+        description: "Another source of Line Dance information ",
+        link: "https://www.linedancerweb.com/."
       }
     ]
   }
