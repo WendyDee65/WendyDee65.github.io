@@ -10,7 +10,7 @@ const events = [
 
   {
     date: "July 23-26, 2026",
-    title: "Palm Springs Dance Madness",
+    title: "Palm Springs Line Dance Madness",
     type: "Event",
     location: "Palm Springs, CA",
     link: "https://palmspringsldm.com/"

@@ -28,98 +28,38 @@
 </header>
 
 <!-- INTRO -->
-<section class="section">
-
-  <h1>Places to Dance</h1>
-
-  <p>
-    A collection of local and regional resources for line dancing, socials, workshops,
-    and dance communities. Click through to explore events and venues.
-  </p>
-
-</section>
-
-<!-- LOCAL VENUES -->
 <section class="section alt">
-
-  <h2>Local Dance Venues</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>SLO County Dance Events</h3>
-      <p>Local social dances and community events in San Luis Obispo County.</p>
-      <a href="https://www.google.com/search?q=line+dance+San+Luis+Obispo+events" target="_blank" class="btn">
-        View Events
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>Atascadero Community Events</h3>
-      <p>Find local gatherings and dance-friendly community spaces.</p>
-      <a href="https://www.google.com/search?q=Atascadero+community+dance+events" target="_blank" class="btn">
-        Explore
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>Templeton & Paso Robles Socials</h3>
-      <p>Nearby wine country events and dance socials.</p>
-      <a href="https://www.google.com/search?q=Paso+Robles+line+dance+events" target="_blank" class="btn">
-        Find Events
-      </a>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- REGIONAL / WELL-KNOWN RESOURCES -->
-<section class="section">
-
-  <h2>Regional Line Dance Resources</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>California Line Dance Events</h3>
-      <p>Statewide listings for workshops and dance weekends.</p>
-      <a href="https://www.caldance.com" target="_blank" class="btn">Visit Site</a>
-    </div>
-
-    <div class="card">
-      <h3>World Line Dance Newsletter</h3>
-      <p>International choreographer updates and step sheets.</p>
-      <a href="https://www.worldlinedancenewsletter.com" target="_blank" class="btn">Visit Site</a>
-    </div>
-
-    <div class="card">
-      <h3>YouTube Line Dance Tutorials</h3>
-      <p>Searchable tutorials and demo videos for all levels.</p>
-      <a href="https://www.youtube.com/results?search_query=line+dance+tutorial" target="_blank" class="btn">Watch</a>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- CTA -->
-<section class="section alt">
-
-  <h2>Know a Great Dance Location?</h2>
-
-  <p>
-    If you know of a local venue or event that should be listed here,
-    feel free to reach out.
-  </p>
-
-  <a href="contact.html" class="btn">Contact Me</a>
-
+  <div id="resourcesContainer"></div>
 </section>
 
 <footer>
   <p>Vine In Line | SLO North County, CA</p>
 </footer>
+
+<script src="other_resources.js"></script>
+
+<script>
+  const resourcesContainer = document.getElementById("resourcesContainer");
+
+  resourcesContainer.innerHTML = resourceSections.map((section, index) => `
+    <section class="resource-section ${index % 2 === 0 ? 'resource-light' : 'resource-alt'}">
+      <h2>${section.title}</h2>
+
+      <div class="resource-grid">
+        ${section.resources.map(resource => `
+          <div class="resource-card">
+            <h3>
+              ${resource.link
+                ? `<a href="${resource.link}" target="_blank" rel="noopener noreferrer">${resource.title}</a>`
+                : resource.title}
+            </h3>
+            <p>${resource.description}</p>
+          </div>
+        `).join("")}
+      </div>
+    </section>
+  `).join("");
+</script>
 
 </body>
 </html>
