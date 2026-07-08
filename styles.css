@@ -678,13 +678,9 @@ form button {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   overflow: hidden;
-}
-
-.event-agenda-list {
-  display: flex;
-  flex-direction: column;
   gap: 0.25rem;
 }
+
 
 .event-agenda-item {
   background: #ffffff;
