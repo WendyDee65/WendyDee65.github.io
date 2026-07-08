@@ -300,7 +300,7 @@ table tbody tr:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   gap: 30px;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   align-items: stretch;
 }
