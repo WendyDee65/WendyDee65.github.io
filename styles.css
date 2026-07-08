@@ -572,6 +572,16 @@ form button {
 .dance-info {
   font-weight: 400;
 }
+.dance-info,
+.dance-level {
+  color: #6b4a2b;
+}
+
+.dance-level {
+  display: inline-block;
+  margin-right: 12px;
+  font-weight: 600;
+}
 /* =========================
    SCHEDULE ALERT BOX
 ========================= */
