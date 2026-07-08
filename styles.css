@@ -569,6 +569,9 @@ form button {
   font-style: italic;
 }
 
+.dance-info {
+  font-weight: 400;
+}
 /* =========================
    SCHEDULE ALERT BOX
 ========================= */

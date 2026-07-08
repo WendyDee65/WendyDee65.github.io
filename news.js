@@ -31,13 +31,15 @@ const news = {
       {
         name: "Alligator Smile",
         level: "Absolute Beginner — 32 count, 4 wall, no tags or restarts",
+        info: "32 count, 4 wall, no tags or restarts",
         stepsheet: "",
         demo: "https://www.youtube.com/watch?v=6sRsXVOX0K0",
         tutorial: ""
       },
       {
         name: "Another Bar Song",
-        level: "Beginner — 32 count, 4 wall, no tags or restarts",
+        level: "Beginner",
+        info: "— 32 count, 4 wall, no tags or restarts",
         stepsheet: "",
         demo: "https://www.youtube.com/watch?v=G39Pcjmdw0I",
         tutorial: ""
@@ -47,6 +49,8 @@ const news = {
     justDance: [
       {
         name: "By Request.  Remember to write your request on the whiteboard!",
+        level: "",
+        info: "",
         stepsheet: "",
         demo: "",
         tutorial: ""
@@ -59,14 +63,16 @@ const news = {
     dances: [
       {
         name: "Wild West & Wicked",
-        level: "Improver — choreographed by Rob Fowler",
+        level: "Improver",
+        info: "chareographed by Rob Rowler",
         stepsheet: "https://www.copperknob.co.uk/stepsheets/LB8S443/wild-west-wicked",
         demo: "https://www.youtube.com/watch?v=RauGx_CC4oI",
         tutorial: "https://www.youtube.com/watch?v=a6KektdN0w0"
       },
       {
         name: "Jazz It Up",
-        level: "Improver — choreographed by Rob Fowler",
+        level: "Improver",
+        info: "chareographed by Rob Rowler",
         stepsheet: "https://www.copperknob.co.uk/stepsheets/YR4CF86/jazz-it-up",
         demo: "https://www.youtube.com/watch?v=iR08CYfylJk",
         tutorial: "https://www.youtube.com/watch?v=mefROFr0mOY"
@@ -79,12 +85,14 @@ const news = {
       {
         name: "Dance Name Here",
         level: "Beginner / Improver / Intermediate",
+        info:"",
         stepsheet: "",
         demo: "",
         tutorial: ""
       },
       {
         name: "Dance Name Here",
+        info:"",
         level: "Beginner / Improver / Intermediate",
         stepsheet: "",
         demo: "",

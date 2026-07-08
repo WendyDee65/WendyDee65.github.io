@@ -64,6 +64,13 @@
     return links.length > 0 ? links.join(" ") : `<span class="muted">Links coming soon</span>`;
   }
 
+  function danceTitle(dance) {
+  return `
+    <strong>${dance.name}</strong>
+    ${dance.info ? ` - <span class="dance-info">${dance.info}</span>` : ""}
+  `;
+  }
+
   newsContainer.innerHTML = `
     <div class="card news-card">
       <h2>🍇 ${news.month} Updates</h2>
@@ -104,7 +111,7 @@
       <div class="news-dance-list">
         ${news.beginnerHour.dances.map(dance => `
           <div class="news-dance-item">
-            <h4>${dance.name}</h4>
+            <h4>${danceTitle(dance)}</h4>
             <p><strong>Level:</strong> ${dance.level}</p>
             <p>${danceLinks(dance)}</p>
           </div>
@@ -116,7 +123,7 @@
         <div class="news-dance-list">
           ${news.beginnerHour.justDance.map(dance => `
             <div class="news-dance-item">
-              <h4>${dance.name}</h4>
+              <h4>${danceTitle(dance)}</h4>
               <p>${danceLinks(dance)}</p>
             </div>
           `).join("")}
@@ -131,7 +138,7 @@
       <div class="news-dance-list">
        ${news.improverHour.dances.map(dance => `
           <div class="news-dance-item">
-            <h4>${dance.name}</h4>
+            <h4>${danceTitle(dance)}</h4>
             <p><strong>Level:</strong> ${dance.level}</p>
             <p>${danceLinks(dance)}</p>
           </div>
@@ -146,7 +153,7 @@
       <div class="news-dance-list">
         ${news.thursdayHour.dances.map(dance => `
           <div class="news-dance-item">
-            <h4>${dance.name}</h4>
+            <h4>${danceTitle(dance)}</h4>
             <p><strong>Level:</strong> ${dance.level}</p>
             <p>${danceLinks(dance)}</p>
           </div>
