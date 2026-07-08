@@ -129,12 +129,13 @@
       <h3>${news.improverHour.title}</h3>
 
       <div class="news-dance-list">
-        ${news.improverHour.dances.map(dance => `
+       ${news.improverHour.dances.map(dance => `
           <div class="news-dance-item">
             <h4>${dance.name}</h4>
-            <p><strong>Level:</strong> ${dance.level} ${danceLinks(dance)}</p>
+            <p><strong>Level:</strong> ${dance.level}</p>
+            <p>${danceLinks(dance)}</p>
           </div>
-        `).join("")}
+        `).join("")}  
       </div>
     </div>
   `;
