@@ -286,13 +286,13 @@ table tbody tr:hover {
 .instructor-card p {
   line-height: 1.6;
 }
-.about-section {
+.instructor-section {
   max-width: 1100px;
   margin: auto;
   padding: 60px 20px;
 }
 
-.about-section h2 {
+.insturctor-section h2 {
   text-align: center;
   margin-bottom: 40px;
 }
