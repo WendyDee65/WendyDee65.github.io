@@ -1,6 +1,13 @@
 const events = [
 
   {
+    date: "July 10, 2026",
+    title: "Joy Bonner at the Pour House",
+    type: "Live Music",
+    location: "Paso Robles, CA",
+    link: "https://www.my805tix.com/e/bonner/tickets"
+  },
+  {
     date: "July 16-17, 2026",
     title: "Niels Poulsen Workshop (Sold Out)",
     type: "Workshop",
