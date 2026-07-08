@@ -74,6 +74,11 @@
     ${dance.info ? ` - <span class="dance-info">${dance.info}</span>` : ""}
   `;
   }
+  function danceMetaLine(dance) {
+  const links = danceLinks(dance);
+
+  return links ? `<p>${links}</p>` : "";
+}
 
   newsContainer.innerHTML = `
     <div class="card news-card">
@@ -116,8 +121,7 @@
         ${news.beginnerHour.dances.map(dance => `
           <div class="news-dance-item">
             <h4>${danceTitle(dance)}</h4>
-            <p><strong>Level:</strong> ${dance.level}</p>
-            <p>${danceLinks(dance)}</p>
+            ${danceMetaLine(dance)}
           </div>
         `).join("")}
       </div>
@@ -128,7 +132,7 @@
           ${news.beginnerHour.justDance.map(dance => `
             <div class="news-dance-item">
               <h4>${danceTitle(dance)}</h4>
-              <p>${danceLinks(dance)}</p>
+              ${danceMetaLine(dance)}
             </div>
           `).join("")}
         </div>
@@ -143,8 +147,7 @@
        ${news.improverHour.dances.map(dance => `
           <div class="news-dance-item">
             <h4>${danceTitle(dance)}</h4>
-            <p><strong>Level:</strong> ${dance.level}</p>
-            <p>${danceLinks(dance)}</p>
+            ${danceMetaLine(dance)}
           </div>
         `).join("")}  
       </div>
@@ -158,8 +161,7 @@
         ${news.thursdayHour.dances.map(dance => `
           <div class="news-dance-item">
             <h4>${danceTitle(dance)}</h4>
-            <p><strong>Level:</strong> ${dance.level}</p>
-            <p>${danceLinks(dance)}</p>
+            ${danceMetaLine(dance)}
           </div>
         `).join("")}
       </div>
