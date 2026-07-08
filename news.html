@@ -132,8 +132,7 @@
         ${news.improverHour.dances.map(dance => `
           <div class="news-dance-item">
             <h4>${dance.name}</h4>
-            <p><strong>Level:</strong> ${dance.level}</p>
-            <p>${danceLinks(dance)}</p>
+            <p><strong>Level:</strong> ${dance.level} ${danceLinks(dance)}</p>
           </div>
         `).join("")}
       </div>
