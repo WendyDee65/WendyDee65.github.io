@@ -67,22 +67,6 @@
 
   return links.join(" ");
   }
-    const links = [];
-
-    if (dance.stepsheet) {
-      links.push(`<a href="${dance.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>`);
-    }
-
-    if (dance.demo) {
-      links.push(`<a href="${dance.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>`);
-    }
-
-    if (dance.tutorial) {
-      links.push(`<a href="${dance.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>`);
-    }
-
-    return links.length > 0 ? links.join(" ") : `<span class="muted">Links coming soon</span>`;
-  }
 
   function danceTitle(dance) {
   return `
