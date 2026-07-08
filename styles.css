@@ -860,14 +860,6 @@ table.dataTable tbody tr:hover {
 /* Match DataTables controls to custom dance filters */
 
 /* DataTables top controls */
-.dt-layout-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
 
 .dt-length,
 .dt-search {
@@ -891,27 +883,49 @@ table.dataTable tbody tr:hover {
   min-width: 220px;
 }
 
-/* Custom Level / Count / Walls filters */
-.dance-filters {
+
+/* One combined search/filter row */
+.dt-layout-row:first-of-type {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  margin: 0 0 1rem 0;
-  align-items: center;
-  justify-content: flex-start;
+  margin-bottom: 1rem;
 }
 
-.dance-filters label {
-  display: inline-flex;
+.dt-layout-row:first-of-type .dt-search {
+  order: 1;
+}
+
+.dt-layout-row:first-of-type .dance-filters {
+  order: 2;
+}
+
+.dt-layout-row:first-of-type .dt-length {
+  order: 3;
+}
+
+.dance-filters {
+  display: flex;
   align-items: center;
-  white-space: nowrap;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.dance-filters label,
+.dt-length,
+.dt-search {
   font-weight: 600;
   color: #4b3b5a;
+  white-space: nowrap;
 }
 
 .dance-filters select {
-  width: 160px;
-  max-width: 160px;
+  width: 130px;
+  max-width: 130px;
   padding: 0.45rem 0.7rem;
   border: 1px solid #c7b8d8;
   border-radius: 6px;
@@ -920,10 +934,22 @@ table.dataTable tbody tr:hover {
   font-size: 0.95rem;
   font-family: inherit;
 }
-.dt-layout-row {
-  margin-bottom: 1rem;
+
+.dt-length select,
+.dt-search input {
+  margin-left: 0.4rem;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #c7b8d8;
+  border-radius: 6px;
+  background: white !important;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-family: inherit;
 }
 
+.dt-search input {
+  min-width: 220px;
+}
 /* Switch DataTables search and entries-per-page positions */
 .dt-layout-row:first-of-type {
   flex-direction: row-reverse;

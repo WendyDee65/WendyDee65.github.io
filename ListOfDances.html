@@ -135,6 +135,14 @@
     order: [[0, 'asc']]
   });
 
+  const dataTableTopRow = document.querySelector(".dt-layout-row:first-of-type");
+  const danceFilters = document.querySelector(".dance-filters");
+
+  if (dataTableTopRow && danceFilters) {
+    const searchBox = dataTableTopRow.querySelector(".dt-search");
+    searchBox.insertAdjacentElement("afterend", danceFilters);
+  }
+
   function fillFilter(selectId, columnIndex) {
     const select = document.getElementById(selectId);
 
