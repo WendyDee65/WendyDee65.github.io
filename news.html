@@ -47,37 +47,50 @@
   const newsContainer = document.getElementById("newsContainer");
 
   function danceLinks(dance) {
-    return `
-      ${dance.stepsheet ? `<a href="${dance.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>` : ""}
-      ${dance.demo ? `<a href="${dance.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>` : ""}
-      ${dance.tutorial ? `<a href="${dance.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>` : ""}
-    `;
+    const links = [];
+
+    if (dance.stepsheet) {
+      links.push(`<a href="${dance.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>`);
+    }
+
+    if (dance.demo) {
+      links.push(`<a href="${dance.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>`);
+    }
+
+    if (dance.tutorial) {
+      links.push(`<a href="${dance.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>`);
+    }
+
+    return links.length > 0 ? links.join(" ") : `<span class="muted">Links coming soon</span>`;
   }
 
   newsContainer.innerHTML = `
     <div class="card news-card">
       <h2>🍇 ${news.month} Updates</h2>
 
-      <h3>Current Schedule Updates</h3>
+      <h3>Announcements</h3>
+      <ul>
+        ${news.announcements.map(item => `<li>${item}</li>`).join("")}
+      </ul>
 
+      <h3>Current Schedule Updates</h3>
       <ul>
         ${news.scheduleUpdates.map(item => `<li>${item}</li>`).join("")}
       </ul>
 
       ${news.scheduleAlerts.length > 0 ? `
-      <div class="schedule-alert-box">
-        <h3>⚠️ Schedule Alert</h3>
-
-        <ul>
-          ${news.scheduleAlerts.map(item => `<li>${item}</li>`).join("")}
-        </ul>
-      </div>
+        <div class="schedule-alert-box">
+          <h3>⚠️ Schedule Alert</h3>
+          <ul>
+            ${news.scheduleAlerts.map(item => `<li>${item}</li>`).join("")}
+          </ul>
+        </div>
       ` : ""}
 
       <h3>Group Dance Outings</h3>
       ${news.fieldTrips.map(trip => `
         <div class="news-dance-item">
-          <h4>${trip.title}</h4>
+          ${trip.title ? `<h4>${trip.title}</h4>` : ""}
           <p>${trip.description}</p>
           ${trip.link ? `<a href="${trip.link}" target="_blank" rel="noopener noreferrer">${trip.linkText}</a>` : ""}
         </div>
