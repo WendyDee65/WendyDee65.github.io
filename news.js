@@ -2,13 +2,13 @@ const news = {
   month: "July 2026",
 
   announcements: [
-    "Welcome to the Vine In Line Current News page! Check here for announcements, class reminders, schedule changes, and featured dances.",
-    "Our List of Dances page now includes levels, stepsheet links, demo videos, and tutorial videos to help you practice at home.",
-    "Private lessons, group workshops, parties, and special events may be available by request. Please contact us for availability and pricing."
+    "Summer has arrived and it’s time to get out the sunscreen! We hope you have a lot of fun activities planned for your friends and family.",
+    "We have lots of fun dances planned for this July!", 
+    "Line Dance Boot Camp- We will schedule the next Boot Camp as soon as we get four people signed up. Contact Tina if you are interested in the introductory class. This is a great opportunity to learn basic footwork, moving to music, and memorizing simple line dance patterns before attending the weekly Line Dance Party."
   ],
 
   scheduleUpdates: [
-    "Tuesday classes continue at Centennial Park in Paso Robles.",
+    "Tuesday line dance parties continue every week this month.",
     "Thursday classes will only be held on July 2, July 9, and July 30."
   ],
 
@@ -19,7 +19,7 @@ const news = {
   fieldTrips: [
     {
       title: "July Dance Outing",
-      description: "There is currently no planned dance outing for July. Stay tuned for August updates!",
+      description: "We have no planned dance outing for July. Stay tuned for August updates!",
       linkText: "",
       link: ""
     }
@@ -46,7 +46,7 @@ const news = {
 
     justDance: [
       {
-        name: "More just-dance selections coming soon",
+        name: "By Request.  Remember to write your request on the whiteboard!",
         stepsheet: "",
         demo: "",
         tutorial: ""
@@ -72,5 +72,25 @@ const news = {
         tutorial: "https://www.youtube.com/watch?v=mefROFr0mOY"
       }
     ]
+  },
+  thursdayHour: {
+    title: "Thursday Featured Dances",
+    dances: [
+      {
+        name: "Dance Name Here",
+        level: "Beginner / Improver / Intermediate",
+        stepsheet: "",
+        demo: "",
+        tutorial: ""
+      },
+      {
+        name: "Dance Name Here",
+        level: "Beginner / Improver / Intermediate",
+        stepsheet: "",
+        demo: "",
+        tutorial: ""
+      }
+    ]
   }
+  
 };

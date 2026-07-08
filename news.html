@@ -138,6 +138,21 @@
         `).join("")}  
       </div>
     </div>
+
+    <div class="card news-card">
+      <h2>🤠 Thursday Featured Dances</h2>
+      <h3>${news.thursdayHour.title}</h3>
+
+      <div class="news-dance-list">
+        ${news.thursdayHour.dances.map(dance => `
+          <div class="news-dance-item">
+            <h4>${dance.name}</h4>
+            <p><strong>Level:</strong> ${dance.level}</p>
+            <p>${danceLinks(dance)}</p>
+          </div>
+        `).join("")}
+      </div>
+    </div>
   `;
 </script>
 
