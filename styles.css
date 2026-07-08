@@ -923,6 +923,11 @@ table.dataTable tbody tr:hover {
 .dt-layout-row {
   margin-bottom: 1rem;
 }
+
+/* Switch DataTables search and entries-per-page positions */
+.dt-layout-row:first-of-type {
+  flex-direction: row-reverse;
+}
 /* ==========================================
    RESPONSIVE
 ========================================== */
