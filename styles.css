@@ -292,6 +292,37 @@ table tbody tr:hover {
 .instructor-card p {
   text-align: left;
 }
+/* =========================
+   SCHEDULE PAGE
+========================= */
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: stretch;
+}
+
+.schedule-card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.schedule-card h2 {
+  margin-bottom: 15px;
+}
+
+.schedule-card hr {
+  margin: 12px 0;
+}
+
+.schedule-card p {
+  margin-bottom: 8px;
+}
 
 /* =========================
    SCHEDULE NOTES
@@ -732,11 +763,20 @@ table.dataTable tbody tr:hover {
 
 /* Match DataTables controls to custom dance filters */
 
+/* DataTables top controls */
+.dt-layout-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
 .dt-length,
 .dt-search {
   font-weight: 600;
   color: #4b3b5a;
-  margin-bottom: 1rem;
 }
 
 .dt-length select,
@@ -745,13 +785,24 @@ table.dataTable tbody tr:hover {
   padding: 0.45rem 0.7rem;
   border: 1px solid #c7b8d8;
   border-radius: 6px;
-  background: white;
+  background: white !important;
+  color: var(--text);
   font-size: 0.95rem;
   font-family: inherit;
 }
 
 .dt-search input {
   min-width: 220px;
+}
+
+/* Custom Level / Count / Walls filters */
+.dance-filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 0 1rem 0;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .dt-layout-row {
