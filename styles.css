@@ -680,12 +680,20 @@ form button {
   overflow: hidden;
 }
 
+.event-agenda-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
 .event-agenda-item {
-  padding: 22px 28px;
+  background: #ffffff;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  margin: 0 0 0.25rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-left: 5px solid #b36b00;
   text-align: left;
-  background: white;
-  border-bottom: 1px solid #e6ddd4;
-  border-left: 5px solid var(--accent);
 }
 
 .event-agenda-item:last-child {
@@ -718,6 +726,15 @@ form button {
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.event-agenda-item h3,
+.event-agenda-item h4 {
+  margin: 0 0 0.25rem 0;
+}
+
+.event-agenda-item p {
+  margin: 0.15rem 0;
 }
 
 .event-agenda-meta {
