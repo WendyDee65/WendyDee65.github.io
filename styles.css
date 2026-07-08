@@ -901,6 +901,25 @@ table.dataTable tbody tr:hover {
   justify-content: flex-start;
 }
 
+.dance-filters label {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: 600;
+  color: #4b3b5a;
+}
+
+.dance-filters select {
+  width: 160px;
+  max-width: 160px;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #c7b8d8;
+  border-radius: 6px;
+  background: white;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-family: inherit;
+}
 .dt-layout-row {
   margin-bottom: 1rem;
 }
