@@ -852,9 +852,10 @@ table.dataTable tbody tr:hover {
 
 /* Current page button */
 .dt-paging button.current {
-  background: #5B3A29 !important;
-  color: white !important;
-  border-color: #5B3A29 !important;
+  background: #FFD59A !important;
+  color: #5B3A29 !important;
+  border-color: #C56B32 !important;
+  font-weight: 700 !important;
 }
 
 /* Match DataTables controls to custom dance filters */
@@ -957,7 +958,7 @@ table.dataTable tbody tr:hover {
 
 /* Tighten space above List of Dances search/filter row */
 .dances-section {
-  padding-top: 25px;
+  padding-top: 10px;
 }
 
 /* ==========================================
