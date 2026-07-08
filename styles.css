@@ -954,6 +954,12 @@ table.dataTable tbody tr:hover {
 .dt-layout-row:first-of-type {
   flex-direction: row-reverse;
 }
+
+/* Tighten space above List of Dances search/filter row */
+.dances-section {
+  padding-top: 25px;
+}
+
 /* ==========================================
    RESPONSIVE
 ========================================== */

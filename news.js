@@ -68,7 +68,7 @@ const news = {
       {
         name: "Wild West & Wicked",
         level: "Improver",
-        info: "chareographed by Rob Rowler",
+        info: "choreographed by Rob Rowler",
         stepsheet: "https://www.copperknob.co.uk/stepsheets/LB8S443/wild-west-wicked",
         demo: "https://www.youtube.com/watch?v=RauGx_CC4oI",
         tutorial: "https://www.youtube.com/watch?v=a6KektdN0w0"
@@ -76,7 +76,7 @@ const news = {
       {
         name: "Jazz It Up",
         level: "Improver",
-        info: "chareographed by Rob Rowler",
+        info: "choreographed by Rob Rowler",
         stepsheet: "https://www.copperknob.co.uk/stepsheets/YR4CF86/jazz-it-up",
         demo: "https://www.youtube.com/watch?v=iR08CYfylJk",
         tutorial: "https://www.youtube.com/watch?v=mefROFr0mOY"
