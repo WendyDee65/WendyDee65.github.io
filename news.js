@@ -4,7 +4,7 @@ const news = {
   announcements: [
     "Summer has arrived and it’s time to get out the sunscreen! We hope you have a lot of fun activities planned for your friends and family.",
     "We have lots of fun dances planned for this July!", 
-    "Line Dance Boot Camp- We will schedule the next Boot Camp as soon as we get four people signed up. Contact Tina if you are interested in the introductory class. This is a great opportunity to learn basic footwork, moving to music, and memorizing simple line dance patterns before attending the weekly Line Dance Party."
+    "<Strong>Line Dance Boot Camp </strong>- We will schedule the next Boot Camp as soon as we get four people signed up. Contact Tina if you are interested in the introductory class. This is a great opportunity to learn basic footwork, moving to music, and memorizing simple line dance patterns before attending the weekly Line Dance Party."
   ],
 
   scheduleUpdates: [
@@ -23,6 +23,7 @@ const news = {
       linkText: "",
       link: ""
     }
+
   ],
 
   beginnerHour: {
@@ -30,12 +31,15 @@ const news = {
     dances: [
       {
         name: "Alligator Smile",
-        level: "Absolute Beginner — 32 count, 4 wall, no tags or restarts",
+        level: "Absolute Beginner",
         info: "32 count, 4 wall, no tags or restarts",
         stepsheet: "",
         demo: "https://www.youtube.com/watch?v=6sRsXVOX0K0",
         tutorial: ""
+
       },
+ { name: "After Hours", level: "", music: "After Hours", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/186672/ab-after-hours", demo: "", tutorial: "" },
+
       {
         name: "Another Bar Song",
         level: "Beginner",
