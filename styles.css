@@ -679,7 +679,7 @@ form button {
   flex-direction: column;
   gap: 0.5rem;
 
-  background: transparent;
+  background: var(--surface-alt);
   box-shadow: none;
   border-radius: 0;
   overflow: visible;
