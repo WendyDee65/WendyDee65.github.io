@@ -47,6 +47,26 @@
   const newsContainer = document.getElementById("newsContainer");
 
   function danceLinks(dance) {
+  const links = [];
+
+  if (dance.stepsheet) {
+    links.push(`<a href="${dance.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>`);
+  }
+
+  if (dance.demo) {
+    links.push(`<a href="${dance.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>`);
+  }
+
+  if (dance.tutorial) {
+    links.push(`<a href="${dance.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>`);
+  }
+
+  if (dance.level) {
+    links.push(`<span class="dance-level">Level: ${dance.level}</span>`);
+  }
+
+  return links.join(" ");
+  }
     const links = [];
 
     if (dance.stepsheet) {
