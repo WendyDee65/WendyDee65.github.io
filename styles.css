@@ -756,7 +756,7 @@ form button {
 }
 
 .event-agenda-meta span + span::before {
-  content: "• ";
+  content: "";
   color: var(--accent);
 }
 /* ==========================================
