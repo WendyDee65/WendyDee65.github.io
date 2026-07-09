@@ -52,7 +52,7 @@ const news = {
 
     justDance: [
       {
-        name: "By Request.  Remember to write your request on the whiteboard!",
+        name: "By Request.  Just remember to write your request on the whiteboard!",
         level: "",
         info: "",
         stepsheet: "",
