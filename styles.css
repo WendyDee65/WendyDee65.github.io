@@ -886,14 +886,6 @@ table.dataTable tbody tr:hover {
 
 
 /* One combined search/filter row */
-.dt-layout-row:first-of-type {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
 
 .dt-layout-row:first-of-type .dt-search {
   order: 1;
@@ -905,6 +897,15 @@ table.dataTable tbody tr:hover {
 
 .dt-layout-row:first-of-type .dt-length {
   order: 3;
+}
+
+.dt-layout-row:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
 .dance-filters {

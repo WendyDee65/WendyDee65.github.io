@@ -35,7 +35,7 @@
   <h1>List of Dances</h1>
   <p>
     Here are dances we’ve learned in class.
-    Click links for stepsheets, demo videos, and tutorials.
+    Click links for stepsheets, demo videos, and tutorials. X
   </p>
 </section>
 
@@ -126,10 +126,15 @@
 
   const dataTableTopRow = document.querySelector(".dt-layout-row:first-of-type");
   const danceFilters = document.querySelector(".dance-filters");
+  const searchBox = document.querySelector(".dt-search");
+  const lengthBox = document.querySelector(".dt-length");
 
-  if (dataTableTopRow && danceFilters) {
-    const searchBox = dataTableTopRow.querySelector(".dt-search");
-    searchBox.insertAdjacentElement("afterend", danceFilters);
+  if (dataTableTopRow && searchBox && danceFilters && lengthBox) {
+    dataTableTopRow.innerHTML = "";
+
+    dataTableTopRow.appendChild(searchBox);
+    dataTableTopRow.appendChild(danceFilters);
+    dataTableTopRow.appendChild(lengthBox);
   }
 
   function fillFilter(selectId, columnIndex) {
