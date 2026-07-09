@@ -794,8 +794,6 @@ table.dataTable thead th .dt-column-order {
   opacity: 1 !important;
   font-size: 0.9rem;
   line-height: 1;
-  position: static !important;
-  transform: none !important;
   margin-left: 6px;
 }
 
@@ -956,6 +954,22 @@ table.dataTable tbody tr:hover {
 /* Tighten space above List of Dances search/filter row */
 .dances-section {
   padding-top: 10px;
+}
+
+/* Force DataTables 2 sort icons to show */
+table.dataTable thead th .dt-column-order::before,
+table.dataTable thead th .dt-column-order::after,
+table.dataTable thead td .dt-column-order::before,
+table.dataTable thead td .dt-column-order::after {
+  color: #FFD59A !important;
+  opacity: 1 !important;
+}
+
+/* Make active sorted arrow white */
+table.dataTable thead th.dt-ordering-asc .dt-column-order::before,
+table.dataTable thead th.dt-ordering-desc .dt-column-order::after {
+  color: #ffffff !important;
+  opacity: 1 !important;
 }
 
 /* ==========================================
