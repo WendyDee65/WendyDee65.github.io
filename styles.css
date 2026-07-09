@@ -951,10 +951,6 @@ table.dataTable tbody tr:hover {
 .dt-search input {
   min-width: 220px;
 }
-/* Switch DataTables search and entries-per-page positions */
-.dt-layout-row:first-of-type {
-  flex-direction: row-reverse;
-}
 
 /* Tighten space above List of Dances search/filter row */
 .dances-section {
