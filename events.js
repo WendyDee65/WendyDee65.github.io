@@ -2,7 +2,7 @@ const events = [
 
   {
     date: "July 10, 2026",
-    title: "Joy Bonner at the Pour House - Friday Eve",
+    title: "Joy Bonner @ the Pour House - Friday Eve",
     type: "Live Music",
     location: "Paso Robles, CA",
     link: "https://www.my805tix.com/e/bonner/tickets"
