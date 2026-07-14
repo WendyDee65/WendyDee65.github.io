@@ -248,28 +248,10 @@ table tbody tr:hover {
 }
 
 /* =========================
-HOME PAGE SUBSCRIBE
+HOME PAGE  
 ==========================*/
 
-/* =========================
-   HOME PAGE EMAIL SIGNUP
-========================= */
-
-.email-signup {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  text-align: center;
-  background-color: #f4eff4;
-  border-radius: 10px;
-}
-
-.email-signup h2 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-.email-signup p {
+.welcome-text {
   margin-bottom: 1rem;
 }
 
@@ -292,22 +274,33 @@ HOME PAGE SUBSCRIBE
    HOME PAGE INSTRUCTOR CARDS
 ========================= */
 
+.instructor-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem 2rem;
+}
+
+.instructor-section h2 {
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
 .instructor-container {
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin: 0;
 }
 
 .instructor-card {
   flex: 1 1 320px;
-  max-width: 420px;
+  max-width: 400px;
   background: white;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .instructor-card img {
@@ -321,48 +314,12 @@ HOME PAGE SUBSCRIBE
 }
 
 .instructor-card h3 {
-  margin-top: 0.25rem;
   color: var(--primary);
+  margin: 0.25rem 0 15px;
 }
 
 .instructor-card p {
   line-height: 1.6;
-}
-.instructor-section {
-  max-width: 1100px;
-  margin: auto;
-  padding-top: 0.25rem;
-}
-
-.instructor-section h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.instructor-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: .2rem;
-}
-
-.instructor-card {
-  flex: 1 1 320px;
-  max-width: 400px;
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.instructor-card h3 {
-  color: var(--primary);
-  margin-bottom: 15px;
-}
-
-.instructor-card p {
   text-align: left;
 }
 /* =========================
