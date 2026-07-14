@@ -12,9 +12,9 @@ const dances = [
   { name: "AA", level: "", music: "AA", count: "32", walls: "4", stepsheet: "", demo: "", tutorial: "", info:"" },
   { name: "Across the Room", level: "", music: "You Look Like You Love Me", count: "32", walls: "4", stepsheet: "", demo: "https://www.youtube.com/watch?v=fq3L9zbd8_A", tutorial: "", info:"" },
   { name: "After Hours", level: "", music: "After Hours", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/186672/ab-after-hours", demo: "", tutorial: "", info:"" },
-
+  { name: "Alligator Smile", level: "Absolute Beginner", music:"", count: "", walls: "", stepsheet: "", demo: "https://www.youtube.com/watch?v=6sRsXVOX0K0",tutorial: "",info: "No tags or restarts",},
+  { name: "Another Bar Song", level: "Beginner", music: "", count: "", walls: "", stepsheet: "", demo: "https://www.youtube.com/watch?v=G39Pcjmdw0I", tutorial: "", info: "",},
   // ===== B =====
-    // ===== B =====
 
   { name: "Baby I Wanna Know", level: "", music: "Hey Baby", count: "32", walls: "4", stepsheet: "", demo: "https://www.youtube.com/watch?v=yAKJ5w6qIfA", tutorial: "", info:"" },
   { name: "Back on Texas Time", level: "", music: "Texas Time", count: "32", walls: "4", stepsheet: "", demo: "https://www.youtube.com/watch?v=db0fkKuYZ04", tutorial: "", info:"" },
@@ -107,7 +107,6 @@ const dances = [
   { name: "Give Me Your Tempo", level: "", music: "Tempo", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/161193/give-me-your-tempo", demo: "", tutorial: "", info:"" },
   { name: "Gives Me Shivers", level: "", music: "Shivers", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/154517/gives-me-shivers", demo: "", tutorial: "", info:"" },
   { name: "Going Blonde", level: "", music: "Going Blonde", count: "32", walls: "2", stepsheet: "", demo: "https://www.youtube.com/watch?t=2s&v=mRmm7aMgJxM", tutorial: "", info:"" },
-  { name: "Good At Being Bad", level: "", music: "Being Bad", count: "32", walls: "4", stepsheet: "", demo: "https://www.youtube.com/watch?v=_mA7yjXUYlE", tutorial: "", info:"" },
   { name: "Gypsy Queen", level: "", music: "Gypsy Queen", count: "32", walls: "4", stepsheet: "", demo: "https://www.youtube.com/watch?t=4s&v=YqtO87TqGQU", tutorial: "", info:"" },
 
   // ===== H =====
@@ -132,6 +131,7 @@ const dances = [
 
   { name: "Jambalaya EZ", level: "", music: "Jambalaya", count: "32", walls: "2", stepsheet: "", demo: "https://www.youtube.com/watch?v=zAQZ24DoTxY", tutorial: "", info:"" },
   { name: "Jambalaya", level: "", music: "Jambalaya", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/jambalaya-ID49391.aspx", demo: "", tutorial: "", info:"" },
+  { name: "Jazz It Up", level: "Improver", music:"Jazz It Up", count:"32", walls:"4", stepsheet: "https://www.copperknob.co.uk/stepsheets/YR4CF86/jazz-it-up", demo: "https://www.youtube.com/watch?v=iR08CYfylJk", tutorial: "https://www.youtube.com/watch?v=mefROFr0mOY", info: "choreographed by Rob Rowler"},
   { name: "Jealous of the Sun", level: "", music: "Jealous of the Sun", count: "32", walls: "4", stepsheet: "", demo: "https://www.youtube.com/watch?v=W49Opr1rj_A", tutorial: "", info:"" },
   { name: "Jerusalema", level: "", music: "Jerusalema", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/143546/jerusalema", demo: "", tutorial: "", info:"" },
   { name: "Just a Two Steppin'", level: "", music: "Amigo", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/119245/just-a-two-steppin", demo: "", tutorial: "", info:"" },
@@ -167,7 +167,6 @@ const dances = [
   { name: "Mr. Lonely", level: "", music: "Mr. Lonely", count: "32", walls: "2", stepsheet: "", demo: "https://www.youtube.com/watch?feature=youtu.be&v=P-hpA9wwIw4", tutorial: "", info:"" },
   { name: "My Dancing Queen", level: "", music: "Dancing Queen", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/125214/abba-my-dancing-queen", demo: "", tutorial: "", info:"" },
   { name: "My First Waltz", level: "", music: "Once Upon a December", count: "24", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/my-first-waltz-ID100217.aspx", demo: "", tutorial: "", info:"" },
-  { name: "My Toot Toot", level: "", music: "Don't Mess With My Toot Toot", count: "64", walls: "2", stepsheet: "", demo: "https://youtu.be/KeoQhHiVd5k", tutorial: "", info:"" },
 
   // ===== N =====
 
@@ -205,7 +204,6 @@ const dances = [
   // ===== S =====
 
   { name: "Senorita La-La-La", level: "", music: "Senorita", count: "32", walls: "4", stepsheet: "", demo: "https://www.youtube.com/watch?t=2s&v=OilQ26V7Xzo", tutorial: "", info:"" },
-  { name: "Seven Drunken Nights", level: "", music: "Seven Drunken Nights", count: "64", walls: "2", stepsheet: "", demo: "https://www.youtube.com/watch?v=blv9yAfCHqI", tutorial: "", info:"" },
   { name: "Shake It (Fireball)", level: "", music: "Fireball", count: "32", walls: "4", stepsheet: "", demo: "https://www.youtube.com/watch?t=1s&v=q7cfZo7GSQ4", tutorial: "", info:"" },
   { name: "She's a Natural (Country Girl)", level: "", music: "Natural", count: "32", walls: "4", stepsheet: "", demo: "https://www.youtube.com/watch?v=YpgLkB2pFbg", tutorial: "", info:"" },
   { name: "Shivers", level: "", music: "See Gives Me Shivers", count: "", walls: "", stepsheet: "", demo: "", tutorial: "", info:"" },
@@ -258,6 +256,7 @@ const dances = [
   { name: "Whatever Lola Wants", level: "", music: "Whatever Lola Wants", count: "96", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/MHSB32B/whatever-lola-wants-lola-gets", demo: "", tutorial: "", info:"" },
   { name: "When Love Walks In", level: "", music: "aka Fly Love, C'est Magnifique", count: "32", walls: "4", stepsheet: "", demo: "https://www.youtube.com/watch?v=fsmlbIWyuLg", tutorial: "", info:"" },
   { name: "Wild and Easy", level: "", music: "Wild", count: "32", walls: "1", stepsheet: "", demo: "https://www.youtube.com/watch?v=Ln-waDJqs4g", tutorial: "", info:"" },
+  { name: "Wild West & Wicked", level: "Improver", music: "Wild West & Wicked", count: "64", walls: "2",stepsheet: "https://www.copperknob.co.uk/stepsheets/LB8S443/wild-west-wicked", demo: "https://www.youtube.com/watch?v=RauGx_CC4oI", tutorial: "https://www.youtube.com/watch?v=a6KektdN0w0", info: "choreographed by Rob Rowler", },
 
   // ===== X =====
 
@@ -269,6 +268,5 @@ const dances = [
 
   { name: "Ziggy", level: "", music: "I Wanna Dance With Somebody", count: "32", walls: "4", stepsheet: "", demo: "https://www.youtube.com/watch?v=w-xf5KMx0NU", tutorial: "", info:"" },
   { name: "Zorba", level: "", music: "See Ghost Train", count: "", walls: "", stepsheet: "", demo: "", tutorial: "", info:"" },
-  { name: "Zydeco Bounce", level: "", music: "Zydeco Bounce", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/NJT7R5C/zydeco-bounce", demo: "", tutorial: "", info:"" }
 
 ];

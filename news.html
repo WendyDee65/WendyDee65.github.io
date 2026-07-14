@@ -62,18 +62,25 @@
   }
 
   if (dance.level) {
-      links.push(`<span class="dance-level">👣 Level: ${dance.level}</span>`);
+      links.push(`<span class="dance-level">⭐ Level: ${dance.level}</span>`);
   }
 
   return links.join(" ");
   }
 
-  function danceTitle(dance) {
+function danceTitle(dance) {
+  const details = [];
+
+  if (dance.info) {
+    details.push(`&bull; ${dance.info}`);
+  }
+
   return `
     <strong>${dance.name}</strong>
-    ${dance.info ? ` - <span class="dance-info">${dance.info}</span>` : ""}
+    ${details.length ? ` <span class="dance-info-line"> &nbsp;&nbsp; ${details.join(" ")}</span>` : ""}
   `;
-  }
+}
+  
   function danceMetaLine(dance) {
   const links = danceLinks(dance);
 
@@ -127,7 +134,7 @@
       </div>
 
       ${news.beginnerHour.justDance && news.beginnerHour.justDance.length > 0 ? `
-        <h3>Just Dance Selections</h3>
+        <h3>Open Dancing Selections</h3>
         <div class="news-dance-list">
           ${news.beginnerHour.justDance.map(dance => `
             <div class="news-dance-item">

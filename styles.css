@@ -569,9 +569,11 @@ form button {
   font-style: italic;
 }
 
-.dance-info {
+.dance-info-line {
   font-weight: 400;
+  color: #6b4a2b;
 }
+
 .dance-info,
 .dance-level {
   color: #6b4a2b;
@@ -582,6 +584,8 @@ form button {
   margin-right: 12px;
   font-weight: 600;
 }
+
+
 /* =========================
    SCHEDULE ALERT BOX
 ========================= */
@@ -972,6 +976,291 @@ table.dataTable thead th.dt-ordering-desc .dt-column-order::after {
   opacity: 1 !important;
 }
 
+.related-dance-link {
+  margin-top: 18px;
+  font-weight: 600;
+}
+
+.related-dance-link a {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 8px 14px;
+  background: var(--accent);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.related-dance-link a:hover {
+  background: var(--accent-hover);
+}
+
+/* =========================
+   DANCE LIST LINK BUTTONS
+========================= */
+
+.dance-list-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 750px;
+  margin: 22px auto 0;
+}
+
+.dance-list-card {
+  flex: 0 1 220px;
+  max-width: 240px;
+  background: var(--accent);
+  color: white;
+  border-radius: 8px;
+  padding: 9px 14px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dance-list-card:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,.14);
+}
+
+.dance-list-card h3 {
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.dance-list-card p {
+  display: none;
+}
+
+/* =========================
+   STEPPIN' OUT DANCES PAGE
+   Soft Plum / Lavender
+========================= */
+
+.steppin-out-page {
+  --primary: #5A4A63;
+  --primary-dark: #43364A;
+  --accent: #8B7896;
+  --accent-hover: #725F7E;
+  --surface-alt: #F4F0F6;
+  --border: #D8CEDD;
+}
+
+/* Steppin' Out page intro */
+.steppin-out-page .section:first-of-type {
+  background: #FAF7FB;
+}
+
+/* Table header */
+.steppin-out-page table.dataTable thead th {
+  background: #5A4A63 !important;
+  color: white !important;
+}
+
+/* Sort arrows */
+.steppin-out-page table.dataTable thead th .dt-column-order,
+.steppin-out-page table.dataTable thead th .dt-column-order::before,
+.steppin-out-page table.dataTable thead th .dt-column-order::after {
+  color: #E6DDEE !important;
+  opacity: 1 !important;
+}
+
+/* Slightly darker table section background */
+.steppin-out-page .dances-section {
+  background: #E9E1EE;
+}
+
+/* Alternating rows with more contrast */
+.steppin-out-page table.dataTable tbody tr:nth-child(even) {
+  background-color: #EFE8F2 !important;
+}
+
+.steppin-out-page table.dataTable tbody tr:nth-child(odd) {
+  background-color: #FFFFFF !important;
+}
+
+/* Hover row */
+.steppin-out-page table.dataTable tbody tr:hover {
+  background-color: #DDD2E5 !important;
+}
+
+/* Links inside the dance table */
+.steppin-out-page table.dataTable a {
+  color: #5A4A63;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.steppin-out-page table.dataTable a:hover {
+  color: #725F7E;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Search, entries, and filters */
+.steppin-out-page .dt-length,
+.steppin-out-page .dt-search,
+.steppin-out-page .dance-filters label {
+  color: #5A4A63;
+}
+
+.steppin-out-page .dt-length select,
+.steppin-out-page .dt-search input,
+.steppin-out-page .dance-filters select {
+  border-color: #CBBFD2;
+  background: white !important;
+  color: #2D2D2D;
+}
+
+/* Pagination buttons */
+.steppin-out-page .dt-paging button {
+  border-color: #CBBFD2 !important;
+  background: #F4F0F6 !important;
+  color: #5A4A63 !important;
+}
+
+.steppin-out-page .dt-paging button:hover {
+  background: #8B7896 !important;
+  color: white !important;
+}
+
+/* Current page button */
+.steppin-out-page .dt-paging button.current {
+  background: #E6DDEE !important;
+  color: #43364A !important;
+  border-color: #8B7896 !important;
+  font-weight: 700 !important;
+}
+
+/* Related link button */
+.steppin-out-page .related-dance-link a {
+  background: #8B7896;
+}
+
+.steppin-out-page .related-dance-link a:hover {
+  background: #725F7E;
+}
+
+/* Table section background */
+.steppin-out-page .dances-section {
+  background: #F4F0F6;
+}
+/* =========================
+   ARCHIVED DANCES PAGE
+   Sage Green / Cream
+========================= */
+
+.archived-page {
+  --primary: #4F6253;
+  --primary-dark: #39483C;
+  --accent: #7D9278;
+  --accent-hover: #61745D;
+  --surface-alt: #F0F4EC;
+  --border: #CAD7C2;
+}
+
+/* Archived page intro */
+.archived-page .section:first-of-type {
+  background: #F7FAF4;
+}
+
+/* Table header */
+.archived-page table.dataTable thead th {
+  background: #4F6253 !important;
+  color: white !important;
+}
+
+/* Sort arrows */
+.archived-page table.dataTable thead th .dt-column-order,
+.archived-page table.dataTable thead th .dt-column-order::before,
+.archived-page table.dataTable thead th .dt-column-order::after {
+  color: #E6D8A8 !important;
+  opacity: 1 !important;
+}
+
+/* Alternating rows */
+.archived-page table.dataTable tbody tr:nth-child(even) {
+  background-color: #F0F4EC !important;
+}
+
+.archived-page table.dataTable tbody tr:nth-child(odd) {
+  background-color: #FFFFFF !important;
+}
+
+/* Hover row */
+.archived-page table.dataTable tbody tr:hover {
+  background-color: #E2EADB !important;
+}
+
+/* Links inside the dance table */
+.archived-page table.dataTable a {
+  color: #4F6253;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.archived-page table.dataTable a:hover {
+  color: #7D9278;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Search, entries, and filters */
+.archived-page .dt-length,
+.archived-page .dt-search,
+.archived-page .dance-filters label {
+  color: #4F6253;
+}
+
+.archived-page .dt-length select,
+.archived-page .dt-search input,
+.archived-page .dance-filters select {
+  border-color: #B7C7AE;
+  background: white !important;
+  color: #2D2D2D;
+}
+
+/* Pagination buttons */
+.archived-page .dt-paging button {
+  border-color: #B7C7AE !important;
+  background: #F0F4EC !important;
+  color: #4F6253 !important;
+}
+
+.archived-page .dt-paging button:hover {
+  background: #7D9278 !important;
+  color: white !important;
+}
+
+/* Current page button */
+.archived-page .dt-paging button.current {
+  background: #E6D8A8 !important;
+  color: #39483C !important;
+  border-color: #7D9278 !important;
+  font-weight: 700 !important;
+}
+
+/* Related link button */
+.archived-page .related-dance-link a {
+  background: #7D9278;
+}
+
+.archived-page .related-dance-link a:hover {
+  background: #61745D;
+}
+
+/* Optional: table wrapper area */
+.archived-page .dances-section {
+  background: #F0F4EC;
+}
 /* ==========================================
    RESPONSIVE
 ========================================== */

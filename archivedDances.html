@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archived Dances</title>
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="archived-page">
+
+<header>
+  <div class="logo">
+    <img src="images/VineInLine.png" alt="Logo">
+    <span>Vine In Line</span>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="news.html">Current News</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="ListOfDances.html">Vine in Line Dances</a>
+    <a href="events.html">Events</a>
+    <a href="other_resources.html">Other Resources</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="section">
+  <h1>Archived Dances</h1>
+
+  <p>
+    Here is a list of dances we’ve learned in the past or are not currently focusing on in class.
+  </p>
+
+  <p class="related-dance-link">
+    <a href="ListOfDances.html">View the Main Dance List</a>
+  </p>
+</section>
+
+<section class="section alt dances-section">
+
+  <div style="overflow-x:auto;">
+
+    <div class="dance-filters">
+      <label>
+        Level:
+        <select id="levelFilter">
+          <option value="">All</option>
+        </select>
+      </label>
+
+      <label>
+        Count:
+        <select id="countFilter">
+          <option value="">All</option>
+        </select>
+      </label>
+
+      <label>
+        Walls:
+        <select id="wallsFilter">
+          <option value="">All</option>
+        </select>
+      </label>
+    </div>
+
+    <table id="archivedDanceTableDisplay" class="display stripe hover">
+      <thead>
+        <tr>
+          <th>Dance Name</th>
+          <th>Stepsheet</th>
+          <th>Demo Video</th>
+          <th>Tutorial Video</th>
+          <th>Level</th>
+          <th>Music</th>
+          <th>Count</th>
+          <th>Walls</th>
+          <th>Info</th>
+        </tr>
+      </thead>
+
+      <tbody id="archivedDanceTable"></tbody>
+    </table>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>Vine In Line | SLO North County, CA</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+
+<!-- JS: load Archived dance data -->
+<script src="archivedDances.js"></script>
+
+<script>
+  const tableBody = document.getElementById("archivedDanceTable");
+
+  archivedDances.forEach(d => {
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
+      <td>${d.name || ""}</td>
+      <td>${d.stepsheet ? `<a href="${d.stepsheet}" target="_blank" rel="noopener noreferrer">📄 Stepsheet</a>` : ""}</td>
+      <td>${d.demo ? `<a href="${d.demo}" target="_blank" rel="noopener noreferrer">▶ Demo</a>` : ""}</td>
+      <td>${d.tutorial ? `<a href="${d.tutorial}" target="_blank" rel="noopener noreferrer">🎓 Tutorial</a>` : ""}</td>
+      <td>${d.level || ""}</td>
+      <td>${d.music || ""}</td>
+      <td>${d.count || ""}</td>
+      <td>${d.walls || ""}</td>
+      <td>${d.info || ""}</td>
+    `;
+
+    tableBody.appendChild(row);
+  });
+
+  const table = new DataTable("#archivedDanceTableDisplay", {
+    pageLength: 25,
+    lengthMenu: [10, 25, 50, 100, { label: "All", value: -1 }],
+    order: [[0, "asc"]],
+    ordering: true
+  });
+
+  const dataTableTopRow = document.querySelector(".dt-layout-row:first-of-type");
+  const danceFilters = document.querySelector(".dance-filters");
+  const searchBox = document.querySelector(".dt-search");
+  const lengthBox = document.querySelector(".dt-length");
+
+  if (dataTableTopRow && searchBox && danceFilters && lengthBox) {
+    dataTableTopRow.innerHTML = "";
+
+    dataTableTopRow.appendChild(searchBox);
+    dataTableTopRow.appendChild(danceFilters);
+    dataTableTopRow.appendChild(lengthBox);
+  }
+
+  function fillFilter(selectId, columnIndex) {
+    const select = document.getElementById(selectId);
+
+    table
+      .column(columnIndex)
+      .data()
+      .unique()
+      .sort()
+      .each(function (value) {
+        const cleanValue = value.toString().trim();
+
+        if (cleanValue !== "") {
+          select.add(new Option(cleanValue, cleanValue));
+        }
+      });
+
+    select.addEventListener("change", function () {
+      table.column(columnIndex).search(this.value, { exact: true }).draw();
+    });
+  }
+
+  fillFilter("levelFilter", 4);
+  fillFilter("countFilter", 6);
+  fillFilter("wallsFilter", 7);
+</script>
+
+</body>
+</html>
