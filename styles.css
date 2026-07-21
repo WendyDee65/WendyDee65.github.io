@@ -816,6 +816,60 @@ table.dataTable thead th {
   color: white;
 }
 
+/* Links in the main List of Dances table */
+#danceTableDisplay a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#danceTableDisplay a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Keep Stepsheet icon and text together */
+#danceTableDisplay th:nth-child(2),
+#danceTableDisplay td:nth-child(2) {
+  white-space: nowrap;
+  min-width: 150px;
+}
+
+#danceTableDisplay td:nth-child(2) a {
+  display: inline-flex;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+/* Keep Demo icon and text together */
+#danceTableDisplay th:nth-child(3),
+#danceTableDisplay td:nth-child(3) {
+  white-space: nowrap;
+  min-width: 150px;
+}
+
+#danceTableDisplay td:nth-child(3) a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+/* Keep Tutorial icon and text together */
+#danceTableDisplay th:nth-child(4),
+#danceTableDisplay td:nth-child(4) {
+  white-space: nowrap;
+  min-width: 150px;
+}
+
+#danceTableDisplay td:nth-child(4) a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
 /* Gold sort arrows */
 table.dataTable thead th .dt-column-order {
   color: #FFD59A !important;

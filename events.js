@@ -1,19 +1,5 @@
 const events = [
 
-  {
-    date: "July 10, 2026",
-    title: "Joy Bonner at the Pour House - Friday Night",
-    type: "Live Music",
-    location: "Paso Robles, CA",
-    link: "https://www.my805tix.com/e/bonner/tickets"
-  },
-  {
-    date: "July 16-17, 2026",
-    title: "Niels Poulsen Workshop (Sold Out)",
-    type: "Workshop",
-    location: "Fremont, CA",
-    link: "https://www.amynfriendslinedance.com/copy-of-caldance-2026"
-  },
 
   {
     date: "July 23-26, 2026",
