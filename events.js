@@ -10,6 +10,14 @@ const events = [
   },
 
     {
+    date: "August 9, 2026",
+    title: "Blast & Brew - Just Dance 3-5 PM  (Cost: free! Support by buying food & drinks!) ",
+    type: "Group Outing",
+    location: "Atascadero, CA",
+    link: "https://blastandbrewatown.com/"
+  },
+
+    {
     date: "August 13-16, 2026",
     title: "BLISS (Biggest Little Iconic Summer Stompdown (Sold Out) ",
     type: "Event",
