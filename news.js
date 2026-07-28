@@ -4,7 +4,7 @@ const news = {
   announcements: [
     "Can you believe it's already August? We have lots of fun dances and opportunities planned for this month!.",
 
-    "<Strong>Line Dance Boot Camp </strong>- Tina is scheduling the next Boot Camp on the first two Saturdays of August. Contact her if you are interested in the introductory class. This is a great opportunity to learn basic footwork, moving to music, and memorizing simple line dance patterns before attending the weekly Line Dance Party."
+    "<Strong>Line Dance Boot Camp </strong>- Tina is scheduling the next Boot Camp on the first two Saturdays of August from 9 AM- 11 AM . Contact Tina if you are interested in the introductory class. This is a great opportunity to learn basic footwork, moving to music, and memorizing simple line dance patterns before attending the weekly Line Dance Party."
   ],
 
   scheduleUpdates: [
@@ -29,7 +29,7 @@ const news = {
   beginnerHour: {
     title: "Beginner / High Beginner Hour",
     dances: [
-      { name: "Another Bar Song",level: "Beginner",music: "",count: "",walls: "",stepsheet: "",demo: "https://www.youtube.com/watch?v=G39Pcjmdw0I",tutorial: "",info: "",},
+      { name: "Coming soon... ",level: "",music: "",count: "",walls: "",stepsheet: "",demo: "",tutorial: "",info: "",},
     ],
 
     justDance: [

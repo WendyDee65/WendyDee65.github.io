@@ -144,7 +144,7 @@ const dances = [
 
   { name: "Jambalaya", level: "Improver", music: "Jambalaya - Led Loader & The Barrels", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/jambalaya-ID49391.aspx", demo: "", tutorial: "", info:"" },
   { name: "Jambalaya EZ", level: "Beginner", music: "Jambalaya - Led Loader & The Barrels", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/BM4N7TF/jambalaya-ez", demo: "https://www.youtube.com/watch?v=zAQZ24DoTxY", tutorial: "", info:"" },
-  { name: "Jazz It Up", level: "Improver", music:"Jazz It Up - 2341studios", count:"32", walls:"4", stepsheet: "https://www.copperknob.co.uk/stepsheets/YR4CF86/jazz-it-up", demo: "https://www.youtube.com/watch?v=iR08CYfylJk", tutorial: "https://www.youtube.com/watch?v=mefROFr0mOY", info: "choreographed by Rob Rowler"},
+  { name: "Jazz It Up", level: "Improver", music:"Jazz It Up - 2341studios", count:"32", walls:"4", stepsheet: "https://www.copperknob.co.uk/stepsheets/YR4CF86/jazz-it-up", demo: "https://www.youtube.com/watch?v=iR08CYfylJk", tutorial: "https://www.youtube.com/watch?v=mefROFr0mOY", info: ""},
   { name: "Jealous of the Sun", level: "Improver", music: "Jealous of the Sun - Raleigh Keegan", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/YGL8DLQ/jealous-of-the-sun", demo: "https://www.youtube.com/watch?v=W49Opr1rj_A", tutorial: "", info:"" },
   { name: "Jerusalema", level: "Improver", music: "Jerusalema (feat. Nomcebo Zikode) - Master KG", count: "64", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/143546/jerusalema", demo: "", tutorial: "", info:"" },
   { name: "Just a Two Steppin'", level: "Beginner", music: "Amigo", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/119245/just-a-two-steppin", demo: "", tutorial: "", info:"" },
@@ -215,7 +215,7 @@ const dances = [
   { name: "Rock Me Mama", level: "Beginner", music: "Wagon Wheel - Nathan Carter", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/rock-me-mama-ID125078.aspx", demo: "", tutorial: "", info:"" },
 
   // ===== S =====
-
+  { name: "Saddle On Up", level: "Improver", music: "Saddle Up Shawty - Mikel Knight", count: "48", walls: "2", stepsheet: "https://www.copperknob.co.uk/choreographer/9P93JNV/wendy-moench-gray", demo: "https://www.youtube.com/watch?v=PkjgxE0PaLk", tutorial: "", info: "" },
   { name: "Senorita La-La-La", level: "High Beginner", music: "Señorita - Shawn Mendes & Camila Cabello", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/F3M4D7T/senorita-la-la-la", demo: "https://www.youtube.com/watch?t=2s&v=OilQ26V7Xzo", tutorial: "", info:"" },
   { name: "Seven Drunken Nights", level: "Improver", music: "Seven Drunken Nights - Mike Denver", count: "64", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/KKTM3L7/seven-drunken-nights", demo: "https://www.youtube.com/watch?v=blv9yAfCHqI", tutorial: "", info:"" },
   { name: "Shake It (Fireball)", level: "Beginner", music: "Fireball - Pitbull", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/JQM3HX2/shake-it-fireball", demo: "https://www.youtube.com/watch?t=1s&v=q7cfZo7GSQ4", tutorial: "", info:"" },
@@ -271,7 +271,7 @@ const dances = [
   { name: "Whatever Lola Wants", level: "Intermediate", music: "Whatever Lola Wants (Lola Gets) - Ross Mitchell, His Band and Singers", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/MHSB32B/whatever-lola-wants-lola-gets", demo: "", tutorial: "", info:"" },
   { name: "When Love Walks In", level: "Beginner", music: "Fly Love - Jamie Foxx", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/G8BCGP6/fly-love-aka-when-love-walks-in", demo: "https://www.youtube.com/watch?v=fsmlbIWyuLg", tutorial: "", info:"aka Fly Love" },
   { name: "Wild and Easy", level: "Absolute Beginner", music: "Wild - Lolo", count: "32", walls: "1", stepsheet: "https://www.copperknob.co.uk/stepsheets/68C9MVV/wild-and-easy", demo: "https://www.youtube.com/watch?v=Ln-waDJqs4g", tutorial: "", info:"" },
-  { name: "Wild West & Wicked", level: "Improver", music: "Wild West & Wicked (Remix) - DJTEXX", count: "64", walls: "2",stepsheet: "https://www.copperknob.co.uk/stepsheets/LB8S443/wild-west-wicked", demo: "https://www.youtube.com/watch?v=RauGx_CC4oI", tutorial: "https://www.youtube.com/watch?v=a6KektdN0w0", info: "choreographed by Rob Rowler", },
+  { name: "Wild West & Wicked", level: "Improver", music: "Wild West & Wicked (Remix) - DJTEXX", count: "64", walls: "2",stepsheet: "https://www.copperknob.co.uk/stepsheets/LB8S443/wild-west-wicked", demo: "https://www.youtube.com/watch?v=RauGx_CC4oI", tutorial: "https://www.youtube.com/watch?v=a6KektdN0w0", info: "", },
 
   // ===== X =====
 

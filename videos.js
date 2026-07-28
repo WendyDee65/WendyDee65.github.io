@@ -1,8 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
   const videos = [
     {
-      url: "https://www.youtube.com/shorts/zfp8US-La_I",
-      title: "Tutting Demo"
+      url: "https://www.youtube.com/shorts/aBpQtkj-6bo",
+      title: "A Rattlesnake Kiss - Pour House"
+    },
+    {
+      url: "https://www.youtube.com/shorts/IoLd8EnSqm4",
+      title: "Choosin' Texas - Pour House"
+    },
+    {
+      url: "https://www.youtube.com/watch?v=sF-X4dzZmtc",
+      title: "Dancing at Derby"
     },
     {
       url: "https://www.youtube.com/watch?v=ul6sk1PW3dU",
@@ -15,6 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       url: "https://www.youtube.com/watch?v=wmqT5_pZ37Q",
       title: "Girlie Girlie Demo"
+    },
+    {
+      url: "https://www.youtube.com/watch?v=n72uqgeB3Z0",
+      title: "Electric Slide at Broken Earth"
+    },
+    {
+      url: "https://www.youtube.com/watch?v=a_rFN8fGCB4",
+      title: "Dancing at Tooth & Nail"
     },
   ];
 
