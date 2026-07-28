@@ -1,14 +1,5 @@
 const events = [
 
-
-  {
-    date: "July 23-26, 2026",
-    title: "Palm Springs Line Dance Madness",
-    type: "Event",
-    location: "Palm Springs, CA",
-    link: "https://palmspringsldm.com/"
-  },
-
     {
     date: "August 9, 2026",
     title: "Blast & Brew - Just Dance 3-5 PM  (Cost: free! Support by buying food & drinks!) ",

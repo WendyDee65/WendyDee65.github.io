@@ -22,6 +22,8 @@
     <a href="schedule.html">Schedule</a>
     <a href="listOfDances.html">List of Dances</a>
     <a href="events.html">Events</a>
+    <a href="gallery.html">Photo Gallery</a>
+    <a href="videos.html">Video Gallery</a>
     <a href="other_resources.html">Other Resources</a>
     <a href="contact.html">Contact</a>
   </nav>
@@ -96,7 +98,9 @@ function danceTitle(dance) {
         ${news.announcements.map(item => `<li>${item}</li>`).join("")}
       </ul>
 
-      <h3>Current Schedule Updates</h3>
+      <h3>Current Schedule Updates - <a href="schedule.html">Details</a></h3>    
+  
+   
       <ul>
         ${news.scheduleUpdates.map(item => `<li>${item}</li>`).join("")}
       </ul>
@@ -175,6 +179,6 @@ function danceTitle(dance) {
     </div>
   `;
 </script>
-
+<script src="gallery.js"></script>
 </body>
 </html>
