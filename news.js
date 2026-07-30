@@ -28,10 +28,11 @@ const news = {
 
   beginnerHour: {
     title: "Beginner / High Beginner Hour",
-    dances: [
-      { name: "Coming soon... ",level: "",music: "",count: "",walls: "",stepsheet: "",demo: "",tutorial: "",info: "",},
+    dances: 
+    [
+      { name: "Never Been in Love", level: "Beginner", music: "Never Been in Love", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/3S45DM3/never-been-in-love", demo: "https://www.youtube.com/watch?v=x3VOY5hm62c", tutorial: "https://www.youtube.com/watch?v=E_kxBc9UcPY", info:"" },    
+      { name: "Burn on My Lips", level: "Beginner", music: "I Can't Love You Anymore", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/ZV7J8KD/burn-on-my-lips", demo: "https://www.youtube.com/watch?v=2pSVVUulyS4", tutorial: "https://www.youtube.com/watch?v=TsImDyV4wbY", info:"" },
     ],
-
     justDance: [
       {
         name: "By Request.  Just remember to write your request on the whiteboard for the next week!",

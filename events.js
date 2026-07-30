@@ -49,17 +49,17 @@ const events = [
   },
 
   {
-    date: "April, 2027",
-    title: "Northwest LineDance Blast - Details TBD",
+    date: "April 1-4, 2027",
+    title: "Northwest LineDance Blast - (Wait List)",
     type: "Event",
     location: "Portland, OR",
-    link: ""
+    link: "https://westcoastsue.wixsite.com/nwld-blast/events/portlands-nw-line-dance-blast-2027"
   },
     {
-    date: "April, 2027",
+    date: "April 22-25, 2027",
     title: "Heart Of Texas - Details TBD",
     type: "Event",
     location: "Dallas, CA",
-    link: ""
+    link: "https://hotheartoftexas.com/"
   }
 ];
