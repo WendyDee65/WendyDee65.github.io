@@ -1093,119 +1093,7 @@ table.dataTable thead th.dt-ordering-desc .dt-column-order::after {
   display: none;
 }
 
-/* =========================
-   STEPPIN' OUT DANCES PAGE
-   Soft Plum / Lavender
-========================= */
 
-.steppin-out-page {
-  --primary: #5A4A63;
-  --primary-dark: #43364A;
-  --accent: #8B7896;
-  --accent-hover: #725F7E;
-  --surface-alt: #F4F0F6;
-  --border: #D8CEDD;
-}
-
-/* Steppin' Out page intro */
-.steppin-out-page .section:first-of-type {
-  background: #FAF7FB;
-}
-
-/* Table header */
-.steppin-out-page table.dataTable thead th {
-  background: #5A4A63 !important;
-  color: white !important;
-}
-
-/* Sort arrows */
-.steppin-out-page table.dataTable thead th .dt-column-order,
-.steppin-out-page table.dataTable thead th .dt-column-order::before,
-.steppin-out-page table.dataTable thead th .dt-column-order::after {
-  color: #E6DDEE !important;
-  opacity: 1 !important;
-}
-
-/* Slightly darker table section background */
-.steppin-out-page .dances-section {
-  background: #E9E1EE;
-}
-
-/* Alternating rows with more contrast */
-.steppin-out-page table.dataTable tbody tr:nth-child(even) {
-  background-color: #EFE8F2 !important;
-}
-
-.steppin-out-page table.dataTable tbody tr:nth-child(odd) {
-  background-color: #FFFFFF !important;
-}
-
-/* Hover row */
-.steppin-out-page table.dataTable tbody tr:hover {
-  background-color: #DDD2E5 !important;
-}
-
-/* Links inside the dance table */
-.steppin-out-page table.dataTable a {
-  color: #5A4A63;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.steppin-out-page table.dataTable a:hover {
-  color: #725F7E;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-/* Search, entries, and filters */
-.steppin-out-page .dt-length,
-.steppin-out-page .dt-search,
-.steppin-out-page .dance-filters label {
-  color: #5A4A63;
-}
-
-.steppin-out-page .dt-length select,
-.steppin-out-page .dt-search input,
-.steppin-out-page .dance-filters select {
-  border-color: #CBBFD2;
-  background: white !important;
-  color: #2D2D2D;
-}
-
-/* Pagination buttons */
-.steppin-out-page .dt-paging button {
-  border-color: #CBBFD2 !important;
-  background: #F4F0F6 !important;
-  color: #5A4A63 !important;
-}
-
-.steppin-out-page .dt-paging button:hover {
-  background: #8B7896 !important;
-  color: white !important;
-}
-
-/* Current page button */
-.steppin-out-page .dt-paging button.current {
-  background: #E6DDEE !important;
-  color: #43364A !important;
-  border-color: #8B7896 !important;
-  font-weight: 700 !important;
-}
-
-/* Related link button */
-.steppin-out-page .related-dance-link a {
-  background: #8B7896;
-}
-
-.steppin-out-page .related-dance-link a:hover {
-  background: #725F7E;
-}
-
-/* Table section background */
-.steppin-out-page .dances-section {
-  background: #F4F0F6;
-}
 /* =========================
    ARCHIVED DANCES PAGE
    Sage Green / Cream
@@ -1494,6 +1382,255 @@ body.lightbox-open {
     grid-template-columns: 1fr;
   }
 }
+/* =========================================================
+   STEPPIN' OUT NEWS COLOR SCHEME
+========================================================= */
+
+.steppin-out-page {
+  --so-black: #050505;
+  --so-blue: #008cff;
+  --so-purple: #6b22e6;
+  --so-pink: #f20b91;
+  --so-orange: #ff7a00;
+  --so-lime: #58cf15;
+  --so-white: #ffffff;
+  --so-light: #f3f3f5;
+  --so-text: #191919;
+
+  background: var(--so-light);
+  color: var(--so-text);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.steppin-out-page header {
+  background: var(--so-black);
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    var(--so-blue),
+    var(--so-purple),
+    var(--so-pink),
+    var(--so-orange),
+    var(--so-lime)
+  ) 1;
+}
+
+.steppin-out-page header .logo span {
+  color: var(--so-white);
+}
+
+.steppin-out-page header .logo img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+.steppin-out-page nav a {
+  color: var(--so-white);
+  border-bottom: 3px solid transparent;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.steppin-out-page nav a:hover {
+  color: var(--so-pink);
+  border-bottom-color: var(--so-pink);
+}
+
+.steppin-out-page nav a[href="steppinOutNews.html"] {
+  color: var(--so-lime);
+  border-bottom-color: var(--so-lime);
+}
+
+
+/* =========================
+   PAGE INTRO
+========================= */
+
+.steppin-out-page > .section:first-of-type {
+  position: relative;
+  background: var(--so-white);
+  text-align: center;
+}
+
+.steppin-out-page > .section:first-of-type h1 {
+  margin-bottom: 12px;
+  color: var(--so-black);
+}
+
+.steppin-out-page > .section:first-of-type h1::after {
+  content: "";
+  display: block;
+  width: 190px;
+  height: 5px;
+  margin: 12px auto 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    var(--so-blue),
+    var(--so-purple),
+    var(--so-pink),
+    var(--so-orange),
+    var(--so-lime)
+  );
+}
+
+
+/* =========================
+   OUTER NEWS AREA
+========================= */
+
+.steppin-out-page .section.alt {
+  background: #e9e9ec;
+}
+
+
+/* =========================
+   NEWS CARDS
+========================= */
+
+.steppin-out-page .news-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--so-white);
+  border: 1px solid #d5d5d8;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.13);
+}
+
+.steppin-out-page .news-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--so-blue),
+    var(--so-purple),
+    var(--so-pink),
+    var(--so-orange),
+    var(--so-lime)
+  );
+}
+
+.steppin-out-page .news-card h2 {
+  color: var(--so-black);
+}
+
+.steppin-out-page .news-card h3 {
+  color: #5520a8;
+}
+
+.steppin-out-page .news-card h4 {
+  color: var(--so-black);
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.steppin-out-page .news-card a {
+  color: #006ed6;
+  font-weight: 600;
+}
+
+.steppin-out-page .news-card a:hover {
+  color: var(--so-pink);
+}
+
+
+/* =========================
+   DANCE ITEMS
+========================= */
+
+.steppin-out-page .news-dance-item {
+  background: #fafafd;
+  border: 1px solid #e1e1e5;
+  border-left: 5px solid var(--so-purple);
+  border-radius: 7px;
+}
+
+.steppin-out-page .news-dance-list .news-dance-item:nth-child(5n + 1) {
+  border-left-color: var(--so-blue);
+}
+
+.steppin-out-page .news-dance-list .news-dance-item:nth-child(5n + 2) {
+  border-left-color: var(--so-purple);
+}
+
+.steppin-out-page .news-dance-list .news-dance-item:nth-child(5n + 3) {
+  border-left-color: var(--so-pink);
+}
+
+.steppin-out-page .news-dance-list .news-dance-item:nth-child(5n + 4) {
+  border-left-color: var(--so-orange);
+}
+
+.steppin-out-page .news-dance-list .news-dance-item:nth-child(5n + 5) {
+  border-left-color: var(--so-lime);
+}
+
+.steppin-out-page .dance-level {
+  color: #5520a8;
+  font-weight: 600;
+}
+
+
+/* =========================
+   SCHEDULE ALERT
+========================= */
+
+.steppin-out-page .schedule-alert-box {
+  background: #fff0f7;
+  border-left: 5px solid var(--so-pink);
+  color: #9d0057;
+}
+
+.steppin-out-page .schedule-alert-box h3 {
+  color: #b00062;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.steppin-out-page footer {
+  background: var(--so-black);
+  color: var(--so-white);
+  border-top: 5px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    var(--so-blue),
+    var(--so-purple),
+    var(--so-pink),
+    var(--so-orange),
+    var(--so-lime)
+  ) 1;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .steppin-out-page header .logo img {
+    width: 150px;
+  }
+
+  .steppin-out-page > .section:first-of-type h1::after {
+    width: 140px;
+  }
+}
 /* ==========================================
    RESPONSIVE
 ========================================== */
@@ -1523,4 +1660,408 @@ body.lightbox-open {
     max-width: 500px;
     width: 100%;
   }
+}
+/* =========================================================
+   STEPPIN' OUT DANCES PAGE
+   BLACK + VIVID MULTICOLOR TABLE THEME
+========================================================= */
+
+/* Main table area */
+
+.steppin-out-page .dances-section {
+  padding-top: 18px;
+  background: #dedee4;
+}
+
+/* Give the table area a white card-style container */
+
+.steppin-out-page .dances-section > div {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 24px 0 0;
+  overflow-x: auto;
+
+  background: #ffffff;
+  border: 1px solid #c9c9d0;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.16);
+}
+
+.steppin-out-page .dt-layout-row:first-of-type {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.steppin-out-page .dt-layout-row:last-of-type {
+  padding: 0 20px 20px;
+}
+/* Multicolor strip above the table */
+
+.steppin-out-page .dances-section > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 6px;
+
+  background: linear-gradient(
+    90deg,
+    var(--so-blue),
+    var(--so-purple),
+    var(--so-pink),
+    var(--so-orange),
+    var(--so-lime)
+  );
+}
+
+
+/* =========================================================
+   RELATED DANCE-LIST BUTTON
+========================================================= */
+
+.steppin-out-page .related-dance-link a {
+  display: inline-block;
+  padding: 9px 18px;
+
+  background: var(--so-black);
+  color: var(--so-white);
+  border: 2px solid var(--so-pink);
+  border-radius: 7px;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.steppin-out-page .related-dance-link a:hover {
+  background: var(--so-pink);
+  color: var(--so-white);
+  border-color: var(--so-pink);
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   SEARCH, FILTERS, AND ENTRIES CONTROLS
+========================================================= */
+
+.steppin-out-page .dt-layout-row:first-of-type {
+  align-items: flex-end;
+  gap: 15px;
+  margin: 10px 0 20px;
+  padding: 16px;
+
+  background: #f0f0f4;
+  border: 1px solid #ccccd4;
+  border-radius: 9px;
+}
+
+.steppin-out-page .dt-search,
+.steppin-out-page .dt-length,
+.steppin-out-page .dance-filters label {
+  color: #161616;
+  font-weight: 700;
+}
+
+.steppin-out-page .dt-search input,
+.steppin-out-page .dt-length select,
+.steppin-out-page .dance-filters select {
+  min-height: 39px;
+  padding: 7px 10px;
+
+  background: #ffffff !important;
+  color: #111111;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 6px;
+
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+/* Individual colorful borders */
+
+.steppin-out-page .dt-search input {
+  border-color: var(--so-blue);
+}
+
+.steppin-out-page #levelFilter {
+  border-color: var(--so-purple);
+}
+
+.steppin-out-page #countFilter {
+  border-color: var(--so-pink);
+}
+
+.steppin-out-page #wallsFilter {
+  border-color: var(--so-orange);
+}
+
+.steppin-out-page .dt-length select {
+  border-color: var(--so-lime);
+}
+
+
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+
+.steppin-out-page table.dataTable {
+  width: 100% !important;
+  background: #ffffff;
+  border: 1px solid #aeb0b8;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.steppin-out-page table.dataTable thead th {
+  padding: 12px 10px !important;
+
+  background: #080808 !important;
+  color: #ffffff !important;
+  border-bottom-width: 4px !important;
+  border-bottom-style: solid !important;
+
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Rotating accent colors under the headings */
+
+.steppin-out-page table.dataTable thead th:nth-child(5n + 1) {
+  border-bottom-color: var(--so-blue) !important;
+}
+
+.steppin-out-page table.dataTable thead th:nth-child(5n + 2) {
+  border-bottom-color: var(--so-purple) !important;
+}
+
+.steppin-out-page table.dataTable thead th:nth-child(5n + 3) {
+  border-bottom-color: var(--so-pink) !important;
+}
+
+.steppin-out-page table.dataTable thead th:nth-child(5n + 4) {
+  border-bottom-color: var(--so-orange) !important;
+}
+
+.steppin-out-page table.dataTable thead th:nth-child(5n + 5) {
+  border-bottom-color: var(--so-lime) !important;
+}
+
+/* Sort icons */
+
+.steppin-out-page table.dataTable thead th .dt-column-order,
+.steppin-out-page table.dataTable thead th .dt-column-order::before,
+.steppin-out-page table.dataTable thead th .dt-column-order::after {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+
+/* =========================================================
+   TABLE ROWS
+========================================================= */
+
+.steppin-out-page table.dataTable tbody td {
+  padding: 10px !important;
+  color: #161616;
+  border-bottom: 1px solid #cfd0d6 !important;
+  vertical-align: middle;
+}
+
+.steppin-out-page table.dataTable tbody tr:nth-child(odd) td {
+  background: #ffffff !important;
+}
+
+.steppin-out-page table.dataTable tbody tr:nth-child(even) td {
+  background: #e9e9ef !important;
+}
+
+.steppin-out-page table.dataTable tbody tr:hover td {
+  background: #ffeaf6 !important;
+}
+
+/* Dance-name column */
+
+.steppin-out-page table.dataTable tbody td:first-child {
+  color: #481596;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+
+/* Center Count and Walls */
+
+.steppin-out-page table.dataTable tbody td:nth-child(7),
+.steppin-out-page table.dataTable tbody td:nth-child(8) {
+  text-align: center;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   TABLE LINKS
+========================================================= */
+
+.steppin-out-page table.dataTable tbody a {
+  display: inline-block;
+  padding: 5px 8px;
+
+  background: #111111;
+  color: #ffffff;
+  border-radius: 5px;
+
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.steppin-out-page table.dataTable tbody a:hover {
+  background: var(--so-purple);
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+/* Colorful underline accents */
+
+.steppin-out-page table.dataTable tbody td:nth-child(2) a {
+  border-bottom: 3px solid var(--so-blue);
+}
+
+.steppin-out-page table.dataTable tbody td:nth-child(3) a {
+  border-bottom: 3px solid var(--so-pink);
+}
+
+.steppin-out-page table.dataTable tbody td:nth-child(4) a {
+  border-bottom: 3px solid var(--so-lime);
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.steppin-out-page .dt-info {
+  color: #292929;
+  font-weight: 600;
+}
+
+.steppin-out-page .dt-paging button {
+  border: 1px solid #a9a9b1 !important;
+  background: #ffffff !important;
+  color: #222222 !important;
+}
+
+.steppin-out-page .dt-paging button:hover {
+  background: #eadfff !important;
+  color: #481596 !important;
+  border-color: var(--so-purple) !important;
+}
+
+.steppin-out-page .dt-paging button.current {
+  background: var(--so-purple) !important;
+  color: #ffffff !important;
+  border-color: var(--so-purple) !important;
+  font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+  .steppin-out-page .dances-section > div {
+    width: 100%;
+    padding: 18px 10px;
+  }
+
+  .steppin-out-page .dt-layout-row:first-of-type {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .steppin-out-page .dance-filters {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .steppin-out-page .dance-filters label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .steppin-out-page .dance-filters select {
+    flex: 1;
+    width: auto;
+    max-width: none;
+  }
+
+  .steppin-out-page .dt-search input {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* =========================================================
+   STEPPIN' OUT TABLE LINKS — CLEANER STYLE
+========================================================= */
+
+.steppin-out-page table.dataTable tbody a {
+  display: inline-block;
+  padding: 3px 5px;
+
+  background: transparent;
+  border-radius: 4px;
+
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+
+  transform: none;
+}
+
+/* Stepsheet */
+
+.steppin-out-page table.dataTable tbody td:nth-child(2) a {
+  color: #006ed6;
+  border-bottom: 2px solid #008cff;
+}
+
+/* Demo */
+
+.steppin-out-page table.dataTable tbody td:nth-child(3) a {
+  color: #c90072;
+  border-bottom: 2px solid #f20b91;
+}
+
+/* Tutorial */
+
+.steppin-out-page table.dataTable tbody td:nth-child(4) a {
+  color: #3d8515;
+  border-bottom: 2px solid #58cf15;
+}
+
+/* Subtle hover instead of a dark button */
+
+.steppin-out-page table.dataTable tbody a:hover {
+  background: #f0f0f4;
+  color: #5520a8;
+  text-decoration: none;
+  transform: none;
 }
