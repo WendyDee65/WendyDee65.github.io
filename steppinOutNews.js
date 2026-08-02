@@ -22,7 +22,6 @@ const steppinOutNews = {
 
     dances: [
         { name: "Siempre", level: "High Beginner", music: "Siempre - Vaqueros and Vagabonds", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/C4CWY8Z/siempre", demo: "https://www.youtube.com/watch?v=cFWD99ln9Kw", tutorial: "https://www.youtube.com/watch?v=Z3tpQoC42AU", info:"" },
-        { name: "Dust Off Of Me", level: "Improver", music: "Dust Off of Me - Dusty Black", count: "48", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/HNZR5JY/dust-off-of-me", demo: "https://www.youtube.com/watch?v=1Fuh5Wq-GXM", tutorial: "https://www.youtube.com/watch?v=k0YmjbD-ieY", info:"" },
         { name: "Sweet Portland Dreams", level: "High Intermediate", music: "Sweet Dreams (Are Made of This) - Eurythmics", count: "64", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/L6P8PGC/sweet-portland-dreams", demo: "https://www.youtube.com/watch?v=pHfX1g9B_ro", tutorial: "https://www.youtube.com/watch?v=f8lYcUY5VBQ", info:"" },
     ]
   },
