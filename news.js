@@ -2,7 +2,7 @@ const news = {
   month: "August 2026",
 
   announcements: [
-    "Can you believe it's already August? We have lots of fun dances and opportunities planned for this month!.",
+    "Can you believe it's already August? We have lots of fun dances and opportunities planned for this month!",
 
     "<Strong>Line Dance Boot Camp </strong>- A new introductory class will be scheduled once we have four dancers signed-up. If you are interested, contact Tina."
   ],
