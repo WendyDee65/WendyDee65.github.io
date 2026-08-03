@@ -5,7 +5,7 @@ const steppinOutNews = {
   ],
 
   scheduleUpdates: [
-    "Dates: Thursday August 6, 20 and 27",
+    "Dates: Thursday August 6 and 27",
     "Time: 4:30  (warmup) 5:00 - 6:30 PM (lesson)",
     "Where:  Community Church of Atascadero - Fellowship Hall (Behind the church)",
     "Address: 5850 Rosario Ave, Atascadero, CA 93422",
@@ -14,7 +14,7 @@ const steppinOutNews = {
 
   // leave this blank if no alerts:  scheduleAlerts: []
   scheduleAlerts: [
-    "No Thursday class on August 13."
+    "No Thursday class on August 13th or 20th"
   ],
 
   featuredDances: {

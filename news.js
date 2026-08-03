@@ -8,11 +8,11 @@ const news = {
   ],
   scheduleUpdates: [
     "Tuesday line dance parties continue every week this month.",
-    "Thursday classes will only be held on August 6, 20 and 27."
+    "Thursday classes will only be held on August 6 and 27."
   ],
 
   scheduleAlerts: [
-    "No Thursday class on August 13"
+    "No Thursday class on August 13th or 20th"
   ],
 
   fieldTrips: [
