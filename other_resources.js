@@ -61,12 +61,12 @@ const resourceSections = [
       {
         title: "History of Line Dance",
         description: "Ever wonder when Line Dance Started?",
-        link: "documents/History of Line Dance.pdf"
+        link: "Documents/History of Line Dance.pdf"
       },
       {
         title: "Line Dance Steps Checklist",
         description: "Track your progress",
-        link: "documents/List of Steps.pdf"
+        link: "Documents/List of Steps.pdf"
       }
     ]
   },
