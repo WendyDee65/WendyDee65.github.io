@@ -44,9 +44,30 @@ const resourceSections = [
       },
       {
         title: "Linedancer Web",
-        description: "Another source of Line Dance information ",
-        link: "https://www.linedancerweb.com/."
+        description: "Another source of Line Dance information.",
+        link: "https://www.linedancerweb.com/"
+      },
+      {
+        title: "Individual Step Tutorials",
+        description: "Videos of Individual Steps.",
+        link: "https://www.youtube.com/playlist?list=PLtT9OQNY5gpnlivGOOJOO6ORUBO25CmJh"
       }
     ]
-  }
+  },
+
+  {
+    title: "Printable Resources",
+    resources: [
+      {
+        title: "History of Line Dance",
+        description: "Ever wonder when Line Dance Started?",
+        link: "documents/History of Line Dance.pdf"
+      },
+      {
+        title: "Line Dance Steps Checklist",
+        description: "Track your progress",
+        link: "documents/List of Steps.pdf"
+      }
+    ]
+  },
 ];

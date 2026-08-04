@@ -617,10 +617,11 @@ form button {
 ========================= */
 
 .resource-section {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto 30px;
   padding: 40px 20px;
   border-radius: var(--radius);
-  margin: 0 auto 30px;
-  max-width: 1100px;
 }
 
 .resource-light {
@@ -639,7 +640,7 @@ form button {
 
 .resource-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
 }
 
