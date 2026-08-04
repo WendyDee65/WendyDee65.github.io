@@ -43,18 +43,6 @@ const steppinOutNews = {
       },
 
       {
-        date: "August 20, 2026",
-        dances: [
-          "Mamma Maria",
-          "Got to Be Funky",
-          "Crowded Mind",
-          "Take A Look At Yourself",
-          "Ghosted",
-          "Ain't Too Cool"
-        ]
-      },
-
-      {
         date: "August 27, 2026",
         dances: [
           "Back on Texas Time",
