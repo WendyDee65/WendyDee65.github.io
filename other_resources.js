@@ -59,6 +59,11 @@ const resourceSections = [
     title: "Printable Resources",
     resources: [
       {
+        title: "Blast & Brew Playlist for 8/9/26",
+        description: "List of Open Dances",
+        link: "Documents/BlastAndBrewPlaylist20260809.pdf"
+      },
+      {
         title: "History of Line Dance",
         description: "Ever wonder when Line Dance Started?",
         link: "Documents/History of Line Dance.pdf"
@@ -71,3 +76,4 @@ const resourceSections = [
     ]
   },
 ];
+BlastAndBrewPlaylist20260809.pdf
