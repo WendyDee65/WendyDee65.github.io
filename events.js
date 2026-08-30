@@ -4,7 +4,7 @@ const events = [
     date: "September 13, 2026",
     title: "Longbranch Saloon - Just Dance - Way out West  noon - ? PM  (Cost: free! Support by buying food & drinks!) ",
     type: "Group Outing",
-    location: "Creston, CA",
+    location: "6258 Webster Rd, Creston, CA",
     link: "https://wearewayoutwestband.com/shows"
   },
 

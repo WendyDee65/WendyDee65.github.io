@@ -24,7 +24,7 @@ const news = {
   fieldTrips: [
     {
       title: "September Dance Outing",
-      description: "We are planning a group outing on Sunday September 13 at the Longbranch Saloon from noon - ?.  <br> The Way Out West band will be performing.  <br> As soon as the setlist is available we will post it (with matching line dance patterns) on our website.",
+      description: "We are planning a group outing on Sunday September 13 at the Longbranch Saloon from noon - ?.  <br>Address: 6258 Webster Rd, Creston, CA<br> The Way Out West band will be performing.  <br> As soon as the setlist is available we will post it (with matching line dance patterns) on our website.",
       linkText: "Way Out West",
       link: "https://wearewayoutwestband.com/"
     }
