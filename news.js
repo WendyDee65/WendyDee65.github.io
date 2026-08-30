@@ -3,11 +3,13 @@ const news = {
 
   announcements: [
     "September is Review Month!",
-    "Both Tina and Wendy will be focusing on reviews during the first 4 weeks of the month.",
+    "<strong>For most of the month</strong>, Tina and Wendy will focus on reviews.",  
+    "For the beginner hour, contact Tina to request reviews."  ,
+    "For the improver hour, your requests are listed on the website.",
     "Wendy will also teach 'Opalite' (a *very easy* improver) the first week.",
      "&nbsp;",
-    "<Strong>Make plans to come on the 5th week</strong> -- It's going to be a party!  Both Tina and Wendy will be teaching special circle and party dances!  Woot Woot!",
-
+ 
+    "<strong>Make plans to come on the 5th week</strong> -- It's going to be a party! Both Tina and Wendy will be teaching some fun party dances (which may include circle, partner, contra, and downright 'silly' options).",
     "<Strong>Line Dance Boot Camp </strong>- A new introductory class will be scheduled once we have four dancers signed-up. If you are interested, contact Tina."
   ],
   scheduleUpdates: [
