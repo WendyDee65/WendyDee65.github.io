@@ -5,13 +5,12 @@ const steppinOutNews = {
 
     "Hi Dancers!",
     "This month we are focusing on all reviews. ",
-    "Each week we will review two dances from previous lessons.",
+    "Each week we will review a few dances from previous lessons.",
      "&nbsp;",
     "9/03/26 -      No Remorse  &  Opalite",
     "9/10/26 -      Sweet Portland Dreams  &  Jumanji",
     "9/17/26 -      Liquor Talking  &  Texas Girls",
-    "9/24/26 -      Fuego  &  Raised Like That"
-
+    "9/24/26 -      Fuego, Raised Like That & Add a Little Flavor"
   ],
 
   scheduleUpdates: [
@@ -38,12 +37,13 @@ const steppinOutNews = {
         { name: "Opalite", level: "Improver", music: "Opalite - Taylor Swift", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/389MQZY/opalitet", demo: "https://www.youtube.com/watch?v=6cXbsi1fXwM", tutorial: "https://www.youtube.com/watch?v=VuRg3XOOrxE", info:"" },       
         
         { name: "Sweet Portland Dreams", level: "High Intermediate", music: "Sweet Dreams (Are Made of This) - Eurythmics", count: "64", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/L6P8PGC/sweet-portland-dreams", demo: "https://www.youtube.com/watch?v=pHfX1g9B_ro", tutorial: "https://www.youtube.com/watch?v=f8lYcUY5VBQ", info:"" },
-        { name: "Jumanji", level: "High Intermediate", music: "JUMANJI - HEDEGAARD & Cancun", count: "64", walls: "1", stepsheet: "https://www.copperknob.co.uk/stepsheets/22R2929/jumanji", demo: "", tutorial: "", info: "" },
-        { name: "Liquor Talking", level: "Intermediate", music: "Liquor Talkin' - Don Louis", count: "48", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/62K3WKS/liquor-talking", demo: "", tutorial: "", info: "" },   
-        { name: "Texas Girls", level: "Easy Intermediate", music: "Texas - Blake Shelton", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/BNRL26V/texas-girls", demo: "", tutorial: "", info: "" },
-        { name: "Fuego", level: "", music: "Fuego - Pitbull", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/178608/fuego", demo: "https://www.youtube.com/watch?v=Tg_5_KvpnlY&t=69s", tutorial: "https://www.youtube.com/watch?v=sc5S2eG_9-E", info: "" },
+        { name: "Jumanji", level: "High Intermediate", music: "JUMANJI - HEDEGAARD & Cancun", count: "64", walls: "1", stepsheet: "https://www.copperknob.co.uk/stepsheets/22R2929/jumanji", demo: "https://www.youtube.com/watch?v=vzTe5ghGyew", tutorial: "https://www.youtube.com/watch?v=j3AN2Z-XL9Y", info: "" },
+        { name: "Liquor Talking", level: "Intermediate", music: "Liquor Talkin' - Don Louis", count: "48", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/62K3WKS/liquor-talking", demo: "https://www.youtube.com/watch?v=8DjcRjVKwUs", tutorial: "https://www.youtube.com/watch?v=YcnqxPY8ZjQ", info: "" },   
+        { name: "Texas Girls", level: "Easy Intermediate", music: "Texas - Blake Shelton", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/BNRL26V/texas-girls", demo: "https://www.youtube.com/watch?v=SVOybSm3brI", tutorial: "https://www.youtube.com/watch?v=wOSc0ofnvL8", info: "" },
+        { name: "Fuego", level: "Intermediate", music: "Fuego - Pitbull", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/178608/fuego", demo: "https://www.youtube.com/watch?v=Tg_5_KvpnlY&t=69s", tutorial: "https://www.youtube.com/watch?v=sc5S2eG_9-E", info: "" },
         { name: "Raised Like That", level: "High Improver", music: "Raised Like That - James Johnston", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/154113/raised-like-that", demo: "https://www.youtube.com/watch?v=_NFUvWDfyZE", tutorial: "https://www.youtube.com/watch?v=kH8CbDkP7AY&t=6s", info: "" },
-       ]
+        { name: "Add a Little Flavor", level: "Improver", music: "Flavor (feat. Vikina) - Jimmie Allen, Pitbull & Teamwork", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/9GLQ453/add-a-little-flavor", demo: "https://www.youtube.com/watch?v=5n0lHPJ7d4E", tutorial: "https://www.youtube.com/watch?v=iZnU4HJjMLU", info: "" },
+        ]
   },
 
   warmupDances: {
@@ -92,7 +92,6 @@ const steppinOutNews = {
           "Going Blonde",
           "Calum' Rise",
           "Something in the Water",
-          "Add A Litle Flavor",
           "Liquor Talking (Short Review)"
         ]
       }

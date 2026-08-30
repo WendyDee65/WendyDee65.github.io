@@ -4,7 +4,7 @@ const steppinOutDances = [
   { name: "3 Tequila Floor", level: "Intermediate", music: "3 Tequila Floor - Josiah Siska", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/K3PHTPZ/3-tequila-floor", demo: "https://www.youtube.com/watch?v=vMeNcabUM5o", tutorial: "https://www.youtube.com/watch?v=SW5rgd2cIEk", info: "" },
 
   //--- A ---//
-  { name: "Add a Little Flavor", level: "Improver", music: "Flavor (feat. Vikina) - Jimmie Allen, Pitbull & Teamwork", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/9GLQ453/add-a-little-flavor", demo: "", tutorial: "", info: "" },
+  { name: "Add a Little Flavor", level: "Improver", music: "Flavor (feat. Vikina) - Jimmie Allen, Pitbull & Teamwork", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/9GLQ453/add-a-little-flavor", demo: "https://www.youtube.com/watch?v=5n0lHPJ7d4E", tutorial: "https://www.youtube.com/watch?v=iZnU4HJjMLU", info: "" },
   { name: "Ain't Misbehavin", level: "Intermediate", music: "Misbehavin' - Pentatonix", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/Z58H62Y/aint-misbehavin", demo: "https://www.youtube.com/watch?v=aodOu5PtpPg", tutorial: "https://www.youtube.com/watch?v=RqovmSQTNVo", info: "" },
   { name: "All of Me", level: "Beginner", music: "All of Me - Anne Murray", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/3MGNNW5/all-of-me", demo: "", tutorial: "", info: "" },
   { name: "Around the Fire", level: "Intermediate", music: "OLD COUNTRY BARN - James Johnston", count: "48", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/RSYDMW8/around-the-fire", demo: "https://www.youtube.com/watch?v=o8uB-zNlXFA&t=91s", tutorial: "", info: "" },
@@ -43,7 +43,7 @@ const steppinOutDances = [
   { name: "Edamame", level: "Easy Intermediate", music: "edamame (feat. Rich Brian) - bbno$", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/160054/edamame", demo: "https://www.youtube.com/watch?v=LuAYc5hrPnI", tutorial: "https://www.youtube.com/watch?v=6S3izW3ICqQ", info: "" },
 
   //--- F ---//
-  { name: "Fuego", level: "", music: "Fuego - Pitbull", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/178608/fuego", demo: "https://www.youtube.com/watch?v=Tg_5_KvpnlY&t=69s", tutorial: "https://www.youtube.com/watch?v=sc5S2eG_9-E", info: "" },
+  { name: "Fuego", level: "Intermediate", music: "Fuego - Pitbull", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/178608/fuego", demo: "https://www.youtube.com/watch?v=Tg_5_KvpnlY&t=69s", tutorial: "https://www.youtube.com/watch?v=sc5S2eG_9-E", info: "" },
 
   //--- G ---//
   { name: "Ghost Train", level: "Beginner", music: "Ghost Train (Goin Down Hill Fast) - Australia's Tornadoes", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/53823/ghost-train", demo: "", tutorial: "", info: "" },
@@ -62,10 +62,10 @@ const steppinOutDances = [
   { name: "I'm Free", level: "Beginner", music: "Love My Life (Adam Turner & James Hurr Remix) - Robbie Williams", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/N6F7S4F/im-free", demo: "", tutorial: "", info: "" },
 
   //--- J ---//
-  { name: "Jumanji", level: "High Intermediate", music: "JUMANJI - HEDEGAARD & Cancun", count: "64", walls: "1", stepsheet: "https://www.copperknob.co.uk/stepsheets/22R2929/jumanji", demo: "", tutorial: "", info: "" },
+  { name: "Jumanji", level: "High Intermediate", music: "JUMANJI - HEDEGAARD & Cancun", count: "64", walls: "1", stepsheet: "https://www.copperknob.co.uk/stepsheets/22R2929/jumanji", demo: "https://www.youtube.com/watch?v=vzTe5ghGyew", tutorial: "https://www.youtube.com/watch?v=j3AN2Z-XL9Y", info: "" },
 
   //--- L ---//
-  { name: "Liquor Talking", level: "Intermediate", music: "Liquor Talkin' - Don Louis", count: "48", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/62K3WKS/liquor-talking", demo: "", tutorial: "", info: "" },
+        { name: "Liquor Talking", level: "Intermediate", music: "Liquor Talkin' - Don Louis", count: "48", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/62K3WKS/liquor-talking", demo: "https://www.youtube.com/watch?v=8DjcRjVKwUs", tutorial: "https://www.youtube.com/watch?v=YcnqxPY8ZjQ", info: "" },   
 
   //--- M ---//
   { name: "Mamma Maria", level: "Absolute Beginner", music: "Mamma Maria - Ricchi E Poveri", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/77629/mamma-maria", demo: "https://www.youtube.com/watch?v=EScJ481h_Jw&t=28s", tutorial: "https://www.youtube.com/watch?v=DLxckLrVxyc", info: "" },
@@ -101,7 +101,7 @@ const steppinOutDances = [
   { name: "T.G.I.F.", level: "High Intermediate", music: "Just Got Paid - *NSYNC", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/B7H3L9R/tgif", demo: "https://www.youtube.com/watch?v=F7zjVa9kefY", tutorial: "https://www.youtube.com/watch?v=NblMlYZKzsc", info: "Hustle" },
   { name: "Take a Look at Yourself", level: "Intermediate", music: "Before You Accuse Me - Eric Burdon", count: "48", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/4VC6LHF/take-a-look-at-yourself", demo: "https://www.youtube.com/watch?v=tOcr8IcgWHM", tutorial: "https://www.youtube.com/watch?v=9ufUDdSdw8g", info: "" },
   { name: "Take Me to the Beach", level: "Easy Intermediate", music: "Take Me to the Beach (feat. Baker Boy) - Imagine Dragons", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/8WNZPD4/take-me-to-the-beach", demo: "", tutorial: "", info: "" },
-  { name: "Texas Girls", level: "Easy Intermediate", music: "Texas - Blake Shelton", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/BNRL26V/texas-girls", demo: "", tutorial: "", info: "" },
+  { name: "Texas Girls", level: "Easy Intermediate", music: "Texas - Blake Shelton", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/BNRL26V/texas-girls", demo: "https://www.youtube.com/watch?v=SVOybSm3brI", tutorial: "https://www.youtube.com/watch?v=wOSc0ofnvL8", info: "" },
   { name: "The Vibe", level: "Intermediate", music: "Vibe - Mullally", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/DKJHK4D/the-vibe", demo: "", tutorial: "", info: "" },
   { name: "Til the Neons Gone", level: "Improver", music: "Til the Neon's Gone - Josh Mirenda", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/SSB5V8C/til-the-neons-gone", demo: "", tutorial: "", info: "" },
 
