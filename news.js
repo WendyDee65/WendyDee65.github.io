@@ -1,5 +1,5 @@
 const news = {
-  month: "August 2026",
+  month: "September 2026",
 
   announcements: [
     "September is Review Month!",
