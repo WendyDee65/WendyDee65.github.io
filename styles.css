@@ -326,6 +326,20 @@ HOME PAGE
    SCHEDULE PAGE
 ========================= */
 
+/* Schedule Calendar */
+
+.schedule-calendar {
+  width: 100%;
+  margin: 0 auto 35px;
+}
+
+.schedule-calendar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 .schedule-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
@@ -340,6 +354,41 @@ HOME PAGE
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+/* Schedule Calendar */
+
+.calendar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.calendar-container h2 {
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.calendar-note {
+  margin-bottom: 20px;
+}
+
+.calendar-pdf {
+  width: 100%;
+  height: 850px;
+  border: none;
+  background: white;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+}
+
+.calendar-download {
+  margin-top: 15px;
+}
+
+.calendar-download a {
+  color: var(--primary);
+  font-weight: 600;
 }
 
 .schedule-card h2 {
@@ -511,6 +560,20 @@ form button {
   margin-top: 10px;
 }
 
+/* Announcements */
+.announcements-list {
+  margin-left: 25px;
+}
+
+.announcements-list p {
+  margin: 0.4rem 0;
+}
+
+.announcement-date {
+  display: inline-block;
+  width: 90px;
+}
+
 .news-dance-list {
   display: grid;
   gap: 0.5rem;
@@ -530,6 +593,19 @@ form button {
   color: var(--primary);
   font-weight: bold;
   text-decoration: none;
+}
+
+/* Field Trip Links */
+
+.news-dance-item a.field-trip-link {
+  color: #4b3b5a;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.news-dance-item a.field-trip-link:hover {
+  color: #72506f;
+  text-decoration: underline;
 }
 
 .news-dance-item a:hover {

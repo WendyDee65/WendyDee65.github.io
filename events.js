@@ -1,19 +1,11 @@
 const events = [
 
     {
-    date: "August 9, 2026",
-    title: "Blast & Brew - Just Dance 3-5 PM  (Cost: free! Support by buying food & drinks!) ",
+    date: "September 13, 2026",
+    title: "Longbranch Saloon - Just Dance - Way out West  noon - ? PM  (Cost: free! Support by buying food & drinks!) ",
     type: "Group Outing",
-    location: "Atascadero, CA",
-    link: "https://blastandbrewatown.com/"
-  },
-
-    {
-    date: "August 13-16, 2026",
-    title: "BLISS (Biggest Little Iconic Summer Stompdown (Sold Out) ",
-    type: "Event",
-    location: "Reno, CA",
-    link: "https://www.nvlinedance.com/bliss"
+    location: "Creston, CA",
+    link: "https://wearewayoutwestband.com/shows"
   },
 
   {
@@ -57,9 +49,18 @@ const events = [
   },
     {
     date: "April 22-25, 2027",
-    title: "Heart Of Texas - Details TBD",
+    title: "Heart Of Texas",
     type: "Event",
-    location: "Dallas, CA",
+    location: "Dallas, TX",
     link: "https://hotheartoftexas.com/"
-  }
+  },
+
+  {
+    date: "August 12 - 15, 20267",
+    title: "BLISS (Biggest Little Iconic Summer Stompdown (Sold Out) ",
+    type: "Event",
+    location: "Reno, CA",
+    link: "https://www.nvlinedance.com/bliss"
+  },
+
 ];

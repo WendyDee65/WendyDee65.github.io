@@ -19,7 +19,7 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="news.html">Current News</a>
-    <a href="schedule.html">Schedule</a>
+    <a href="schedule.html">Monthly Calendar</a>
     <a href="listOfDances.html">List of Dances</a>
     <a href="events.html">Events</a>
     <a href="gallery.html">Photo Gallery</a>
@@ -104,10 +104,11 @@ function danceTitle(dance) {
     <div class="card news-card">
       <h2>🍇 ${news.month} Updates</h2>
 
-      <h3>Announcements</h3>
-      <ul>
-        ${news.announcements.map(item => `<li>${item}</li>`).join("")}
-      </ul>
+       <h3>Announcements</h3>
+
+        <div class="announcements-list">
+          ${news.announcements.map(item => `<p>${item}</p>`).join("")}
+        </div>
 
       <h3>Current Schedule Updates - <a href="schedule.html">Details</a></h3>    
   
@@ -130,7 +131,7 @@ function danceTitle(dance) {
         <div class="news-dance-item">
           ${trip.title ? `<h4>${trip.title}</h4>` : ""}
           <p>${trip.description}</p>
-          ${trip.link ? `<a href="${trip.link}" target="_blank" rel="noopener noreferrer">${trip.linkText}</a>` : ""}
+             ${trip.link ? `<a class="field-trip-link" href="${trip.link}" target="_blank" rel="noopener noreferrer">${trip.linkText}</a>` : ""}
         </div>
       `).join("")}
     </div>

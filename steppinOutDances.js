@@ -75,6 +75,7 @@ const steppinOutDances = [
 
   //--- O ---//
   { name: "One More Silver Dollar", level: "Beginner", music: "Everything I Love - Morgan Wallen", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/P9682WZ/one-more-silver-dollar", demo: "", tutorial: "", info: "" },
+  { name: "Opalite", level: "Improver", music: "Opalite - Taylor Swift", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/389MQZY/opalitet", demo: "https://www.youtube.com/watch?v=6cXbsi1fXwM", tutorial: "https://www.youtube.com/watch?v=VuRg3XOOrxE", info:"" },
   { name: "Ooh La La", level: "Intermediate", music: "Ooh La La - Jessie Ware", count: "64", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/202006/ooh-la-la", demo: "https://www.youtube.com/watch?v=Bz0Xxdc_BLw", tutorial: "https://www.youtube.com/watch?v=6S1tvlZbpFY&t=5s", info: "" },
   { name: "Our Kingdom", level: "Easy Advanced", music: "Our Kingdom - Valley Of Wolves", count: "88", walls: "1", stepsheet: "https://www.copperknob.co.uk/stepsheets/195435/our-kingdom", demo: "https://www.youtube.com/watch?v=Q20hEdrNZsE", tutorial: "https://www.youtube.com/watch?v=qcKwXAlna4E&t=1s", info: "Phrased" },
   { name: "Our Own Party", level: "Intermediate", music: "Dance (Our Own Party) - The Busker", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/8NGD5YH/our-own-party", demo: "", tutorial: "", info: "" },
