@@ -56,8 +56,8 @@ const events = [
   },
 
   {
-    date: "August 12 - 15, 20267",
-    title: "BLISS (Biggest Little Iconic Summer Stompdown (Sold Out) ",
+    date: "August 12 - 15, 2027",
+    title: "BLISS (Biggest Little Iconic Summer Stompdown",
     type: "Event",
     location: "Reno, CA",
     link: "https://www.nvlinedance.com/bliss"
