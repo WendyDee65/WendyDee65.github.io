@@ -1,4 +1,5 @@
 const galleryImages = [
+  "gallery/IMG_2096.jpg",
   "gallery/20210622_183528.jpg",
   "gallery/Centennial Park Line Dance Class.jpg",
   "gallery/Dancing to Joy Bonner.jpg",

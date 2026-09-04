@@ -10,7 +10,7 @@ const news = {
      "&nbsp;",
  
     "<strong>Make plans to come on the 5th week</strong> -- It's going to be a party! Both Tina and Wendy will be teaching some fun party dances (which may include circle, partner, contra, and downright 'silly' options).",
-    "<Strong>Line Dance Boot Camp </strong>- A new introductory class will be scheduled once we have four dancers signed-up. If you are interested, contact Tina."
+    "<Strong>Line Dance Boot Camp </strong>- Scheduled for 9/19 and 9/26 (Saturdays) 9 - 11 AM.  $40 for the 2-week series.  Contact Tina to register."
   ],
   scheduleUpdates: [
     "Tuesday line dance parties continue every week this month.",
