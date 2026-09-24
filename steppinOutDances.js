@@ -69,6 +69,7 @@ const steppinOutDances = [
 
   //--- M ---//
   { name: "Mamma Maria", level: "Absolute Beginner", music: "Mamma Maria - Ricchi E Poveri", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/77629/mamma-maria", demo: "https://www.youtube.com/watch?v=EScJ481h_Jw&t=28s", tutorial: "https://www.youtube.com/watch?v=DLxckLrVxyc", info: "" },
+  { name: "Mucho Gusto", level: "High Intermediate", music: "Uh-huh (Ajá) - Frank Ray", count: "80", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/6MRR8Q6/mucho-gusto", demo: "", tutorial: "https://www.youtube.com/watch?v=_J1h1EmtzYk", info: "" },
 
   //--- N ---//
   { name: "No Remorse", level: "Intermediate", music: "Not Your Man - Teddy Swims", count: "64", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/RMY28MZ/no-remorse", demo: "https://www.youtube.com/watch?v=X9s3PWPgfcQ", tutorial: "https://www.youtube.com/watch?v=B2JlOAwuysw&t=12s", info: "" },

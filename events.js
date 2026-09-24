@@ -1,12 +1,6 @@
 const events = [
 
-    {
-    date: "September 13, 2026",
-    title: "Longbranch Saloon - Just Dance - Way out West  noon - ? PM  (Cost: free! Support by buying food & drinks!) ",
-    type: "Group Outing",
-    location: "6258 Webster Rd, Creston, CA",
-    link: "https://wearewayoutwestband.com/shows"
-  },
+
 
   {
     date: "October 7-11, 2026",
@@ -16,6 +10,13 @@ const events = [
     link: "https://windycitylinedancemania.com/"
    },
 
+    {
+    date: "October 16, 2026 - 5:30 - 7:30 PM",
+    title: "Gone Country at the Castle - $ Free but stick around for dinner and drinks!",
+    type: "Group Outing",
+    location: "3090 Anderson Road, Paso Robles • Hwy 46 West",
+    link: "https://theandersonpaso.com/about"
+  },
    {
     date:  "November  9-14, 2026",
     title: "Vegas Dance Explosion",
@@ -23,6 +24,8 @@ const events = [
     location: "Las Vegas, NV",
     link: "https://www.vegasdanceexplosion.com/"
   },
+
+
 
   {
     date: "January 21-24, 2027",

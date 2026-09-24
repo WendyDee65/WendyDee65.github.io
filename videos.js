@@ -21,6 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Saddle On Up Demo"
     },
     {
+      url: "https://www.youtube.com/watch?v=ro5J8gQPHbs",
+      title: "Born in Boots Demo"
+    },
+    {
       url: "https://www.youtube.com/watch?v=wmqT5_pZ37Q",
       title: "Girlie Girlie Demo"
     },

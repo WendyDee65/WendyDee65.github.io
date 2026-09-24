@@ -88,10 +88,8 @@ const steppinOutNews = {
       {
         date: "September 24, 2026",
         dances: [
-          "Come Dance With Me",
-          "Going Blonde",
-          "Calum' Rise",
-          "Something in the Water",
+          "Add a Little Flavor",
+          "Raised Like That",
           "Liquor Talking (Short Review)"
         ]
       }
