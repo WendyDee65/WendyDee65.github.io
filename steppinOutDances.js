@@ -41,6 +41,7 @@ const steppinOutDances = [
 
   //--- E ---//
   { name: "Edamame", level: "Easy Intermediate", music: "edamame (feat. Rich Brian) - bbno$", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/160054/edamame", demo: "https://www.youtube.com/watch?v=LuAYc5hrPnI", tutorial: "https://www.youtube.com/watch?v=6S3izW3ICqQ", info: "" },
+  { name: "Esther", level: "Intermediate", music: "Esther - BAYNK & Tinashe", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/5D3HS34/esther", demo: "https://www.youtube.com/watch?v=kkaWwr41zmo", tutorial: "https://www.youtube.com/watch?v=P9pxeW-pTM8", info: "" },
 
   //--- F ---//
   { name: "Fuego", level: "Intermediate", music: "Fuego - Pitbull", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/178608/fuego", demo: "https://www.youtube.com/watch?v=Tg_5_KvpnlY&t=69s", tutorial: "https://www.youtube.com/watch?v=sc5S2eG_9-E", info: "" },
@@ -69,7 +70,7 @@ const steppinOutDances = [
 
   //--- M ---//
   { name: "Mamma Maria", level: "Absolute Beginner", music: "Mamma Maria - Ricchi E Poveri", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/77629/mamma-maria", demo: "https://www.youtube.com/watch?v=EScJ481h_Jw&t=28s", tutorial: "https://www.youtube.com/watch?v=DLxckLrVxyc", info: "" },
-  { name: "Mucho Gusto", level: "High Intermediate", music: "Uh-huh (Ajá) - Frank Ray", count: "80", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/6MRR8Q6/mucho-gusto", demo: "", tutorial: "https://www.youtube.com/watch?v=_J1h1EmtzYk", info: "" },
+  { name: "Mucho Gusto", level: "High Intermediate", music: "Uh-huh (Ajá) - Frank Ray", count: "80", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/6MRR8Q6/mucho-gusto", demo: "https://www.youtube.com/watch?v=PUrtSrSeujs", tutorial: "https://www.youtube.com/watch?v=_J1h1EmtzYk", info: "" },
 
   //--- N ---//
   { name: "No Remorse", level: "Intermediate", music: "Not Your Man - Teddy Swims", count: "64", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/RMY28MZ/no-remorse", demo: "https://www.youtube.com/watch?v=X9s3PWPgfcQ", tutorial: "https://www.youtube.com/watch?v=B2JlOAwuysw&t=12s", info: "" },

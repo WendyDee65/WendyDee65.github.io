@@ -1,34 +1,28 @@
 const news = {
-  month: "September 2026",
+  month: "October 2026",
 
   announcements: [
-    "September is Review Month!",
-    "<strong>For most of the month</strong>, Tina and Wendy will focus on reviews.",  
-    "For the beginner hour, contact Tina to request reviews."  ,
-    "For the improver hour, your requests are listed on the website.",
-    "Wendy will also teach 'Opalite' (a *very easy* improver) the first week.",
-     "&nbsp;",
- 
-    "<strong>Make plans to come on the 5th week</strong> -- It's going to be a party! Both Tina and Wendy will be teaching some fun party dances (which may include circle, partner, contra, and downright 'silly' options).",
-    "<Strong>Line Dance Boot Camp </strong>- Scheduled for 9/19 and 9/26 (Saturdays) 9 - 11 AM.  $40 for the 2-week series.  Contact Tina to register."
+  "Welcome Autumn!", 
+  "&nbsp",
+  "This fall we will introduce new line dance patterns and plan to meet at The Anderson for a group activity. (see below) ",
   ],
   scheduleUpdates: [
     "Tuesday line dance parties continue every week this month.",
-    "Thursday classes will be held every week this month"
+    "Thursday classes will be on Thursdays this month except for October 8th."
   ],
 
-  //scheduleAlerts: [
-  //  "No Thursday class on August 13th or 20th"
-  //],
+  scheduleAlerts: [
+    "No Thursday class on October 8th"
+  ],
    scheduleAlerts: [
   ],
 
   fieldTrips: [
     {
-      title: "September Dance Outing",
-      description: "We are planning a group outing on Sunday September 13 at the Longbranch Saloon from noon - ?.  <br>Address: 6258 Webster Rd, Creston, CA<br> The Way Out West band will be performing.  <br> As soon as the setlist is available we will post it (with matching line dance patterns) on our website.",
-      linkText: "Way Out West",
-      link: "https://wearewayoutwestband.com/"
+      title: "October Dance Outing",
+      description: "The Anderson (Formerly Tooth & Nail) has graciously allowed us to use the rooftop patio for a two-hour *Just Dance* event. The event will occur on Friday, 10/16/26, 5:30 - 7:30 PM. After the dance, we encourage everyone to stay for dinner at their new restaurant. Drinks will be available for purchase during the event. Feel free to invite your significant other, friends, or family to join us for dinner.",
+      linkText: "The Anderson",
+      link: "https://theandersonpaso.com/"
     }
 
   ],
@@ -37,14 +31,8 @@ const news = {
     title: "Beginner / High Beginner Hour",
     dances: 
     [
-        {
-        name: "Tina will review dances from the past 6 months.  Contact her to request your favorite.",
-        level: "",
-        info: "",
-        stepsheet: "",
-        demo: "",
-        tutorial: ""
-      } ],
+    { name: "Don't Wanna Go Home", level: "Beginner", music: "Don't Wanna Go Home", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/M2XTM5Z/dont-wanna-go-home", demo: "https://www.youtube.com/watch?v=oa_ik8Z2O6I", tutorial: "https://www.youtube.com/watch?v=kIacVdPZESw", info:"" },
+    ],
  /*   justDance: [
       {
         name: "By Request.  Just remember to write your request on the whiteboard for the next week!",
@@ -58,35 +46,18 @@ const news = {
   },
 
   improverHour: {
-    title: "Improver / High Improver Hour  (2 dances reviewed per week in September)",
+    title: "Improver / High Improver Hour",
     dances: [
-        { name: "Opalite", level: "Improver", music: "Opalite - Taylor Swift", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/389MQZY/opalitet", demo: "https://www.youtube.com/watch?v=6cXbsi1fXwM", tutorial: "https://www.youtube.com/watch?v=VuRg3XOOrxE", info:"" },       
-        { name: "The Wolf", level: "Improver", music: "The Wolf - The Spencer Lee Band", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/93HFRDG/the-wolf", demo: "https://www.youtube.com/watch?v=nLGSGguOvh8", tutorial: "https://www.youtube.com/watch?v=Pl4SLzkX810", info:"" },
-        
-        { name: "Bigger Houses", level: "Beginner", music: "Bigger Houses - Dan + Shay", count: "16", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/FYPRFH5/bigger-houses-wdm25", demo: "https://www.youtube.com/watch?v=rY3O661XUUA", tutorial: "https://www.youtube.com/watch?v=LL7KdZ2gfms", info: "" },
-        { name: "Wonderland Waltz", level: "Improver", music: "Welcome to Mystery - Plain White T's", count: "648", walls: "2",stepsheet: "https://www.copperknob.co.uk/stepsheets/6S3JC7R/wonderland-waltz", demo: "https://www.youtube.com/watch?v=9rL9Iw7vYBs&t=37s", tutorial: "https://www.youtube.com/watch?v=YDzYh1BGk78&t=1s", info: "",},
-        
-        { name: "Do Si Dough", level: "High Beginner", music: "Do Si Dough - Josiah Siska", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/CT3L6XC/do-si-dough", demo: "https://www.youtube.com/watch?v=YgbrkmTPTfM", tutorial: "https://www.youtube.com/watch?v=AsCS6c-G1_Q", info:"" },
-        { name: "Right Foot First", level: "Improver", music: "Right Foot First - Crash Adams", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/C72F253/right-foot-first", demo: "https://www.youtube.com/watch?v=woasm8NhQs4", tutorial: "https://www.youtube.com/watch?v=Q4qX3h7QHRo", info:"" },
-
-        { name: "Wave On Wave", level: "Improver", music: "Wave On Wave - Pat Green", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/T2VVCPP/wave-on-wave", demo: "https://www.youtube.com/watch?t=38s&v=moklaSzRVAM", tutorial: "https://www.youtube.com/watch?v=IcIzTC8qGOA", info:"" },
-        { name: "Role Model", level: "High Improver", music: "Be Her - Ella Langley", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/R247MW4/role-model", demo: "https://www.youtube.com/watch?v=yA-DIL4AnEY", tutorial: "https://www.youtube.com/watch?v=SpXtqDm9Ndg", info:"" },
+        { name: "Turn This Town", level: "High Beginner", music: "Turn This Town (Into a Honky Tonk) - Spencer Hatcher", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/7FF8V5F/turn-this-town", demo: "https://www.youtube.com/watch?v=GYrXDCCthVw", tutorial: "https://www.youtube.com/watch?v=x9G-Gj_6COo", info:"" },
+        { name: "Your Love Amazes Me", level: "High Improver", music: "Your Love Amazes Me - Westlife", count: "28", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/XNFN6K7/your-love-amazes-me", demo: "https://www.youtube.com/watch?v=OEzWa01uRxQ", tutorial: "https://www.youtube.com/watch?v=84vJthNyqqw", info:"" },
 
       ]
     },
   thursdayHour: {
     title: "Thursday Featured Dances - All Reviews this month (2 per week)",
     dances: [
-        { name: "No Remorse", level: "Intermediate", music: "Not Your Man - Teddy Swims", count: "64", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/RMY28MZ/no-remorse", demo: "https://www.youtube.com/watch?v=X9s3PWPgfcQ", tutorial: "https://www.youtube.com/watch?v=B2JlOAwuysw&t=12s", info: "" }, 
-        { name: "Opalite", level: "Improver", music: "Opalite - Taylor Swift", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/389MQZY/opalitet", demo: "https://www.youtube.com/watch?v=6cXbsi1fXwM", tutorial: "https://www.youtube.com/watch?v=VuRg3XOOrxE", info:"" },       
-        
-        { name: "Sweet Portland Dreams", level: "High Intermediate", music: "Sweet Dreams (Are Made of This) - Eurythmics", count: "64", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/L6P8PGC/sweet-portland-dreams", demo: "https://www.youtube.com/watch?v=pHfX1g9B_ro", tutorial: "https://www.youtube.com/watch?v=f8lYcUY5VBQ", info:"" },
-        { name: "Jumanji", level: "High Intermediate", music: "JUMANJI - HEDEGAARD & Cancun", count: "64", walls: "1", stepsheet: "https://www.copperknob.co.uk/stepsheets/22R2929/jumanji", demo: "https://www.youtube.com/watch?v=vzTe5ghGyew", tutorial: "https://www.youtube.com/watch?v=j3AN2Z-XL9Y", info: "" },
-        { name: "Liquor Talking", level: "Intermediate", music: "Liquor Talkin' - Don Louis", count: "48", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/62K3WKS/liquor-talking", demo: "https://www.youtube.com/watch?v=8DjcRjVKwUs", tutorial: "https://www.youtube.com/watch?v=YcnqxPY8ZjQ", info: "" },   
-        { name: "Texas Girls", level: "Easy Intermediate", music: "Texas - Blake Shelton", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/BNRL26V/texas-girls", demo: "https://www.youtube.com/watch?v=SVOybSm3brI", tutorial: "https://www.youtube.com/watch?v=wOSc0ofnvL8", info: "" },
         { name: "Fuego", level: "Intermediate", music: "Fuego - Pitbull", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/178608/fuego", demo: "https://www.youtube.com/watch?v=Tg_5_KvpnlY&t=69s", tutorial: "https://www.youtube.com/watch?v=sc5S2eG_9-E", info: "" },
-        { name: "Raised Like That", level: "High Improver", music: "Raised Like That - James Johnston", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/154113/raised-like-that", demo: "https://www.youtube.com/watch?v=_NFUvWDfyZE", tutorial: "https://www.youtube.com/watch?v=kH8CbDkP7AY&t=6s", info: "" },
-        { name: "Add a Little Flavor", level: "Improver", music: "Flavor (feat. Vikina) - Jimmie Allen, Pitbull & Teamwork", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/9GLQ453/add-a-little-flavor", demo: "https://www.youtube.com/watch?v=5n0lHPJ7d4E", tutorial: "https://www.youtube.com/watch?v=iZnU4HJjMLU", info: "" },
+        { name: "Esther", level: "Intermediate", music: "Esther - BAYNK & Tinashe", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/5D3HS34/esther", demo: "https://www.youtube.com/watch?v=kkaWwr41zmo", tutorial: "https://www.youtube.com/watch?v=P9pxeW-pTM8", info: "" },
         ]
   }
   

@@ -1,20 +1,19 @@
 const steppinOutNews = {
-  month: "September 2026",
+  month: "October 2026",
 
   announcements: [
 
     "Hi Dancers!",
-    "This month we are focusing on all reviews. ",
-    "Each week we will review a few dances from previous lessons.",
+    "&nbsp",
+    "This month we will be learning the Wild Card Dance of the Year from Line Light Awards!",
      "&nbsp;",
-    "9/03/26 -      No Remorse  &  Opalite",
-    "9/10/26 -      Sweet Portland Dreams  &  Jumanji",
-    "9/17/26 -      Liquor Talking  &  Texas Girls",
-    "9/24/26 -      Fuego, Raised Like That & Add a Little Flavor"
+    "Esther by Chris Jacques",
+    "&nbsp;",
+    "We will also review Fuego since we didn't get to it last month"
   ],
 
   scheduleUpdates: [
-    "Dates:  Every Thursday in September",
+    "Dates:  October 1, 15, 22, and 29",
     "Time: 4:30  (warmup) 5:00 - 6:30 PM (lesson)",
     "Where:  Community Church of Atascadero - Fellowship Hall (Behind the church)",
     "Address: 5850 Rosario Ave, Atascadero, CA 93422",
@@ -22,27 +21,17 @@ const steppinOutNews = {
   ],
 
   // leave this blank if no alerts:  scheduleAlerts: []
-  //scheduleAlerts: [
-  // "No Thursday class on August 13th or 20th"
-  //],
-
   scheduleAlerts: [
-  ],
+  "No Thursday class on October  8th"],
+  //scheduleAlerts: [
+  //],
 
   featuredDances: {
     title: "Lessons this month",
 
     dances: [
-        { name: "No Remorse", level: "Intermediate", music: "Not Your Man - Teddy Swims", count: "64", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/RMY28MZ/no-remorse", demo: "https://www.youtube.com/watch?v=X9s3PWPgfcQ", tutorial: "https://www.youtube.com/watch?v=B2JlOAwuysw&t=12s", info: "" }, 
-        { name: "Opalite", level: "Improver", music: "Opalite - Taylor Swift", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/389MQZY/opalitet", demo: "https://www.youtube.com/watch?v=6cXbsi1fXwM", tutorial: "https://www.youtube.com/watch?v=VuRg3XOOrxE", info:"" },       
-        
-        { name: "Sweet Portland Dreams", level: "High Intermediate", music: "Sweet Dreams (Are Made of This) - Eurythmics", count: "64", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/L6P8PGC/sweet-portland-dreams", demo: "https://www.youtube.com/watch?v=pHfX1g9B_ro", tutorial: "https://www.youtube.com/watch?v=f8lYcUY5VBQ", info:"" },
-        { name: "Jumanji", level: "High Intermediate", music: "JUMANJI - HEDEGAARD & Cancun", count: "64", walls: "1", stepsheet: "https://www.copperknob.co.uk/stepsheets/22R2929/jumanji", demo: "https://www.youtube.com/watch?v=vzTe5ghGyew", tutorial: "https://www.youtube.com/watch?v=j3AN2Z-XL9Y", info: "" },
-        { name: "Liquor Talking", level: "Intermediate", music: "Liquor Talkin' - Don Louis", count: "48", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/62K3WKS/liquor-talking", demo: "https://www.youtube.com/watch?v=8DjcRjVKwUs", tutorial: "https://www.youtube.com/watch?v=YcnqxPY8ZjQ", info: "" },   
-        { name: "Texas Girls", level: "Easy Intermediate", music: "Texas - Blake Shelton", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/BNRL26V/texas-girls", demo: "https://www.youtube.com/watch?v=SVOybSm3brI", tutorial: "https://www.youtube.com/watch?v=wOSc0ofnvL8", info: "" },
         { name: "Fuego", level: "Intermediate", music: "Fuego - Pitbull", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/178608/fuego", demo: "https://www.youtube.com/watch?v=Tg_5_KvpnlY&t=69s", tutorial: "https://www.youtube.com/watch?v=sc5S2eG_9-E", info: "" },
-        { name: "Raised Like That", level: "High Improver", music: "Raised Like That - James Johnston", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/154113/raised-like-that", demo: "https://www.youtube.com/watch?v=_NFUvWDfyZE", tutorial: "https://www.youtube.com/watch?v=kH8CbDkP7AY&t=6s", info: "" },
-        { name: "Add a Little Flavor", level: "Improver", music: "Flavor (feat. Vikina) - Jimmie Allen, Pitbull & Teamwork", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/9GLQ453/add-a-little-flavor", demo: "https://www.youtube.com/watch?v=5n0lHPJ7d4E", tutorial: "https://www.youtube.com/watch?v=iZnU4HJjMLU", info: "" },
+        { name: "Esther", level: "Intermediate", music: "Esther - BAYNK & Tinashe", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/5D3HS34/esther", demo: "https://www.youtube.com/watch?v=kkaWwr41zmo", tutorial: "https://www.youtube.com/watch?v=P9pxeW-pTM8", info: "" },
         ]
   },
 
@@ -51,46 +40,51 @@ const steppinOutNews = {
 
     weeks: [
       {
-        date: "September 3, 2026",
+        date: "October 1, 2026",
         dances: [
-          "Mamma Maria",
-          "She's a Natural (Country Girl)",
+          "American Kids",
+          "Edamame",
           "Siempre",
-          "Got to be Funky",
-          "Johnnie Walker Blues",
-          "Take A Look At Yourself (Short Review)",
+          "The Outlaw",
+          "Something in the Water",
+          "Bringing it Back",
+          "Come Dance With Me",
         ]
       },
 
       {
-        date: "September 10, 2026",
+        date: "October 15, 2026",
         dances: [
-          "Til the Neon's Gone",
-          "I Close My Eyes",
-          "3 Tequila Floor",
+          "Going Blonde",
+          "Stomp 2,3,4",
+          "Ghost Train",
+          "I'm Free",
           "Opalite",
-          "Take a Look At Yourself",
-          "Take Me to The Beach",
-          "No Remorse (Short Review)"
+          "One More Silver Dollar",
+          "Back on Texas Time",
+          "Broke",
+          "Opalite",
         ]
       },
       {
-        date: "September 17, 2026",
+        date: "October 22, 2026",
         dances: [
-          "Goin' Hamm",
-          "Un Poquito",
-          "Calum' Rise",
-          "Boots on Bars",
-          "Codigo",
-          "Jumanji (Short Review)",
+          "Somewhere in Sedona",
+          "Texas Girls",
+          "Champagne Promise",
+          "Dizzy",
+          "Heaven's Jukebos",
         ]
       },
       {
-        date: "September 24, 2026",
+        date: "October 29, 2026",
         dances: [
-          "Add a Little Flavor",
-          "Raised Like That",
-          "Liquor Talking (Short Review)"
+          "Cold Heart",
+          "Hello Dolly",
+          "Redneck Angel",
+          "Bigger Houses",
+          "Got to be Funky",
+          "Johnnie Walker Blues",
         ]
       }
     ]
