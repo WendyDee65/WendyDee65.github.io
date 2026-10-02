@@ -1,6 +1,28 @@
 const resourceSections = [
+
   {
-    title: "Local Dance Resources",
+    title: "Printable Resources",
+    resources: [
+      {
+        title: "Longbranch Saloon Set List - 9/13/26",
+        description: "List of Songs with Matching Line Dance Patterns",
+        link: "Documents/Longbranch Saloon Set List 9-13-26.pdf"
+      },
+          {
+        title: "Blast & Brew Playlist - 8/9/26",
+        description: "Line dance playlist.",
+        link: "Documents/BlastAndBrewPlaylist20260809.pdf"
+      },
+      {
+        title: "Line Dance Steps Checklist",
+        description: "Track your progress",
+        link: "Documents/List of Steps.pdf"
+      }
+    ]
+  },
+
+  {
+    title: "Local Places to Dance & Info",
     resources: [
       {
         title: "805 Line Dancers",
@@ -9,26 +31,28 @@ const resourceSections = [
       },
       {
         title: "Cal Poly Country Line Dancing Club - CLDC",
-        description: "The CLDC is a student run social and dance club design to teach line dance, country and partner dancing.  It is welcome to the public.",
+        description: "The CLDC is a student-run social and dance club designed to teach line dance, country and partner dancing. It is open to the public.",
         link: "https://cldccalpoly.wixsite.com/cldccalpoly"
       }
     ]
   },
+
   {
-    title: "Regional Dance Resources",
+    title: "Regional Places to Dance",
     resources: [
       {
         title: "Maverick's Saloon Dancing with Vanessa",
-        description: "Vanessa Robertson hosts line dancing monthly at Maverick's saloon",
+        description: "Vanessa Robertson hosts line dancing monthly at Maverick's Saloon.",
         link: "https://www.mavericksaloon.com/"
       },
       {
         title: "Joel's Bakersfield Line Dancing",
-        description: "Great instruction and great fun multiple days of the week",
+        description: "Great instruction and great fun multiple days of the week.",
         link: "https://sites.google.com/view/joels-links/line-dancing-links"
       }
     ]
   },
+
   {
     title: "Line Dance Web Sites",
     resources: [
@@ -44,36 +68,26 @@ const resourceSections = [
       },
       {
         title: "Linedancer Web",
-        description: "Another source of Line Dance information.",
+        description: "Another source of line dance information.",
         link: "https://www.linedancerweb.com/"
       },
       {
         title: "Individual Step Tutorials",
-        description: "Videos of Individual Steps.",
+        description: "Videos of individual line dance steps.",
         link: "https://www.youtube.com/playlist?list=PLtT9OQNY5gpnlivGOOJOO6ORUBO25CmJh"
       }
     ]
   },
 
   {
-    title: "Printable Resources",
+    title: "Other Resources",
     resources: [
-      {
-        title: "Longbranch Saloon Set List - 9/13/26",
-        description: "List of Songs with Matching Line Dance Patterns",
-        link: "Documents/Longbranch Saloon Set List 9-13-26.pdf"
-      }, 
-      {
+        {
         title: "History of Line Dance",
         description: "Ever wonder when Line Dance Started?",
         link: "Documents/History of Line Dance.pdf"
       },
-      {
-        title: "Line Dance Steps Checklist",
-        description: "Track your progress",
-        link: "Documents/List of Steps.pdf"
-      }
     ]
-  },
+  }
+
 ];
-BlastAndBrewPlaylist20260809.pdf

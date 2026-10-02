@@ -1,736 +1,1438 @@
 /* ==========================================
+
    COLOR PALETTE
+
 ========================================== */
 
+
+
 :root {
+
   --primary: #5B3A29;
+
   --primary-dark: #452C20;
+
   --accent: #C56B32;
+
   --accent-hover: #A95728;
- 
+
+
+
   --background: #F8F5F1;
+
   --surface: #FFFFFF;
+
   --surface-alt: #EFE7DF;
 
+
+
   --text: #2D2D2D;
+
   --text-light: #FFFFFF;
+
+
 
   --border: #DDD5CD;
 
+
+
   --shadow: 0 3px 10px rgba(0,0,0,.10);
+
   --radius: 10px;
+
 }
 
+
+
 /* ==========================================
+
    RESET
+
 ========================================== */
+
+
 
 * {
+
   margin: 0;
+
   padding: 0;
+
   box-sizing: border-box;
+
 }
 
+
+
 /* ==========================================
+
    BODY
+
 ========================================== */
+
+
 
 body {
+
   font-family: "Open Sans", sans-serif;
+
   line-height: 1.6;
+
   background: var(--background);
+
   color: var(--text);
+
 }
 
+
+
 /* ==========================================
+
    HEADER
+
 ========================================== */
 
+
+
 header {
+
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
   flex-wrap: wrap;
+
+
 
   padding: 18px 30px;
 
+
+
   background: var(--primary);
+
   color: var(--text-light);
+
+
 
   box-shadow: var(--shadow);
+
 }
+
+
 
 h1, h2, h3 {
+
   font-family: "Merriweather", serif;
+
 }
 
+
+
 /* ==========================================
+
    LOGO
+
 ========================================== */
+
+
 
 .logo {
+
   display: flex;
+
   align-items: center;
+
   gap: 15px;
+
 }
+
+
 
 .logo img {
+
   width: 120px;
+
   height: auto;
+
 }
+
+
 
 .logo span {
+
   font-size: 1.4rem;
+
   font-weight: bold;
+
 }
 
+
+
 /* ==========================================
+
    NAVIGATION
+
 ========================================== */
+
+
 
 nav {
+
   display: flex;
+
   gap: 18px;
+
   flex-wrap: wrap;
+
 }
+
+
 
 nav a {
+
   color: var(--text-light);
+
   text-decoration: none;
+
   font-weight: bold;
+
   transition: color .25s ease;
+
 }
+
+
 
 nav a:hover {
+
   color: #FFD59A;
+
 }
 
 
+
+
+
 /* ==========================================
+
    SECTIONS
+
 ========================================== */
+
+
 
 .section {
+
   background: var(--surface);
+
   padding: 40px 20px;
+
   text-align: center;
+
 }
+
+
 
 .section.alt {
+
   background: var(--surface-alt);
+
 }
+
+
 
 .section h2 {
+
   margin-bottom: 20px;
+
   color: var(--primary);
+
 }
 
+
+
 /* ==========================================
+
    GRID
+
 ========================================== */
+
+
 
 .grid {
+
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+
   gap: 25px;
+
   margin-top: 30px;
+
   justify-items: center;
+
 }
 
+
+
 /* ==========================================
+
    CARDS
+
 ========================================== */
 
+
+
 .card {
+
   background: var(--surface);
 
+
+
   border-radius: var(--radius);
+
+
 
   padding: 25px;
 
+
+
   box-shadow: var(--shadow);
 
+
+
   transition: transform .25s ease,
+
               box-shadow .25s ease;
+
 }
+
+
 
 .card:hover {
+
   transform: translateY(-5px);
+
   box-shadow: 0 8px 18px rgba(0,0,0,.15);
+
 }
+
+
 
 .card h3 {
+
   margin-bottom: 12px;
+
   color: var(--primary);
+
 }
 
+
+
 /* ==========================================
+
    BUTTONS
+
 ========================================== */
 
+
+
 .btn {
+
   display: inline-block;
 
+
+
   margin-top: 15px;
+
+
 
   padding: 10px 18px;
 
+
+
   background: var(--accent);
+
   color: white;
+
+
 
   border-radius: 6px;
 
+
+
   text-decoration: none;
 
+
+
   font-weight: bold;
+
+
 
   transition: background .25s ease;
+
 }
+
+
 
 .btn:hover {
+
   background: var(--accent-hover);
+
 }
 
+
+
 /* =========================
+
    DANCE FILTERS
+
 ========================= */
+
+
 
 .dance-filters {
+
   display: flex;
+
   gap: 1rem;
+
   flex-wrap: wrap;
+
   margin-bottom: 1rem;
+
   align-items: center;
+
 }
+
+
 
 .dance-filters label {
+
   font-weight: 600;
+
   color: #4b3b5a;      /* Matches your purple/brown theme */
+
 }
+
+
 
 .dance-filters select {
+
   margin-left: 0.4rem;
+
   padding: 0.45rem 0.7rem;
+
   border: 1px solid #c7b8d8;
+
   border-radius: 6px;
+
   background: white;
+
   font-size: 0.95rem;
+
 }
+
 /* ==========================================
+
    TABLES
+
 ========================================== */
 
+
+
 table {
+
   width: 100%;
+
   border-collapse: collapse;
+
   background: var(--surface);
+
 }
+
+
 
 table th {
+
   background: var(--primary);
+
   color: white;
+
 }
+
+
 
 table th,
+
 table td {
+
   padding: 12px;
+
   border-bottom: 1px solid var(--border);
+
   text-align: left;
+
   line-height: 1.1;
+
 }
+
+
 
 table tbody tr:nth-child(even) {
+
   background: #FAF7F3;
+
 }
+
+
 
 table tbody tr:hover {
+
   background: #F2ECE5;
+
 }
 
+
+
 /* =========================
+
 HOME PAGE  
+
 ==========================*/
 
+
+
 .welcome-text {
+
   margin-bottom: 1rem;
+
 }
+
+
 
 .subscribe-button {
+
   display: inline-block;
+
   padding: 0.7rem 1.25rem;
+
   background-color: #72506f;
+
   color: white;
+
   text-decoration: none;
+
   font-weight: 600;
+
   border-radius: 6px;
+
 }
+
+
 
 .subscribe-button:hover,
+
 .subscribe-button:focus {
+
   background-color: #5d405a;
+
   color: white;
+
 }
+
 /* =========================
+
    HOME PAGE INSTRUCTOR CARDS
+
 ========================= */
+
+
 
 .instructor-section {
+
   max-width: 1100px;
+
   margin: 0 auto;
+
   padding: 0.5rem 1rem 2rem;
+
 }
+
+
 
 .instructor-section h2 {
+
   text-align: center;
+
   margin: 0 0 1rem;
+
 }
+
+
 
 .instructor-container {
+
   display: flex;
+
   justify-content: center;
+
   gap: 2rem;
+
   flex-wrap: wrap;
+
   margin: 0;
+
 }
+
+
 
 .instructor-card {
+
   flex: 1 1 320px;
+
   max-width: 400px;
+
   background: white;
+
   border-radius: 12px;
+
   padding: 1.5rem;
+
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
   text-align: center;
+
 }
+
+
 
 .instructor-card img {
+
   width: 115px;
+
   height: 115px;
+
   object-fit: cover;
+
   border-radius: 50%;
+
   float: left;
+
   margin: 0 1rem 0.75rem 0;
+
   border: 4px solid #f3eef7;
+
 }
+
+
 
 .instructor-card h3 {
+
   color: var(--primary);
+
   margin: 0.25rem 0 15px;
+
 }
+
+
 
 .instructor-card p {
+
   line-height: 1.6;
+
   text-align: left;
+
 }
+
 /* =========================
+
    SCHEDULE PAGE
+
 ========================= */
 
+
+
 /* Schedule Calendar */
+
+
 
 .schedule-calendar {
+
   width: 100%;
+
   margin: 0 auto 35px;
+
 }
+
+
 
 .schedule-calendar img {
+
   display: block;
+
   width: 100%;
+
   height: auto;
+
   margin: 0 auto;
+
 }
+
+
 
 .schedule-grid {
+
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+
   gap: 30px;
+
   max-width: 1300px;
+
   margin: auto;
+
   align-items: stretch;
+
 }
 
+
+
 .schedule-card {
+
   text-align: left;
+
   display: flex;
+
   flex-direction: column;
+
   height: 100%;
+
 }
+
+
 
 /* Schedule Calendar */
 
+
+
 .calendar-container {
+
   max-width: 1100px;
+
   margin: 0 auto;
+
   text-align: center;
+
 }
+
+
 
 .calendar-container h2 {
+
   margin-bottom: 10px;
+
   color: var(--primary);
+
 }
+
+
 
 .calendar-note {
+
   margin-bottom: 20px;
+
 }
+
+
 
 .calendar-pdf {
+
   width: 100%;
+
   height: 850px;
+
   border: none;
+
   background: white;
+
   box-shadow: var(--shadow);
+
   border-radius: var(--radius);
+
 }
+
+
 
 .calendar-download {
+
   margin-top: 15px;
+
 }
+
+
 
 .calendar-download a {
+
   color: var(--primary);
+
   font-weight: 600;
+
 }
+
+
 
 .schedule-card h2 {
+
   margin-bottom: 15px;
+
 }
+
+
 
 .schedule-card hr {
+
   margin: 12px 0;
+
 }
+
+
 
 .schedule-card p {
+
   margin-bottom: 8px;
+
 }
 
+
+
 /* =========================
+
    SCHEDULE NOTES
+
 ========================= */
+
+
 
 .schedule-note {
+
   margin-top: 20px;
+
   font-size: 16px;
+
 }
+
+
 
 .schedule-warning {
+
   color: red;
+
   font-weight: bold;
+
 }
 
+
+
 /* =========================
+
    CONTACT PAGE GRID
+
 ========================= */
+
+
 
 .contact-grid {
+
   display: grid;
+
   grid-template-columns: 1.3fr 1fr 1fr;
+
   gap: 25px;
+
   max-width: 1300px;
+
   margin: 30px auto 0;
+
   align-items: start;
+
 }
+
+
 
 .contact-card {
+
   text-align: left;
+
 }
+
+
 
 .contact-card h2 {
+
   color: var(--primary);
+
   margin-bottom: 12px;
+
   font-size: 1.25rem;
+
 }
+
+
 
 .contact-card form {
+
   box-shadow: none;
+
   padding: 0;
+
   background: transparent;
+
   max-width: none;
+
 }
+
+
 
 .contact-card label {
+
   display: block;
+
   margin-top: 10px;
+
   margin-bottom: 3px;
+
   font-weight: 600;
+
 }
+
+
 
 .contact-card input,
-.contact-card textarea {
-  width: 100%;
-  padding: 8px 10px;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  font-family: inherit;
-}
 
 .contact-card textarea {
-  min-height: 70px;
-  resize: vertical;
+
+  width: 100%;
+
+  padding: 8px 10px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 6px;
+
+  font-family: inherit;
+
 }
+
+
+
+.contact-card textarea {
+
+  min-height: 70px;
+
+  resize: vertical;
+
+}
+
+
 
 .contact-card .btn {
+
   width: 100%;
+
   margin-top: 15px;
+
 }
+
+
 
 .contact-line {
+
   display: flex;
+
   align-items: center;
+
   gap: 8px;
+
   margin-top: 10px;
+
 }
+
+
 
 .contact-card a {
+
   color: var(--primary);
+
   text-decoration: none;
+
 }
+
+
 
 .contact-card a:hover {
+
   text-decoration: underline;
+
 }
+
+
 
 .icon {
+
   font-size: 1rem;
+
 }
+
+
 
 @media (max-width: 900px) {
+
   .contact-grid {
+
     grid-template-columns: 1fr;
+
   }
+
 }
+
 /* =========================
+
    CONTACT FORMS
+
 ========================= */
+
+
 
 form {
+
   max-width: 600px;
+
   margin: auto;
+
   background: var(--surface);
+
   padding: 18px 22px;
+
   border-radius: 10px;
+
   box-shadow: var(--shadow);
+
 }
+
+
 
 form label {
+
   display: block;
+
   margin-top: 10px;
+
   margin-bottom: 3px;
+
   font-weight: 600;
+
 }
+
+
 
 form input,
-form textarea {
-  width: 100%;
-  padding: 8px 10px;
-  margin-top: 0;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  font-family: inherit;
-}
 
 form textarea {
-  min-height: 90px;
-  resize: vertical;
+
+  width: 100%;
+
+  padding: 8px 10px;
+
+  margin-top: 0;
+
+  border: 1px solid var(--border);
+
+  border-radius: 6px;
+
+  font-family: inherit;
+
 }
+
+
+
+form textarea {
+
+  min-height: 90px;
+
+  resize: vertical;
+
+}
+
+
 
 form button {
+
   margin-top: 15px;
+
 }
+
 /* =========================
+
    NEWS PAGE
+
 ========================= */
+
 .news-card {
+
   max-width: 1200px;
+
   margin: 0 auto 30px auto;
+
   text-align: left;
+
 }
+
+
 
 .news-card h2 {
+
   color: var(--primary);
+
   margin-bottom: 15px;
+
 }
+
+
 
 .news-card h3 {
+
   margin-top: 20px;
+
   color: #4b3b5a;
+
 }
+
+
 
 .news-card ul {
+
   margin-left: 25px;
+
   margin-top: 10px;
+
 }
+
+
 
 /* Announcements */
+
 .announcements-list {
+
   margin-left: 25px;
+
 }
+
+
 
 .announcements-list p {
+
   margin: 0.4rem 0;
+
 }
+
+
 
 .announcement-date {
+
   display: inline-block;
+
   width: 90px;
+
 }
 
+
+
 .news-dance-list {
+
   display: grid;
+
   gap: 0.5rem;
+
   margin: 20px 0;
+
 }
+
+
+
 
 
 .news-dance-item h4 {
+
   color: var(--primary);
+
   margin-bottom: 6px;
 
+
+
 }
 
+
+
 .news-dance-item a {
+
   display: inline-block;
+
   margin-right: 12px;
+
   color: var(--primary);
+
   font-weight: bold;
+
   text-decoration: none;
+
 }
+
+
 
 /* Field Trip Links */
 
+
+
 .news-dance-item a.field-trip-link {
+
   color: #4b3b5a;
+
   text-decoration: underline;
+
   font-weight: 600;
+
 }
+
+
 
 .news-dance-item a.field-trip-link:hover {
+
   color: #72506f;
+
   text-decoration: underline;
+
 }
+
+
 
 .news-dance-item a:hover {
+
   text-decoration: underline;
+
 }
+
+
 
 .schedule-alert-box {
+
   background: #fff4e5;
+
   border-left: 5px solid #b36b00;
+
   padding: 1rem 1.25rem;
+
   margin: 1.5rem 0;
+
   border-radius: 8px;
+
 }
+
+
 
 .news-dance-item {
+
   background: #ffffff;
+
   padding: 0.65rem 1rem;
+
   border-radius: 8px;
+
   margin: 0 0 0.25rem 0;
+
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+
   border-left: 5px solid #b36b00;
+
 }
+
+
 
 .news-dance-item h4 {
+
   margin-top: 0;
+
 }
+
+
 
 .news-dance-item a {
+
   display: inline-block;
+
   margin-right: 12px;
+
   font-weight: 600;
+
 }
+
+
 
 .muted {
+
   color: #777;
+
   font-style: italic;
+
 }
+
+
 
 .dance-info-line {
+
   font-weight: 400;
+
   color: #6b4a2b;
+
 }
+
+
 
 .dance-info,
-.dance-level {
-  color: #6b4a2b;
-}
 
 .dance-level {
-  display: inline-block;
-  margin-right: 12px;
-  font-weight: 600;
+
+  color: #6b4a2b;
+
 }
+
+
+
+.dance-level {
+
+  display: inline-block;
+
+  margin-right: 12px;
+
+  font-weight: 600;
+
+}
+
+
+
 
 
 /* =========================
+
    SCHEDULE ALERT BOX
+
 ========================= */
 
+
+
 .schedule-alert-box {
+
   background: #fff3f3;
+
   border-left: 6px solid #cc0000;
+
   border-radius: 8px;
+
   padding: 18px 20px;
+
   margin: 25px 0;
+
 }
+
+
 
 .schedule-alert-box h3 {
+
   color: #b30000;
+
   margin-top: 0;
+
   margin-bottom: 10px;
+
 }
+
+
 
 .schedule-alert-box ul {
+
   margin: 0;
+
   padding-left: 20px;
+
 }
 
+
+
 .schedule-alert-box li {
+
   color: #b30000;
+
   font-weight: bold;
+
 }
+
 /* =========================
    OTHER RESOURCES PAGE
 ========================= */
 
+/* Keep the resources page wide on large screens,
+   but let it shrink naturally on smaller screens. */
 .resource-section {
   width: 100%;
-  max-width: 1500px;
-  margin: 0 auto 30px;
-  padding: 40px 20px;
-  border-radius: var(--radius);
+  max-width: 1450px;
+  margin: 0 auto 10px;
+  padding: 0;
+  border-bottom: 1px solid var(--border);
 }
 
-.resource-light {
+/* Accordion heading */
+.resource-section summary {
+  cursor: pointer;
+  padding: 10px 14px;
+  text-align: left;
   background: var(--surface);
+  border-radius: 6px;
 }
 
-.resource-alt {
+.resource-section summary h2 {
+  display: inline;
+  margin: 0;
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+/* Slight background change when section is open */
+.resource-section[open] summary {
   background: #F3EEF7;
 }
 
-.resource-section h2 {
-  color: var(--primary);
-  text-align: center;
-  margin-bottom: 25px;
-}
-
+/* Resource cards */
 .resource-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+  padding: 10px 12px 14px;
 }
 
 .resource-card {
   background: white;
-  padding: 22px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  padding: 11px 14px;
+  border-radius: 7px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
   text-align: left;
-  border-left: 5px solid var(--accent);
+  border-left: 4px solid var(--accent);
 }
 
 .resource-card h3 {
-  margin-bottom: 10px;
+  margin: 0 0 4px;
+  font-size: 1rem;
 }
 
 .resource-card h3 a {
@@ -745,1400 +1447,2828 @@ form button {
 }
 
 .resource-card p {
+  margin: 0;
   color: #555;
+  font-size: 0.9rem;
+  line-height: 1.35;
 }
+
+/* Remove extra padding inside the JS container */
+#resourcesContainer {
+  padding: 0;
+}
+
+/* Responsive side spacing for the resources page */
+.section.alt:has(#resourcesContainer) {
+  padding: 28px clamp(12px, 3vw, 40px);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .resource-section {
+    margin-bottom: 6px;
+  }
+
+  .resource-section summary {
+    padding: 9px 10px;
+  }
+
+  .resource-grid {
+    grid-template-columns: 1fr;
+    padding: 8px 10px 12px;
+  }
+
+  .section.alt:has(#resourcesContainer) {
+    padding: 18px 10px;
+  }
+}
+
 /* =========================
+
    EVENTS PAGE
+
 ========================= */
+
+
 
 .events-list {
+
   max-width: 850px;
+
   margin: auto;
 
+
+
   display: flex;
+
   flex-direction: column;
+
   gap: 0.5rem;
 
+
+
   background: var(--surface-alt);
+
   box-shadow: none;
+
   border-radius: 0;
+
   overflow: visible;
+
 }
+
+
 
 .event-agenda-item {
+
   background: #ffffff;
+
   padding: 0.65rem 1rem;
+
   border-radius: 8px;
+
   margin: 0;
+
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+
   border-left: 5px solid #b36b00;
+
   text-align: left;
+
 }
+
+
 
 .event-agenda-item:last-child {
+
   border-bottom: none;
+
 }
+
+
 
 .event-agenda-date {
+
   font-family: "Open Sans", sans-serif;
+
   font-size: 1.05rem;
+
   font-weight: 700;
+
   line-height: 1.2;
+
   color: var(--primary);
+
   text-transform: uppercase;
+
   letter-spacing: 1px;
+
   margin-bottom: 6px;
+
 }
+
+
 
 .event-agenda-item a {
+
   display: inline-block;
+
   margin-top: 0.25rem;
+
   margin-right: 12px;
+
   font-family: inherit;
+
   font-weight: 600;
+
   color: var(--primary);
+
   text-decoration: none;
+
 }
+
+
 
 .event-agenda-item h2 {
+
   font-size: 1.2rem;
+
   margin: 4px 0 6px;
+
   font-weight: 700;
+
 }
+
+
 
 .event-agenda-item h2 a {
+
   color: var(--text);
+
   text-decoration: none;
+
 }
+
+
 
 .event-agenda-item h2 a:hover {
+
   color: var(--accent);
+
   text-decoration: underline;
+
   text-underline-offset: 3px;
+
 }
+
+
 
 .event-agenda-item h3,
+
 .event-agenda-item h4 {
+
   margin: 0 0 0.25rem 0;
+
 }
+
+
 
 .event-agenda-item p {
+
   margin: 0.15rem 0;
+
 }
+
+
 
 .event-agenda-meta {
+
   display: flex;
+
   gap: 8px;
+
   flex-wrap: wrap;
+
   font-size: .9rem;
+
   color: #666;
+
   font-weight: 600;
+
 }
+
+
 
 .event-agenda-meta span + span::before {
+
   content: "";
+
   color: var(--accent);
+
 }
+
 /* ==========================================
+
    FOOTER
+
 ========================================== */
 
+
+
 footer {
+
   background: var(--primary);
+
   color: white;
+
   text-align: center;
+
   padding: 25px;
+
   margin-top: 40px;
+
 }
+
+
+
 
 
 /* =========================
+
    DATATABLE SORT ICONS
+
 ========================= */
 
+
+
 table.dataTable thead th {
+
   cursor: pointer;
+
 }
+
+
 
 /* Keep title and icon on one line */
+
 table.dataTable thead th .dt-column-header {
+
   display: flex;
+
   align-items: center;
+
   justify-content: space-between;
+
   gap: 8px;
+
 }
+
+
 
 /* Style the built-in DataTables icon */
+
 table.dataTable thead th .dt-column-order {
+
   color: #FFD59A !important;
+
   opacity: 1 !important;
+
   font-size: 0.9rem;
+
   line-height: 1;
+
   margin-left: 6px;
+
 }
+
+
 
 /* Make active sorted column icon white */
+
 table.dataTable thead th.dt-ordering-asc .dt-column-order,
+
 table.dataTable thead th.dt-ordering-desc .dt-column-order {
+
   color: white !important;
+
 }
+
+
 
 /* =========================
+
    DATATABLE CUSTOM STYLE
+
 ========================= */
 
+
+
 /* Header */
+
 table.dataTable thead th {
+
   background: var(--primary);
+
   color: white;
+
 }
+
+
 
 /* Links in the main List of Dances table */
+
 #danceTableDisplay a {
+
   color: var(--primary);
+
   font-weight: 600;
+
   text-decoration: none;
+
 }
+
+
 
 #danceTableDisplay a:hover {
+
   color: var(--accent-hover);
+
   text-decoration: underline;
+
   text-underline-offset: 3px;
+
 }
+
+
 
 /* Keep Stepsheet icon and text together */
+
 #danceTableDisplay th:nth-child(2),
+
 #danceTableDisplay td:nth-child(2) {
+
   white-space: nowrap;
+
   min-width: 150px;
+
 }
+
+
 
 #danceTableDisplay td:nth-child(2) a {
+
   display: inline-flex;
+
   gap: 4px;
+
   white-space: nowrap;
+
 }
+
+
 
 /* Keep Demo icon and text together */
+
 #danceTableDisplay th:nth-child(3),
+
 #danceTableDisplay td:nth-child(3) {
+
   white-space: nowrap;
+
   min-width: 150px;
+
 }
+
+
 
 #danceTableDisplay td:nth-child(3) a {
+
   display: inline-flex;
+
   align-items: center;
+
   gap: 4px;
+
   white-space: nowrap;
+
 }
+
+
 
 /* Keep Tutorial icon and text together */
+
 #danceTableDisplay th:nth-child(4),
+
 #danceTableDisplay td:nth-child(4) {
+
   white-space: nowrap;
+
   min-width: 150px;
+
 }
+
+
 
 #danceTableDisplay td:nth-child(4) a {
+
   display: inline-flex;
+
   align-items: center;
+
   gap: 4px;
+
   white-space: nowrap;
+
 }
+
+
 
 /* Gold sort arrows */
+
 table.dataTable thead th .dt-column-order {
+
   color: #FFD59A !important;
+
   opacity: 1 !important;
+
 }
+
+
 
 /* Alternating lavender rows */
+
 table.dataTable tbody tr:nth-child(even) {
+
   background-color: #F3EEF7;
+
 }
+
+
 
 table.dataTable tbody tr:nth-child(odd) {
+
   background-color: #FFFFFF;
+
 }
 
+
+
 /* Hover row - soft wine color */
+
 table.dataTable tbody tr:hover {
+
   background-color: #EFE1E8 !important;
+
 }
+
+
+
 
 
 /* Pagination buttons */
+
 .dt-paging button {
+
   border-radius: 8px !important;
+
   border: 1px solid #c7b8d8 !important;
+
   background: #F3EEF7 !important;
+
   color: #4b3b5a !important;
+
   margin: 0 3px;
+
 }
+
+
 
 .dt-paging button:hover {
+
   background: #6b4f7a !important;
+
   color: white !important;
+
 }
 
+
+
 /* Current page button */
+
 .dt-paging button.current {
+
   background: #FFD59A !important;
+
   color: #5B3A29 !important;
+
   border-color: #C56B32 !important;
+
   font-weight: 700 !important;
+
 }
+
+
 
 /* Match DataTables controls to custom dance filters */
 
+
+
 /* DataTables top controls */
 
+
+
 .dt-length,
+
 .dt-search {
+
   font-weight: 600;
+
   color: #4b3b5a;
+
 }
+
+
 
 .dt-length select,
-.dt-search input {
-  margin-left: 0.4rem;
-  padding: 0.45rem 0.7rem;
-  border: 1px solid #c7b8d8;
-  border-radius: 6px;
-  background: white !important;
-  color: var(--text);
-  font-size: 0.95rem;
-  font-family: inherit;
-}
 
 .dt-search input {
-  min-width: 220px;
+
+  margin-left: 0.4rem;
+
+  padding: 0.45rem 0.7rem;
+
+  border: 1px solid #c7b8d8;
+
+  border-radius: 6px;
+
+  background: white !important;
+
+  color: var(--text);
+
+  font-size: 0.95rem;
+
+  font-family: inherit;
+
 }
+
+
+
+.dt-search input {
+
+  min-width: 220px;
+
+}
+
+
+
 
 
 /* One combined search/filter row */
 
+
+
 .dt-layout-row:first-of-type .dt-search {
+
   order: 1;
+
 }
+
+
 
 .dt-layout-row:first-of-type .dance-filters {
+
   order: 2;
+
 }
+
+
 
 .dt-layout-row:first-of-type .dt-length {
+
   order: 3;
+
 }
+
+
 
 .dt-layout-row:first-of-type {
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+
   gap: 1rem;
+
   flex-wrap: wrap;
+
   margin-bottom: 1rem;
+
 }
+
+
 
 .dance-filters {
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
   gap: 1rem;
+
   flex-wrap: wrap;
+
   margin: 0;
+
 }
+
+
 
 .dance-filters label,
+
 .dt-length,
+
 .dt-search {
+
   font-weight: 600;
+
   color: #4b3b5a;
+
   white-space: nowrap;
+
 }
+
+
 
 .dance-filters select {
+
   width: 130px;
+
   max-width: 130px;
+
   padding: 0.45rem 0.7rem;
+
   border: 1px solid #c7b8d8;
+
   border-radius: 6px;
+
   background: white;
+
   color: var(--text);
+
   font-size: 0.95rem;
+
   font-family: inherit;
+
 }
+
+
 
 .dt-length select,
-.dt-search input {
-  margin-left: 0.4rem;
-  padding: 0.45rem 0.7rem;
-  border: 1px solid #c7b8d8;
-  border-radius: 6px;
-  background: white !important;
-  color: var(--text);
-  font-size: 0.95rem;
-  font-family: inherit;
-}
 
 .dt-search input {
-  min-width: 220px;
+
+  margin-left: 0.4rem;
+
+  padding: 0.45rem 0.7rem;
+
+  border: 1px solid #c7b8d8;
+
+  border-radius: 6px;
+
+  background: white !important;
+
+  color: var(--text);
+
+  font-size: 0.95rem;
+
+  font-family: inherit;
+
 }
+
+
+
+.dt-search input {
+
+  min-width: 220px;
+
+}
+
+
 
 /* Tighten space above List of Dances search/filter row */
+
 .dances-section {
+
   padding-top: 10px;
+
 }
+
+
 
 /* Force DataTables 2 sort icons to show */
+
 table.dataTable thead th .dt-column-order::before,
+
 table.dataTable thead th .dt-column-order::after,
+
 table.dataTable thead td .dt-column-order::before,
+
 table.dataTable thead td .dt-column-order::after {
+
   color: #FFD59A !important;
+
   opacity: 1 !important;
+
 }
+
+
 
 /* Make active sorted arrow white */
+
 table.dataTable thead th.dt-ordering-asc .dt-column-order::before,
+
 table.dataTable thead th.dt-ordering-desc .dt-column-order::after {
+
   color: #ffffff !important;
+
   opacity: 1 !important;
+
 }
+
+
 
 .related-dance-link {
+
   margin-top: 18px;
+
   font-weight: 600;
+
 }
+
+
 
 .related-dance-link a {
+
   display: inline-block;
+
   margin-left: 6px;
+
   padding: 8px 14px;
+
   background: var(--accent);
+
   color: white;
+
   border-radius: 6px;
+
   text-decoration: none;
+
   font-weight: 700;
+
 }
+
+
 
 .related-dance-link a:hover {
+
   background: var(--accent-hover);
+
 }
 
+
+
 /* =========================
+
    DANCE LIST LINK BUTTONS
+
 ========================= */
+
+
 
 .dance-list-cards {
+
   display: flex;
+
   justify-content: center;
+
   gap: 1rem;
+
   flex-wrap: wrap;
+
   max-width: 750px;
+
   margin: 22px auto 0;
+
 }
+
+
 
 .dance-list-card {
+
   flex: 0 1 220px;
+
   max-width: 240px;
+
   background: var(--accent);
+
   color: white;
+
   border-radius: 8px;
+
   padding: 9px 14px;
+
   box-shadow: var(--shadow);
+
   text-align: center;
+
   text-decoration: none;
+
   font-weight: 700;
+
   transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
 }
+
+
 
 .dance-list-card:hover {
+
   background: var(--accent-hover);
+
   transform: translateY(-2px);
+
   box-shadow: 0 6px 14px rgba(0,0,0,.14);
+
 }
+
+
 
 .dance-list-card h3 {
+
   color: white;
+
   margin: 0;
+
   font-size: 1rem;
+
   font-family: "Open Sans", sans-serif;
+
 }
 
+
+
 .dance-list-card p {
+
   display: none;
+
 }
+
+
+
 
 
 /* =========================
+
    ARCHIVED DANCES PAGE
+
    Sage Green / Cream
+
 ========================= */
 
+
+
 .archived-page {
+
   --primary: #4F6253;
+
   --primary-dark: #39483C;
+
   --accent: #7D9278;
+
   --accent-hover: #61745D;
+
   --surface-alt: #F0F4EC;
+
   --border: #CAD7C2;
+
 }
+
+
 
 /* Archived page intro */
+
 .archived-page .section:first-of-type {
+
   background: #F7FAF4;
+
 }
+
+
 
 /* Table header */
+
 .archived-page table.dataTable thead th {
+
   background: #4F6253 !important;
+
   color: white !important;
+
 }
+
+
 
 /* Sort arrows */
+
 .archived-page table.dataTable thead th .dt-column-order,
+
 .archived-page table.dataTable thead th .dt-column-order::before,
+
 .archived-page table.dataTable thead th .dt-column-order::after {
+
   color: #E6D8A8 !important;
+
   opacity: 1 !important;
+
 }
+
+
 
 /* Alternating rows */
+
 .archived-page table.dataTable tbody tr:nth-child(even) {
+
   background-color: #F0F4EC !important;
+
 }
+
+
 
 .archived-page table.dataTable tbody tr:nth-child(odd) {
+
   background-color: #FFFFFF !important;
+
 }
+
+
 
 /* Hover row */
+
 .archived-page table.dataTable tbody tr:hover {
+
   background-color: #E2EADB !important;
+
 }
+
+
 
 /* Links inside the dance table */
+
 .archived-page table.dataTable a {
+
   color: #4F6253;
+
   font-weight: 600;
+
   text-decoration: none;
+
 }
+
+
 
 .archived-page table.dataTable a:hover {
+
   color: #7D9278;
+
   text-decoration: underline;
+
   text-underline-offset: 3px;
+
 }
+
+
 
 /* Search, entries, and filters */
+
 .archived-page .dt-length,
+
 .archived-page .dt-search,
+
 .archived-page .dance-filters label {
+
   color: #4F6253;
+
 }
+
+
 
 .archived-page .dt-length select,
+
 .archived-page .dt-search input,
+
 .archived-page .dance-filters select {
+
   border-color: #B7C7AE;
+
   background: white !important;
+
   color: #2D2D2D;
+
 }
+
+
 
 /* Pagination buttons */
+
 .archived-page .dt-paging button {
+
   border-color: #B7C7AE !important;
+
   background: #F0F4EC !important;
+
   color: #4F6253 !important;
+
 }
+
+
 
 .archived-page .dt-paging button:hover {
+
   background: #7D9278 !important;
+
   color: white !important;
+
 }
+
+
 
 /* Current page button */
+
 .archived-page .dt-paging button.current {
+
   background: #E6D8A8 !important;
+
   color: #39483C !important;
+
   border-color: #7D9278 !important;
+
   font-weight: 700 !important;
+
 }
+
+
 
 /* Related link button */
+
 .archived-page .related-dance-link a {
+
   background: #7D9278;
+
 }
+
+
 
 .archived-page .related-dance-link a:hover {
+
   background: #61745D;
+
 }
+
+
 
 /* Optional: table wrapper area */
+
 .archived-page .dances-section {
+
   background: #F0F4EC;
+
+
 
 }
 
+
+
 /* ==========================================
+
    GALLERY
+
 ========================================== */
+
+
+
 
 
 .photo-gallery {
+
   display: grid;
+
   grid-template-columns: repeat(6, 1fr);
+
   gap: 1rem;
+
 }
+
+
 
 .gallery-item {
+
   overflow: hidden;
+
   border-radius: 10px;
+
 }
+
+
 
 .gallery-item img {
+
   display: block;
+
   width: 100%;
+
   aspect-ratio: 1 / 1;
+
   object-fit: cover;
+
   cursor: pointer;
+
   transition: transform 0.2s ease;
+
 }
+
+
 
 .gallery-item img:hover {
+
   transform: scale(1.03);
+
 }
+
+
 
 /* Tablets */
+
 @media (max-width: 900px) {
+
   .photo-gallery {
+
     grid-template-columns: repeat(3, 1fr);
+
   }
+
 }
 
+
+
 /* Phones */
+
 @media (max-width: 600px) {
+
   .photo-gallery {
+
     grid-template-columns: repeat(2, 1fr);
+
     gap: 0.75rem;
+
   }
+
 }
+
+
 
 /* Enlarged photo viewer */
 
+
+
 .gallery-lightbox {
+
   display: none;
+
   position: fixed;
+
   inset: 0;
+
   z-index: 2000;
+
   align-items: center;
+
   justify-content: center;
+
   padding: 2rem;
+
   background-color: rgba(0, 0, 0, 0.9);
+
 }
+
+
 
 .gallery-lightbox.active {
+
   display: flex;
+
 }
+
+
 
 .gallery-lightbox img {
+
   display: block;
+
   max-width: 90vw;
+
   max-height: 88vh;
+
   object-fit: contain;
+
   border-radius: 6px;
+
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+
 }
+
+
 
 .lightbox-close,
+
 .lightbox-previous,
+
 .lightbox-next {
+
   position: absolute;
+
   border: none;
+
   background: transparent;
+
   color: white;
+
   cursor: pointer;
+
   font-family: Arial, sans-serif;
+
 }
+
+
 
 .lightbox-close {
+
   top: 1rem;
+
   right: 1.5rem;
+
   font-size: 3rem;
+
 }
+
+
 
 .lightbox-previous,
+
 .lightbox-next {
+
   top: 50%;
+
   padding: 1rem;
+
   font-size: 3rem;
+
   transform: translateY(-50%);
+
 }
+
+
 
 .lightbox-previous {
+
   left: 1rem;
+
 }
+
+
 
 .lightbox-next {
+
   right: 1rem;
+
 }
+
+
 
 .lightbox-close:hover,
+
 .lightbox-previous:hover,
+
 .lightbox-next:hover {
+
   color: #d8c0d8;
+
 }
+
+
 
 body.lightbox-open {
+
   overflow: hidden;
+
 }
+
+
 
 @media (max-width: 600px) {
+
   .gallery-lightbox {
+
     padding: 1rem;
+
   }
+
+
 
   .lightbox-previous,
+
   .lightbox-next {
+
     padding: 0.5rem;
+
     font-size: 2rem;
+
   }
+
+
 
   .lightbox-previous {
+
     left: 0;
+
   }
 
+
+
   .lightbox-next {
+
     right: 0;
+
   }
+
 }
+
+
+
 
 
 /* ===========================================
+
    VIDEOS
+
    ========================================= */
+
 #video-gallery {
+
   display: grid;
+
   grid-template-columns: repeat(3, minmax(0, 1fr));
+
   gap: 1rem;
+
   width: 100%;
+
   max-width: 1800px;
+
   margin: 0 auto;
+
   padding: 0 1rem 2rem;
+
   box-sizing: border-box;
+
 }
+
+
 
 #video-gallery > div {
+
   width: 100%;
+
   min-width: 0;
+
   background: white;
+
   border-radius: 8px;
+
   overflow: hidden;
+
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
 }
+
+
 
 #video-gallery iframe {
+
   display: block;
+
   width: 100%;
+
   height: auto;
+
   aspect-ratio: 16 / 9;
+
   border: 0;
+
 }
+
+
 
 /* Two columns on medium screens */
+
 @media (max-width: 1000px) {
+
   #video-gallery {
+
     grid-template-columns: repeat(2, minmax(0, 1fr));
+
   }
+
 }
+
+
 
 /* One column on phones */
+
 @media (max-width: 650px) {
+
   #video-gallery {
+
     grid-template-columns: 1fr;
+
   }
+
 }
+
 /* =========================================================
+
    STEPPIN' OUT NEWS COLOR SCHEME
+
 ========================================================= */
 
+
+
 .steppin-out-page {
+
   --so-black: #050505;
+
   --so-blue: #008cff;
+
   --so-purple: #6b22e6;
+
   --so-pink: #f20b91;
+
   --so-orange: #ff7a00;
+
   --so-lime: #58cf15;
+
   --so-white: #ffffff;
+
   --so-light: #f3f3f5;
+
   --so-text: #191919;
 
+
+
   background: var(--so-light);
+
   color: var(--so-text);
+
 }
 
 
+
+
+
 /* =========================
+
    HEADER
+
 ========================= */
+
+
 
 .steppin-out-page header {
+
   background: var(--so-black);
+
   border-bottom: 5px solid transparent;
+
   border-image: linear-gradient(
+
     90deg,
+
     var(--so-blue),
+
     var(--so-purple),
+
     var(--so-pink),
+
     var(--so-orange),
+
     var(--so-lime)
+
   ) 1;
+
 }
+
+
 
 .steppin-out-page header .logo span {
+
   color: var(--so-white);
+
 }
+
+
 
 .steppin-out-page header .logo img {
+
   width: 180px;
+
   height: auto;
+
   object-fit: contain;
+
 }
+
+
 
 .steppin-out-page nav a {
+
   color: var(--so-white);
+
   border-bottom: 3px solid transparent;
+
   transition:
+
     color 0.2s ease,
+
     border-color 0.2s ease;
+
 }
+
+
 
 .steppin-out-page nav a:hover {
+
   color: var(--so-pink);
+
   border-bottom-color: var(--so-pink);
+
 }
+
+
 
 .steppin-out-page nav a[href="steppinOutNews.html"] {
+
   color: var(--so-lime);
+
   border-bottom-color: var(--so-lime);
+
 }
 
 
+
+
+
 /* =========================
+
    PAGE INTRO
+
 ========================= */
+
+
 
 .steppin-out-page > .section:first-of-type {
+
   position: relative;
+
   background: var(--so-white);
+
   text-align: center;
+
 }
+
+
 
 .steppin-out-page > .section:first-of-type h1 {
+
   margin-bottom: 12px;
+
   color: var(--so-black);
+
 }
+
+
 
 .steppin-out-page > .section:first-of-type h1::after {
+
   content: "";
+
   display: block;
+
   width: 190px;
+
   height: 5px;
+
   margin: 12px auto 0;
+
   border-radius: 10px;
+
   background: linear-gradient(
+
     90deg,
+
     var(--so-blue),
+
     var(--so-purple),
+
     var(--so-pink),
+
     var(--so-orange),
+
     var(--so-lime)
+
   );
+
 }
 
 
+
+
+
 /* =========================
+
    OUTER NEWS AREA
+
 ========================= */
+
+
 
 .steppin-out-page .section.alt {
+
   background: #e9e9ec;
+
 }
 
 
+
+
+
 /* =========================
+
    NEWS CARDS
+
 ========================= */
+
+
 
 .steppin-out-page .news-card {
+
   position: relative;
+
   overflow: hidden;
+
   background: var(--so-white);
+
   border: 1px solid #d5d5d8;
+
   border-radius: 10px;
+
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.13);
+
 }
+
+
 
 .steppin-out-page .news-card::before {
+
   content: "";
+
   position: absolute;
+
   top: 0;
+
   right: 0;
+
   left: 0;
+
   height: 6px;
+
   background: linear-gradient(
+
     90deg,
+
     var(--so-blue),
+
     var(--so-purple),
+
     var(--so-pink),
+
     var(--so-orange),
+
     var(--so-lime)
+
   );
+
 }
+
+
 
 .steppin-out-page .news-card h2 {
+
   color: var(--so-black);
+
 }
+
+
 
 .steppin-out-page .news-card h3 {
+
   color: #5520a8;
+
 }
+
+
 
 .steppin-out-page .news-card h4 {
+
   color: var(--so-black);
+
 }
 
 
+
+
+
 /* =========================
+
    LINKS
+
 ========================= */
+
+
 
 .steppin-out-page .news-card a {
+
   color: #006ed6;
+
   font-weight: 600;
+
 }
+
+
 
 .steppin-out-page .news-card a:hover {
+
   color: var(--so-pink);
+
 }
 
 
+
+
+
 /* =========================
+
    DANCE ITEMS
+
 ========================= */
+
+
 
 .steppin-out-page .news-dance-item {
+
   background: #fafafd;
+
   border: 1px solid #e1e1e5;
+
   border-left: 5px solid var(--so-purple);
+
   border-radius: 7px;
+
 }
+
+
 
 .steppin-out-page .news-dance-list .news-dance-item:nth-child(5n + 1) {
+
   border-left-color: var(--so-blue);
+
 }
+
+
 
 .steppin-out-page .news-dance-list .news-dance-item:nth-child(5n + 2) {
+
   border-left-color: var(--so-purple);
+
 }
+
+
 
 .steppin-out-page .news-dance-list .news-dance-item:nth-child(5n + 3) {
+
   border-left-color: var(--so-pink);
+
 }
+
+
 
 .steppin-out-page .news-dance-list .news-dance-item:nth-child(5n + 4) {
+
   border-left-color: var(--so-orange);
+
 }
+
+
 
 .steppin-out-page .news-dance-list .news-dance-item:nth-child(5n + 5) {
+
   border-left-color: var(--so-lime);
+
 }
+
+
 
 .steppin-out-page .dance-level {
+
   color: #5520a8;
+
   font-weight: 600;
+
 }
 
 
+
+
+
 /* =========================
+
    SCHEDULE ALERT
+
 ========================= */
+
+
 
 .steppin-out-page .schedule-alert-box {
+
   background: #fff0f7;
+
   border-left: 5px solid var(--so-pink);
+
   color: #9d0057;
+
 }
+
+
 
 .steppin-out-page .schedule-alert-box h3 {
+
   color: #b00062;
+
 }
 
 
+
+
+
 /* =========================
+
    FOOTER
+
 ========================= */
+
+
 
 .steppin-out-page footer {
+
   background: var(--so-black);
+
   color: var(--so-white);
+
   border-top: 5px solid transparent;
+
   border-image: linear-gradient(
+
     90deg,
+
     var(--so-blue),
+
     var(--so-purple),
+
     var(--so-pink),
+
     var(--so-orange),
+
     var(--so-lime)
+
   ) 1;
+
 }
+
+
+
 
 
 /* =========================
+
    MOBILE
+
 ========================= */
 
+
+
 @media (max-width: 700px) {
+
   .steppin-out-page header .logo img {
+
     width: 150px;
+
   }
 
+
+
   .steppin-out-page > .section:first-of-type h1::after {
+
     width: 140px;
+
   }
+
 }
+
 /* ==========================================
+
    RESPONSIVE
+
 ========================================== */
+
+
 
 @media (max-width:768px) {
 
+
+
   header {
+
     flex-direction: column;
+
     text-align: center;
+
   }
+
+
 
   nav {
+
     justify-content: center;
+
     margin-top: 15px;
+
   }
+
+
 
   .logo img {
+
     width: 90px;
+
   }
+
+
 
   .instructor-container {
+
     flex-direction: column;
+
     align-items: center;
+
   }
 
+
+
   .instructor-card {
+
     max-width: 500px;
+
     width: 100%;
+
   }
+
 }
+
 /* =========================================================
+
    STEPPIN' OUT DANCES PAGE
+
    BLACK + VIVID MULTICOLOR TABLE THEME
+
 ========================================================= */
+
+
 
 /* Main table area */
 
+
+
 .steppin-out-page .dances-section {
+
   padding-top: 18px;
+
   background: #dedee4;
+
 }
+
+
 
 /* Give the table area a white card-style container */
 
+
+
 .steppin-out-page .dances-section > div {
+
   position: relative;
+
   width: 100%;
+
   max-width: none;
+
   margin: 0 auto;
+
   padding: 24px 0 0;
+
   overflow-x: auto;
 
+
+
   background: #ffffff;
+
   border: 1px solid #c9c9d0;
+
   border-radius: 12px;
+
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.16);
+
 }
 
+
+
 .steppin-out-page .dt-layout-row:first-of-type {
+
   margin-left: 20px;
+
   margin-right: 20px;
+
 }
+
+
 
 .steppin-out-page .dt-layout-row:last-of-type {
+
   padding: 0 20px 20px;
+
 }
+
 /* Multicolor strip above the table */
 
+
+
 .steppin-out-page .dances-section > div::before {
+
   content: "";
+
   position: absolute;
+
   top: 0;
+
   right: 0;
+
   left: 0;
+
   height: 6px;
 
+
+
   background: linear-gradient(
+
     90deg,
+
     var(--so-blue),
+
     var(--so-purple),
+
     var(--so-pink),
+
     var(--so-orange),
+
     var(--so-lime)
+
   );
+
 }
 
 
+
+
+
 /* =========================================================
+
    RELATED DANCE-LIST BUTTON
+
 ========================================================= */
+
+
 
 .steppin-out-page .related-dance-link a {
+
   display: inline-block;
+
   padding: 9px 18px;
 
+
+
   background: var(--so-black);
+
   color: var(--so-white);
+
   border: 2px solid var(--so-pink);
+
   border-radius: 7px;
 
+
+
   text-decoration: none;
+
   font-weight: 700;
 
+
+
   transition:
+
     background 0.2s ease,
+
     border-color 0.2s ease,
+
     transform 0.2s ease;
+
 }
 
+
+
 .steppin-out-page .related-dance-link a:hover {
+
   background: var(--so-pink);
+
   color: var(--so-white);
+
   border-color: var(--so-pink);
+
   transform: translateY(-2px);
+
 }
+
+
+
 
 
 /* =========================================================
+
    SEARCH, FILTERS, AND ENTRIES CONTROLS
+
 ========================================================= */
 
+
+
 .steppin-out-page .dt-layout-row:first-of-type {
+
   align-items: flex-end;
+
   gap: 15px;
+
   margin: 10px 0 20px;
+
   padding: 16px;
 
+
+
   background: #f0f0f4;
+
   border: 1px solid #ccccd4;
+
   border-radius: 9px;
+
 }
+
+
 
 .steppin-out-page .dt-search,
+
 .steppin-out-page .dt-length,
+
 .steppin-out-page .dance-filters label {
+
   color: #161616;
+
   font-weight: 700;
+
 }
+
+
 
 .steppin-out-page .dt-search input,
+
 .steppin-out-page .dt-length select,
+
 .steppin-out-page .dance-filters select {
+
   min-height: 39px;
+
   padding: 7px 10px;
 
+
+
   background: #ffffff !important;
+
   color: #111111;
+
   border-width: 2px;
+
   border-style: solid;
+
   border-radius: 6px;
 
+
+
   font-family: inherit;
+
   font-size: 0.95rem;
+
 }
+
+
 
 /* Individual colorful borders */
 
+
+
 .steppin-out-page .dt-search input {
+
   border-color: var(--so-blue);
+
 }
+
+
 
 .steppin-out-page #levelFilter {
+
   border-color: var(--so-purple);
+
 }
+
+
 
 .steppin-out-page #countFilter {
+
   border-color: var(--so-pink);
+
 }
+
+
 
 .steppin-out-page #wallsFilter {
+
   border-color: var(--so-orange);
+
 }
 
+
+
 .steppin-out-page .dt-length select {
+
   border-color: var(--so-lime);
+
 }
+
+
+
 
 
 /* =========================================================
+
    TABLE HEADER
+
 ========================================================= */
 
+
+
 .steppin-out-page table.dataTable {
+
   width: 100% !important;
+
   background: #ffffff;
+
   border: 1px solid #aeb0b8;
+
   border-collapse: separate;
+
   border-spacing: 0;
+
 }
+
+
 
 .steppin-out-page table.dataTable thead th {
+
   padding: 12px 10px !important;
 
+
+
   background: #080808 !important;
+
   color: #ffffff !important;
+
   border-bottom-width: 4px !important;
+
   border-bottom-style: solid !important;
 
+
+
   font-weight: 700;
+
   white-space: nowrap;
+
 }
+
+
 
 /* Rotating accent colors under the headings */
 
+
+
 .steppin-out-page table.dataTable thead th:nth-child(5n + 1) {
+
   border-bottom-color: var(--so-blue) !important;
+
 }
+
+
 
 .steppin-out-page table.dataTable thead th:nth-child(5n + 2) {
+
   border-bottom-color: var(--so-purple) !important;
+
 }
+
+
 
 .steppin-out-page table.dataTable thead th:nth-child(5n + 3) {
+
   border-bottom-color: var(--so-pink) !important;
+
 }
+
+
 
 .steppin-out-page table.dataTable thead th:nth-child(5n + 4) {
+
   border-bottom-color: var(--so-orange) !important;
+
 }
 
+
+
 .steppin-out-page table.dataTable thead th:nth-child(5n + 5) {
+
   border-bottom-color: var(--so-lime) !important;
+
 }
+
+
 
 /* Sort icons */
 
+
+
 .steppin-out-page table.dataTable thead th .dt-column-order,
+
 .steppin-out-page table.dataTable thead th .dt-column-order::before,
+
 .steppin-out-page table.dataTable thead th .dt-column-order::after {
+
   color: #ffffff !important;
+
   opacity: 1 !important;
+
 }
+
+
+
 
 
 /* =========================================================
+
    TABLE ROWS
+
 ========================================================= */
 
+
+
 .steppin-out-page table.dataTable tbody td {
+
   padding: 10px !important;
+
   color: #161616;
+
   border-bottom: 1px solid #cfd0d6 !important;
+
   vertical-align: middle;
+
 }
+
+
 
 .steppin-out-page table.dataTable tbody tr:nth-child(odd) td {
+
   background: #ffffff !important;
+
 }
+
+
 
 .steppin-out-page table.dataTable tbody tr:nth-child(even) td {
+
   background: #e9e9ef !important;
+
 }
 
+
+
 .steppin-out-page table.dataTable tbody tr:hover td {
+
   background: #ffeaf6 !important;
+
 }
+
+
 
 /* Dance-name column */
 
+
+
 .steppin-out-page table.dataTable tbody td:first-child {
+
   color: #481596;
+
   font-family: "Merriweather", serif;
+
   font-weight: 700;
+
 }
+
+
 
 /* Center Count and Walls */
 
+
+
 .steppin-out-page table.dataTable tbody td:nth-child(7),
+
 .steppin-out-page table.dataTable tbody td:nth-child(8) {
+
   text-align: center;
+
   font-weight: 700;
+
 }
+
+
+
 
 
 /* =========================================================
+
    TABLE LINKS
+
 ========================================================= */
 
+
+
 .steppin-out-page table.dataTable tbody a {
+
   display: inline-block;
+
   padding: 5px 8px;
 
+
+
   background: #111111;
+
   color: #ffffff;
+
   border-radius: 5px;
 
+
+
   font-size: 0.84rem;
+
   font-weight: 700;
+
   text-decoration: none;
+
   white-space: nowrap;
 
+
+
   transition:
+
     background 0.2s ease,
+
     transform 0.2s ease;
+
 }
 
+
+
 .steppin-out-page table.dataTable tbody a:hover {
+
   background: var(--so-purple);
+
   color: #ffffff;
+
   text-decoration: none;
+
   transform: translateY(-1px);
+
 }
+
+
 
 /* Colorful underline accents */
 
+
+
 .steppin-out-page table.dataTable tbody td:nth-child(2) a {
+
   border-bottom: 3px solid var(--so-blue);
+
 }
+
+
 
 .steppin-out-page table.dataTable tbody td:nth-child(3) a {
+
   border-bottom: 3px solid var(--so-pink);
+
 }
+
+
 
 .steppin-out-page table.dataTable tbody td:nth-child(4) a {
+
   border-bottom: 3px solid var(--so-lime);
+
 }
 
 
+
+
+
 /* =========================================================
+
    PAGINATION
+
 ========================================================= */
+
+
 
 .steppin-out-page .dt-info {
+
   color: #292929;
+
   font-weight: 600;
+
 }
+
+
 
 .steppin-out-page .dt-paging button {
+
   border: 1px solid #a9a9b1 !important;
+
   background: #ffffff !important;
+
   color: #222222 !important;
+
 }
+
+
 
 .steppin-out-page .dt-paging button:hover {
+
   background: #eadfff !important;
+
   color: #481596 !important;
+
   border-color: var(--so-purple) !important;
+
 }
+
+
 
 .steppin-out-page .dt-paging button.current {
+
   background: var(--so-purple) !important;
+
   color: #ffffff !important;
+
   border-color: var(--so-purple) !important;
+
   font-weight: 700 !important;
+
 }
 
 
+
+
+
 /* =========================================================
+
    MOBILE
+
 ========================================================= */
+
+
 
 @media (max-width: 800px) {
+
   .steppin-out-page .dances-section > div {
+
     width: 100%;
+
     padding: 18px 10px;
+
   }
+
+
 
   .steppin-out-page .dt-layout-row:first-of-type {
+
     align-items: stretch;
+
     flex-direction: column;
+
   }
+
+
 
   .steppin-out-page .dance-filters {
+
     align-items: stretch;
+
     flex-direction: column;
+
   }
+
+
 
   .steppin-out-page .dance-filters label {
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 12px;
+
   }
+
+
 
   .steppin-out-page .dance-filters select {
+
     flex: 1;
+
     width: auto;
+
     max-width: none;
+
   }
+
+
 
   .steppin-out-page .dt-search input {
+
     width: 100%;
+
     min-width: 0;
+
   }
+
 }
+
+
 
 /* =========================================================
+
    STEPPIN' OUT TABLE LINKS — CLEANER STYLE
+
 ========================================================= */
 
+
+
 .steppin-out-page table.dataTable tbody a {
+
   display: inline-block;
+
   padding: 3px 5px;
 
+
+
   background: transparent;
+
   border-radius: 4px;
 
+
+
   font-size: 0.88rem;
+
   font-weight: 700;
+
   text-decoration: none;
+
   white-space: nowrap;
 
+
+
   transform: none;
+
 }
+
+
 
 /* Stepsheet */
 
+
+
 .steppin-out-page table.dataTable tbody td:nth-child(2) a {
+
   color: #006ed6;
+
   border-bottom: 2px solid #008cff;
+
 }
+
+
 
 /* Demo */
 
+
+
 .steppin-out-page table.dataTable tbody td:nth-child(3) a {
+
   color: #c90072;
+
   border-bottom: 2px solid #f20b91;
+
 }
+
+
 
 /* Tutorial */
 
+
+
 .steppin-out-page table.dataTable tbody td:nth-child(4) a {
+
   color: #3d8515;
+
   border-bottom: 2px solid #58cf15;
+
 }
+
+
 
 /* Subtle hover instead of a dark button */
 
+
+
 .steppin-out-page table.dataTable tbody a:hover {
+
   background: #f0f0f4;
+
   color: #5520a8;
+
   text-decoration: none;
+
   transform: none;
+
 }
