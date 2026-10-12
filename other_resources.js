@@ -4,9 +4,9 @@ const resourceSections = [
     title: "Printable Resources",
     resources: [
       {
-        title: "Longbranch Saloon Set List - 9/13/26",
-        description: "List of Songs with Matching Line Dance Patterns",
-        link: "Documents/Longbranch Saloon Set List 9-13-26.pdf"
+        title: "The Anderson - Playlist 10/16/26",
+        description: "List of dances",
+        link: "Documents/TheAnderson20261016.pdf"
       },
           {
         title: "Blast & Brew Playlist - 8/9/26",
