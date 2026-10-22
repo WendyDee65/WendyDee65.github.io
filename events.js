@@ -2,13 +2,6 @@ const events = [
 
 
 
-  {
-    date: "October 7-11, 2026",
-    title: "Windy City LineDance Mania",
-    type: "Event",
-    location: "Chicago, IL",
-    link: "https://windycitylinedancemania.com/"
-   },
 
     {
     date: "October 16, 2026 - 5:30 - 7:30 PM",
@@ -25,8 +18,6 @@ const events = [
     link: "https://www.vegasdanceexplosion.com/"
   },
 
-
-
   {
     date: "January 21-24, 2027",
     title: "Palm Springs Winter Break",
@@ -36,7 +27,7 @@ const events = [
   },
 
     {
-    date: "February, 2027",
+    date: "February, 26-27, 2027",
     title: "Cambria Dance Line Dance Extravaganza - Details TBD",
     type: "Event",
     location: "Cambria, CA",

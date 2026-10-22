@@ -85,6 +85,7 @@ const steppinOutDances = [
   //--- R ---//
   { name: "Raised Like That", level: "High Improver", music: "Raised Like That - James Johnston", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/154113/raised-like-that", demo: "https://www.youtube.com/watch?v=_NFUvWDfyZE", tutorial: "https://www.youtube.com/watch?v=kH8CbDkP7AY&t=6s", info: "" },
   { name: "Redneck Angel", level: "High Beginner", music: "Merry Go Round - The JaneDear Girls", count: "16", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/NM5RM5Z/redneck-angel", demo: "", tutorial: "", info: "" },
+  { name: "Rhumbumbumba", level: "High Beginner", music: "Rhumbumbumba - DJTEXX", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/8RHKFN8/rhumbumbumba", demo: "https://www.youtube.com/watch?v=hi3hEVQCQk8", tutorial: "https://www.youtube.com/watch?v=cCwidqUzWbQ", info:"" },
 
   //--- S ---//
   { name: "Saddle On Up", level: "Improver", music: "Saddle Up Shawty - Mikel Knight", count: "48", walls: "2", stepsheet: "https://www.copperknob.co.uk/choreographer/9P93JNV/wendy-moench-gray", demo: "https://www.youtube.com/watch?v=PkjgxE0PaLk", tutorial: "", info: "" },

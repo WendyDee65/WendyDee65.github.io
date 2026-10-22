@@ -225,6 +225,7 @@ const dances = [
   { name: "River of Dreams 2 4 6 AB", level: "", music: "The River of Dreams - Billy Joel", count: "16", walls: "-", stepsheet: "https://www.copperknob.co.uk/stepsheets/BW8V2K8/river-of-dreams-2-4-6-ab", demo: "https://www.youtube.com/watch?v=MhNkjbJMrZU", tutorial: "", info:"" },
   { name: "Rock Me Mama", level: "Beginner", music: "Wagon Wheel - Nathan Carter", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/rock-me-mama-ID125078.aspx", demo: "", tutorial: "", info:"" },
   { name: "Role Model", level: "High Improver", music: "Be Her - Ella Langley", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/R247MW4/role-model", demo: "https://www.youtube.com/watch?v=yA-DIL4AnEY", tutorial: "https://www.youtube.com/watch?v=SpXtqDm9Ndg", info:"" },
+  { name: "Rhumbumbumba", level: "High Beginner", music: "Rhumbumbumba - DJTEXX", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/8RHKFN8/rhumbumbumba", demo: "https://www.youtube.com/watch?v=hi3hEVQCQk8", tutorial: "https://www.youtube.com/watch?v=cCwidqUzWbQ", info:"" },
 
   // ===== S =====
   { name: "Saddle On Up", level: "Improver", music: "Saddle Up Shawty - Mikel Knight", count: "48", walls: "2", stepsheet: "https://www.copperknob.co.uk/choreographer/9P93JNV/wendy-moench-gray", demo: "https://www.youtube.com/watch?v=PkjgxE0PaLk", tutorial: "", info: "" },

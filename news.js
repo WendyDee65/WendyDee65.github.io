@@ -49,12 +49,12 @@ const news = {
     title: "Improver / High Improver Hour",
     dances: [
         { name: "Turn This Town", level: "High Beginner", music: "Turn This Town (Into a Honky Tonk) - Spencer Hatcher", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/7FF8V5F/turn-this-town", demo: "https://www.youtube.com/watch?v=GYrXDCCthVw", tutorial: "https://www.youtube.com/watch?v=x9G-Gj_6COo", info:"" },
-        { name: "Your Love Amazes Me", level: "High Improver", music: "Your Love Amazes Me - Westlife", count: "28", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/XNFN6K7/your-love-amazes-me", demo: "https://www.youtube.com/watch?v=OEzWa01uRxQ", tutorial: "https://www.youtube.com/watch?v=84vJthNyqqw", info:"" },
+        { name: "Rhumbumbumba", level: "High Beginner", music: "Rhumbumbumba - DJTEXX", count: "32", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/8RHKFN8/rhumbumbumba", demo: "https://www.youtube.com/watch?v=hi3hEVQCQk8", tutorial: "https://www.youtube.com/watch?v=cCwidqUzWbQ", info:"" },
 
       ]
     },
   thursdayHour: {
-    title: "Thursday Featured Dances - All Reviews this month (2 per week)",
+    title: "Thursday Featured Dances",
     dances: [
         { name: "Fuego", level: "Intermediate", music: "Fuego - Pitbull", count: "48", walls: "4", stepsheet: "https://www.copperknob.co.uk/stepsheets/178608/fuego", demo: "https://www.youtube.com/watch?v=Tg_5_KvpnlY&t=69s", tutorial: "https://www.youtube.com/watch?v=sc5S2eG_9-E", info: "" },
         { name: "Esther", level: "Intermediate", music: "Esther - BAYNK & Tinashe", count: "32", walls: "2", stepsheet: "https://www.copperknob.co.uk/stepsheets/5D3HS34/esther", demo: "https://www.youtube.com/watch?v=kkaWwr41zmo", tutorial: "https://www.youtube.com/watch?v=P9pxeW-pTM8", info: "" },
